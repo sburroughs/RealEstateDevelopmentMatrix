@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="page.css">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body onload="servePage()">
+
+<div id="matrix">
+    <!--THIS CONTENT WILL BE SERVED VIA NAVIGATION SCRIPTS-->
+</div>
+
+<div class="center-wrapper">
+    <div id="top-nav">
+        <button id="upBtn" type="button" onclick="serveContent(-1, 0)">UP ARROW</button>
+    </div>
+    <div id="left-nav">
+        <button id="leftBtn" type="button" onclick="serveContent(0, -1)">LEFT ARROW</button>
+    </div>
+
+    <div id="main-view">
+        <!--THIS CONTENT WILL BE SERVED VIA NAVIGATION SCRIPTS-->
+        THIS CONTENT IS BLANK FOR NOW
+    </div>
+
+    <div id="right-nav">
+        <button id="rightBtn" type="button" onclick="serveContent(0, 1)">RIGHT ARROW</button>
+    </div>
+    <div id="bottom-nav">
+        <button id="downBtn" type="button" onclick="serveContent(1, 0)">DOWN ARROW</button>
+    </div>
+</div>
+
+<div id="comments">
+    <div id="breakpoint"></div>
+    <form method='post'>
+        Name: <input type='text' name='name' id='name'/>
+        <br/>
+        Comment:<br/>
+        <textarea name='comment' id='comment'></textarea><br/>
+        <input type='submit' value='Submit'/>
+    </form>
+</div>
+
+<script>
+
+    var MAX_TASKS = 12;
+    var MAX_STAGE = 12;
+
+    var currentStage = 1;
+    var currentTask = 1;
+
+    function servePage() {
+        serveMatrix();
+        serveContent(0, 0);
+        serveComments();
+    }
+
+    function serveMatrix() {
+        var matrix = retrieveMatrix();
+
+        document.getElementById("matrix").innerHTML = matrix;
+    }
+
+    function retrieveMatrix() {
+
+        var response = '{ "matrix":[{ "stage":{ "title":"Stage 1 Title", "tasks":[{ "task":{ "title": "Stage 1", "content": "Task 1" }},{ "task":{ "title": "Stage 1", "content": "Task 1" }},{ "task":{ "title": "Stage 1", "content": "Task 1" }} ]} },{ "stage":{ "title":"Stage 1 Title", "tasks":[{ "task":{ "title": "Stage 1", "content": "Task 1" }},{ "task":{ "title": "Stage 1", "content": "Task 1" }},{ "task":{ "title": "Stage 1", "content": "Task 1" }} ]} }, { "stage":{ "title":"Stage 1 Title", "tasks":[{ "task":{ "title": "Stage 1", "content": "Task 1" }},{ "task":{ "title": "Stage 1", "content": "Task 1" }},{ "task":{ "title": "Stage 1", "content": "Task 1" }} ]} } ] }';
+
+        var matrix;
+        try {
+            matrix = JSON.parse(response);
+        }
+        catch (err) {
+            alert("Bad REST request message received during Matrix generation." + err.message);
+        }
+
+        return matrix;
+
+    }
+
+    function serveContent(incrementStage, incrementTask) {
+
+        currentStage = currentStage + incrementStage;
+        currentTask = currentTask + incrementTask;
+
+        validateButtons();
+
+        var task = retrieveTask(currentStage, currentTask);
+        var title = task.title;
+        var content = task.content;
+
+        var servedContent = '<p>Title:' + title + '</p><p>Content:' + content + '</p>';
+
+        document.getElementById("main-view").innerHTML = servedContent;
+    }
+
+    function serveComments() {
+
+        var comments = retrieveComments();
+
+        var insert = "";
+        for (i = 0; i < comments.length; i++) {
+
+            var comment = comments[i];
+            var name = comment.name;
+            var value = comment.value;
+
+            var nextComment = '<div class="existing-comment">' + value + '</div>';
+            insert = insert + nextComment;
+        }
+
+        document.getElementById("breakpoint").innerHTML = insert;
+
+    }
+
+    function retrieveComments() {
+
+        var response = '{"comments":[{"comment":{"name":"Kim","value":"I think this could work"}},{"comment":{"name":"Shane","value":"Do you think this could work?"}}]}';
+        var comments;
+        try {
+            comments = JSON.parse(response);
+        }
+        catch (err) {
+            alert("Bad response while receiving comments.");
+        }
+
+        return comments;
+    }
+
+
+    function retrieveTask(stage, task) {
+
+        var title = '"STAGE: ' + stage + ' , TASK: ' + task + '"';
+        var response = '{"title":' + title + ', "content":"This is dummy content and will eventually be pulled from real data"}';
+
+//        var URL = "stage" + stage + "/task" + task + ".xml";
+//
+//        var content = URL;
+//
+//        var connection = new XMLHttpRequest();
+//        connection.open("GET", URL, false);
+//        connection.setRequestHeader("Content-Type", "text/xml");
+//        connection.send(null);
+//
+//        if (connection.readyState == 4 && connection.status == 200) {
+//            content = connection.responseText;
+//        }
+//
+//        return content;
+
+        var task;
+        try {
+            task = JSON.parse(response);
+        }
+        catch (err) {
+            alert("Bad REST request message recieved." + err.message);
+        }
+
+        return task;
+    }
+
+
+    function validateButtons() {
+        //UP
+        if (currentStage <= 1) {
+            document.getElementById("upBtn").disabled = true;
+        }
+        else {
+            document.getElementById("upBtn").disabled = false;
+        }
+
+        //DOWN
+        if (currentStage >= MAX_STAGE) {
+            document.getElementById("downBtn").disabled = true;
+        }
+        else {
+            document.getElementById("downBtn").disabled = false;
+        }
+
+        //LEFT
+        if (currentTask <= 1) {
+            document.getElementById("leftBtn").disabled = true;
+        }
+        else {
+            document.getElementById("leftBtn").disabled = false;
+        }
+
+        //RIGHT
+        if (currentTask >= MAX_TASKS) {
+            document.getElementById("rightBtn").disabled = true;
+        }
+        else {
+            document.getElementById("rightBtn").disabled = false;
+        }
+
+
+    }
+
+</script>
+
+
+</body>
+</html>
