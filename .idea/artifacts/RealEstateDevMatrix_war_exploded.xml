@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="RealEstateDevMatrix:war exploded">
-    <output-path>$PROJECT_DIR$/target/DevelopmentMatrix</output-path>
+    <output-path>$PROJECT_DIR$/target/matrix</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -28,10 +28,13 @@
           <element id="library" level="project" name="Maven: commons-io:commons-io:2.4" />
           <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-api:2.3" />
           <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-core:2.3" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.6.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.6.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.6.0" />
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/DevelopmentMatrix/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/matrix/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="RealEstateDevMatrix/web/Web" />
     </root>

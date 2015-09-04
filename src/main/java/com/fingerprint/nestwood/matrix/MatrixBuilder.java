@@ -9,10 +9,11 @@ import org.xml.sax.SAXException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import java.io.File;
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Enumeration;
 import java.util.List;
 import java.util.UnknownFormatConversionException;
 
@@ -22,11 +23,14 @@ public class MatrixBuilder {
     private static final String TITLE_ELEMENT = "Title";
     private static final String CONTENT_ELEMENT = "Content;";
 
-    public DevelopmentMatrix buildMatrix(String stagePathRoot) throws IOException {
+    private static final int MAX_STAGES = 2;
+    private static final int MAX_TASKS = 2;
+
+    public DevelopmentMatrix buildMatrix(String stagePathRoot) throws IOException, URISyntaxException {
 
         List<MatrixStage> stages = new ArrayList<>();
 
-        List<String> stagePaths = getPaths(stagePathRoot);
+        List<String> stagePaths = getStagePaths(stagePathRoot);
         for (String stagePath : stagePaths) {
             MatrixStage currentStage = buildStage(stagePath);
             stages.add(currentStage);
@@ -38,11 +42,11 @@ public class MatrixBuilder {
         return matrix;
     }
 
-    public MatrixStage buildStage(String stagePath) throws IOException {
+    public MatrixStage buildStage(String stagePath) throws IOException, URISyntaxException {
 
         List<MatrixTask> tasks = new ArrayList<>();
 
-        List<String> taskPaths = getPaths(stagePath);
+        List<String> taskPaths = getTaskPaths(stagePath);
         for (String taskPath : taskPaths) {
             MatrixTask currentTask = buildTask(taskPath);
             tasks.add(currentTask);
@@ -102,17 +106,25 @@ public class MatrixBuilder {
     }
 
 
-    private List<String> getPaths(String stagePath) throws IOException {
+    private List<String> getStagePaths(String stagesPath) {
 
         List<String> paths = new ArrayList<>();
 
-        ClassLoader classLoader = getClass().getClassLoader();
-        //Gets files in directory to determine number of tasks to build
-        Enumeration<URL> urls = classLoader.getResources(stagePath);
+        for (int i = 1; i <= MAX_STAGES; i++) {
+            String path = stagesPath + "/stage" + i;
+            paths.add(path);
+        }
 
-        while (urls.hasMoreElements()) {
-            String url = urls.nextElement().getPath();
-            paths.add(url);
+        return paths;
+    }
+
+    private List<String> getTaskPaths(String stagePath) {
+
+        List<String> paths = new ArrayList<>();
+
+        for (int i = 1; i <= MAX_STAGES; i++) {
+            String path = stagePath + "/task" + i + ".xml";
+            paths.add(path);
         }
 
         return paths;

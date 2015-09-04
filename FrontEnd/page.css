@@ -14,6 +14,59 @@
 
 }
 
-#main-view {
+.header {
+    background: purple;
 
+}
+
+
+
+#main-view {
+    width: 50%;
+    background: white;
+    font-size: 14px;
+}
+
+#matrix {
+
+}
+
+.matrix-task {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background: orange;
+}
+
+table {
+
+}
+
+td {
+    border: 2px solid black;
+    width: 10%;
+}
+
+.center-wrapper {
+    padding-top: 75px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background: darkgrey;
+}
+
+.existing-comment {
+
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 20px;
+
+}
+
+#comments {
+    position: fixed;
+    bottom: 0;
+    width: 80%;
+    background: green;
+    margin: auto;
 }
