@@ -3,131 +3,136 @@ package com.fingerprint.nestwood.matrix;
 import org.apache.commons.io.IOUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import java.io.File;
+import javax.xml.xpath.*;
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
-import java.net.URISyntaxException;
-import java.net.URL;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UnknownFormatConversionException;
 
 
 public class MatrixBuilder {
 
-    private static final String TITLE_ELEMENT = "Title";
-    private static final String CONTENT_ELEMENT = "Content;";
+    public DevelopmentMatrix buildMatrix() throws MatrixBuildException {
 
-    private static final int MAX_STAGES = 2;
-    private static final int MAX_TASKS = 2;
-
-    public DevelopmentMatrix buildMatrix(String stagePathRoot) throws IOException, URISyntaxException {
-
-        List<MatrixStage> stages = new ArrayList<>();
-
-        List<String> stagePaths = getStagePaths(stagePathRoot);
-        for (String stagePath : stagePaths) {
-            MatrixStage currentStage = buildStage(stagePath);
-            stages.add(currentStage);
+        MatrixHeader stageHeaders = null;
+        try {
+            String headerNodeXpath = "headers/header[@type='stage']/node";
+            stageHeaders = getHeader(headerNodeXpath);
+        } catch (Exception e) {
+            throw new MatrixBuildException(e);
         }
 
-        DevelopmentMatrix matrix = new DevelopmentMatrix();
-        matrix.setStages(stages);
 
+        MatrixHeader taskHeader = null;
+        try {
+            String taskNodeXpath = "headers/header[@type='task']/node";
+            taskHeader = getHeader(taskNodeXpath);
+        } catch (Exception e) {
+            throw new MatrixBuildException(e);
+        }
+
+
+        MatrixContent matrixContent = null;
+        try {
+            matrixContent = getMatrixContent(stageHeaders.getHeaders().size(), taskHeader.getHeaders().size());
+        } catch (Exception e) {
+            throw new MatrixBuildException(e);
+        }
+
+
+        DevelopmentMatrix matrix = new DevelopmentMatrix(stageHeaders, taskHeader);
+        matrix.setMatrix(matrixContent);
         return matrix;
     }
 
-    public MatrixStage buildStage(String stagePath) throws IOException, URISyntaxException {
+    private MatrixHeader getHeader(String nodesXpath) throws ParserConfigurationException, IOException, SAXException, XPathExpressionException {
 
-        List<MatrixTask> tasks = new ArrayList<>();
+        Document document = resourceToDocument("headers.xml");
 
-        List<String> taskPaths = getTaskPaths(stagePath);
-        for (String taskPath : taskPaths) {
-            MatrixTask currentTask = buildTask(taskPath);
-            tasks.add(currentTask);
+        XPathFactory xPathfactory = XPathFactory.newInstance();
+        XPath xpath = xPathfactory.newXPath();
+        XPathExpression expr = xpath.compile(nodesXpath);
+
+        List<MatrixNode> headerNodes = new ArrayList<>();
+
+        NodeList nodes = (NodeList) expr.evaluate(document, XPathConstants.NODESET);
+        int numberOfNodes = nodes.getLength();
+
+        for (int i = 0; i < numberOfNodes; i++) {
+            Element nodeElement = (Element) nodes.item(i);
+            String title = nodeElement.getElementsByTagName("title").item(0).getTextContent();
+            String content = nodeElement.getElementsByTagName("content").item(0).getTextContent();
+
+            MatrixNode matrixNode = new MatrixNode();
+            matrixNode.setTitle(title);
+            matrixNode.setContent(content);
+
+            headerNodes.add(matrixNode);
         }
 
-        MatrixStage stage = new MatrixStage();
-        stage.setTitle(null);
-        stage.setTasks(tasks);
 
-        return stage;
+        MatrixHeader header = new MatrixHeader();
+        header.setHeaders(headerNodes);
 
+        return header;
     }
 
+    private MatrixContent getMatrixContent(int stageSize, int taskSize) throws IOException, ParserConfigurationException, SAXException {
 
-    public MatrixTask buildTask(String resourcePath) throws IOException {
+        MatrixContent matrixContent = new MatrixContent(stageSize, taskSize);
 
-        MatrixTask task = new MatrixTask();
+        Document document = resourceToDocument("content.xml");
 
-        try {
-            ClassLoader classLoader = getClass().getClassLoader();
-            //result should be the path of a given stage. Folder should contain stage_content.xml and a list of task xml files
-            String xmlContent = IOUtils.toString(classLoader.getResourceAsStream(resourcePath));
+        Element root = document.getDocumentElement();
+        NodeList stageNodes = root.getElementsByTagName("stage");
+        for (int i = 0; i < stageNodes.getLength(); i++) {
+            Element currentStage = (Element) stageNodes.item(i);
+            NodeList taskNodes = currentStage.getElementsByTagName("task");
+            for (int j = 0; j < taskNodes.getLength(); j++) {
 
-            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-            Document doc = dBuilder.parse(xmlContent);
+                Node task = taskNodes.item(j);
+                String content = task.getTextContent();
 
-            Element root = doc.getDocumentElement();
-            if (root.getTagName().equals("Task")) {
-                throw new UnknownFormatConversionException("Unexpected Root Element");
+                MatrixNode node = new MatrixNode();
+                node.setContent(content);
+
+                matrixContent.addContent(i, j, node);
             }
-
-            String title = getInnerContent(root, TITLE_ELEMENT);
-            task.setTitle(title);
-            String content = getInnerContent(root, CONTENT_ELEMENT);
-            task.setContent(content);
-
-        } catch (ParserConfigurationException e) {
-            e.printStackTrace();
-        } catch (SAXException e) {
-            e.printStackTrace();
         }
 
 
-        return task;
+        return matrixContent;
     }
 
-    private String getInnerContent(Element rootElement, String elementName) {
+    public Document resourceToDocument(String fileName) throws IOException, ParserConfigurationException, SAXException {
 
-        NodeList titles = rootElement.getElementsByTagName(elementName);
-        if (titles.getLength() != 1) {
-            throw new UnknownFormatConversionException("Incorrect Element Detected: Expecting single:" + elementName);
+        String path = "/content/" + fileName;
+
+        InputStream resource = null;
+        try {
+            resource = this.getClass().getResourceAsStream(path);
+            String xml = IOUtils.toString(resource, "UTF-8");
+
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder builder = factory.newDocumentBuilder();
+            Document doc = builder.parse(new InputSource(new ByteArrayInputStream(xml.getBytes("utf-8"))));
+
+            return doc;
+        } finally {
+            if (resource != null) {
+                resource.close();
+            }
         }
-
-        return titles.item(0).getTextContent();
-
     }
 
-
-    private List<String> getStagePaths(String stagesPath) {
-
-        List<String> paths = new ArrayList<>();
-
-        for (int i = 1; i <= MAX_STAGES; i++) {
-            String path = stagesPath + "/stage" + i;
-            paths.add(path);
-        }
-
-        return paths;
-    }
-
-    private List<String> getTaskPaths(String stagePath) {
-
-        List<String> paths = new ArrayList<>();
-
-        for (int i = 1; i <= MAX_STAGES; i++) {
-            String path = stagePath + "/task" + i + ".xml";
-            paths.add(path);
-        }
-
-        return paths;
-    }
 
 }

@@ -3,41 +3,54 @@ package com.fingerprint.nestwood.matrix;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * Created by SBurroug on 8/22/2015.
  */
 public class DevelopmentMatrix {
 
-    private List<MatrixStage> stages;
+    private static final int DEFAULT_STAGES = 12;
+    private static final int DEFAULT_TASKS = 12;
+
+
+    private MatrixContent matrix;
+    private MatrixHeader stageHeader;
+    private MatrixHeader taskHeader;
 
     public DevelopmentMatrix() {
-        stages = new ArrayList<>();
+        matrix = new MatrixContent(DEFAULT_STAGES, DEFAULT_TASKS);
+        stageHeader = new MatrixHeader();
+        taskHeader = new MatrixHeader();
     }
 
-    /**
-     * @return
-     */
-    public List<MatrixStage> getStages() {
-        return stages;
+    public DevelopmentMatrix(MatrixHeader stageHeader, MatrixHeader taskHeader) {
+        matrix = new MatrixContent(stageHeader.getHeaders().size(), taskHeader.getHeaders().size());
+        this.stageHeader = stageHeader;
+        this.taskHeader = taskHeader;
     }
 
-    public void setStages(List<MatrixStage> stages) {
-        this.stages = stages;
+    public MatrixContent getMatrix() {
+        return matrix;
     }
 
-    public String generateRequest() {
-
-        try {
-            ObjectMapper mapper = new ObjectMapper();
-            String json = mapper.writeValueAsString(stages);
-            return json;
-        } catch (JsonProcessingException e) {
-            e.printStackTrace();
-        }
-
-        return "";
+    public void setMatrix(MatrixContent matrix) {
+        this.matrix = matrix;
     }
+
+    public MatrixHeader getStageHeader() {
+        return stageHeader;
+    }
+
+    public void setStageHeader(MatrixHeader stageHeader) {
+        this.stageHeader = stageHeader;
+    }
+
+    public MatrixHeader getTaskHeader() {
+        return taskHeader;
+    }
+
+    public void setTaskHeader(MatrixHeader taskHeader) {
+        this.taskHeader = taskHeader;
+    }
+
+
 }

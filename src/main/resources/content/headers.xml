@@ -1,0 +1,66 @@
+<headers>
+    <header type="stage">
+        <node>
+            <title>Land Banking</title>
+            <content>lkjlkj</content>
+        </node>
+        <node>
+            <title>Land Packaging</title>
+            <content>lkjlkj</content>
+        </node>
+        <node>
+            <title>Land Development</title>
+            <content>lkjlkj</content>
+        </node>
+        <node>
+            <title>Building Development</title>
+            <content>lkjlkj</content>
+        </node>
+        <node>
+            <title>Building Operations</title>
+            <content>lkjlkj</content>
+        </node>
+        <node>
+            <title>Building Renovation</title>
+            <content>lkjlkj</content>
+        </node>
+        <node>
+            <title>Building Redevelopment</title>
+            <content>lkjlkj</content>
+        </node>
+    </header>
+    <header type="task">
+        <node>
+            <title>Acquisition</title>
+            <content>lkjlkj</content>
+        </node>
+        <node>
+            <title>Financing</title>
+            <content>lkjlkj</content>
+        </node>
+        <node>
+            <title>Marketing Studies and Marketing Strategies</title>
+            <content>lkjlkj</content>
+        </node>
+        <node>
+            <title>Environmental Studies</title>
+            <content>lkjlkj</content>
+        </node>
+        <node>
+            <title>Approvals and Permits</title>
+            <content>lkjlkj</content>
+        </node>
+        <node>
+            <title>Improvements</title>
+            <content>lkjlkj</content>
+        </node>
+        <node>
+            <title>Transportation and Accessability</title>
+            <content>lkjlkj</content>
+        </node>
+        <node>
+            <title>Sales and Disposition</title>
+            <content>lkjlkj</content>
+        </node>
+    </header>
+</headers>

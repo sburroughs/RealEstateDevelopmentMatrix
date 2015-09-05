@@ -1,9 +1,9 @@
 package com.fingerprint.nestwood.matrix;
 
 /**
- * Created by SBurroug on 8/22/2015.
+ * Created by SBurroug on 9/5/2015.
  */
-public class MatrixTask {
+public class MatrixNode {
 
     private String title;
     private String content;
@@ -24,4 +24,7 @@ public class MatrixTask {
         this.content = content;
     }
 
+    public void toJson() {
+
+    }
 }

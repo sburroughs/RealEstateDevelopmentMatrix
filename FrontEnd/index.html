@@ -28,7 +28,7 @@
 
     <div id="main-view">
         <!--THIS CONTENT WILL BE SERVED VIA NAVIGATION SCRIPTS-->
-        THIS CONTENT IS BLANK FOR NOW
+        Unable to Load Content
     </div>
 
     <div id="right-nav">
@@ -83,7 +83,14 @@
     }
 
     function serveMatrix() {
-        var URL = "/DevelopmentMatrix/rest/matrix";
+
+        var dStage = $.get("/matrix/headers/stage");
+        var dTask = $.get("/matrix/headers/task");
+        $.when(dStage, dTask).done(function() {
+            // ...do stuff...
+        });
+
+        var URL = "/matrix/headers/stage";
         $.get(URL, function (json) {
 
             var content = JSON.parse(json);
