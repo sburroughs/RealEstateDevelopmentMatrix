@@ -25,6 +25,7 @@
     width: 50%;
     background: white;
     font-size: 14px;
+    height: 500px;
 }
 
 #matrix {
@@ -38,11 +39,7 @@
     background: orange;
 }
 
-table {
-
-}
-
-td {
+table, td, th {
     border: 2px solid black;
     width: 10%;
 }
@@ -64,8 +61,6 @@ td {
 }
 
 #comments {
-    position: fixed;
-    bottom: 0;
     width: 80%;
     background: green;
     margin: auto;

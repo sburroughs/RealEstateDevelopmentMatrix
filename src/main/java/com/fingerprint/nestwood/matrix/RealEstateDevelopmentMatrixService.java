@@ -64,4 +64,21 @@ public class RealEstateDevelopmentMatrixService {
 
         return Response.status(200).entity(json).build();
     }
+
+//    @GET
+//    @Path("/")
+//    public Response getComments(@PathParam("stage") int stage, @PathParam("task") int task) {
+//
+//
+//        return null;
+//    }
+
+//    public static void main(String[] args) throws MatrixBuildException {
+//
+//        MatrixBuilder builder = new MatrixBuilder();
+//        DevelopmentMatrix matrix = builder.buildMatrix();
+//        System.out.println(matrix.getMatrix().getContent(6, 1).getContent());
+//    }
+
+
 }

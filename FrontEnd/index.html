@@ -11,6 +11,27 @@
 <div class="header">
     <h1>Real Estate Development Matrix</h1>
 
+    <h2>A Multi-Disciplinary Project</h2>
+
+    <p>The real estate development process is organized around a 56-cell, stage-task matrix, which describes the entire
+        real estate development process in seven stages from the land banking stage to the redevelopment stage. In each
+        stage, there are eight categories of tasks that need to be addressed. The main thesis of this interdisciplinary
+        development model is that there are discrete stages in the process, and in each stage the real estate developer
+        must (1) complete different tasks using specialized skills and thereby accepting certain risks and (2) employ
+        various capital structures with different risk-return characteristics to create or "capture" the value increase
+        in that
+        stage. The seven stages in the model are: land banking, land packaging, land development, building development,
+        building operation, building renovation, and site redevelopment. Each stage in the process begins with the
+        acquisition tasks and ends with the disposition tasks. Each stage must also address, to some extent, the
+        following categories of tasks (many of which are done simultaneously): financing, market research, approvals,
+        environmental, improvement construction, and transportation and accessibility concerns. As with all real world
+        applications of conceptual
+        models, the lines separating the stages and the categories are fuzzy.</p>
+
+    <p>The Development Matrix can be used as a descriptive, normative, or predictive model. As a pedagogical tool, the
+        Development matrix can help the student understand the process, risks, and value creation in real estate
+        development. If you click on any blue link in the Matrix below, it will take you to a detailed explanation</p>
+
     <div id="matrix">
         <!--THIS CONTENT WILL BE SERVED VIA NAVIGATION SCRIPTS-->
     </div>
@@ -58,8 +79,8 @@
 
 <script>
 
-    var MAX_TASKS = 3;
-    var MAX_STAGE = 3;
+    var MAX_STAGE = 7;
+    var MAX_TASKS = 8;
 
     var currentStage = 1;
     var currentTask = 1;
@@ -86,57 +107,70 @@
 
         var dStage = $.get("/matrix/headers/stage");
         var dTask = $.get("/matrix/headers/task");
-        $.when(dStage, dTask).done(function() {
-            // ...do stuff...
-        });
+        $.when(dStage, dTask).done(
+                function (stageJson, taskJson) {
 
-        var URL = "/matrix/headers/stage";
-        $.get(URL, function (json) {
+                    try {
+                        ;
+                        var stageHeader = JSON.parse(stageJson[0]).headers;
+                        var taskHeader = JSON.parse(taskJson[0]).headers;
 
-            var content = JSON.parse(json);
-            matrix = content.matrix;
-            var length = matrix.length;
+                        var stageLength = stageHeader.length;
+                        var taskLength = taskHeader.length;
 
 
-            var taskSequence = [];
-            for (var i = 0; i < MAX_TASKS; i++) {
+                        var stageHeadingHtml = "<tr><th></th>";
+                        for (var i = 0; i < stageLength; i++) {
+                            var stageHeadTitle = stageHeader[i].title;
+                            stageHeadingHtml += "<th>" + stageHeadTitle + "</th>";
+                        }
+                        stageHeadingHtml += "</tr>"
 
-                for (var j = 0; j < length; j++) {
+                        var taskContent = "";
+                        for (var i = 0; i < taskLength; i++) {
 
-                    var stage = matrix[j].stage;
-                    var stageTasks = stage.tasks;
+                            var taskTitle = taskHeader[i].title;
+                            taskContent += "<tr><th>" + taskTitle + "</th>";
+                            for (var j = 0; j < stageLength; j++) {
+                                var stageTitle = stageHeader[j].title;
 
-                    var currentTask = stageTasks[i].task;
-                    var taskContent = currentTask.content;
-                    var taskTitle = currentTask.title;
+                                var combinedTitle = romanize(i + 1) + "." + (j + 1) + " " + stageTitle + " in " + taskTitle;
+                                taskContent += "<td onclick='serveContent(" + j + "," + i + ")'>" + combinedTitle + "</td> ";
 
-                    //If theres already content, add to it
-                    var currentTaskHtml = taskSequence[i];
-                    if (typeof currentTaskHtml == 'undefined') {
-                        currentTaskHtml = "";
+                            }
+
+                            taskContent += "</tr>";
+
+                        }
+
+                        var matrixContent = stageHeadingHtml + taskContent;
+                        var tableWrapper = '<table>' + matrixContent + '</table>';
+
+                        $("#matrix").html(matrixContent);
+
                     }
-
-                    var updatedTaskHtml = currentTaskHtml + '<td onclick="serveContent(' + j + ',' + i + ')">' + taskTitle + '</td>';
-                    taskSequence[i] = updatedTaskHtml;
+                    catch (error) {
+                        alert(error);
+                    }
                 }
-            }
+        ).fail(function () {
+                    alert("Unable to load Matrix")
+                });
 
-            var matrixContent = "";
-            for (var i = 0; i < taskSequence.length; i++) {
+    }
 
-                var content = taskSequence[i];
-
-                var tableWrapper = '<tr>' + content + '</tr>';
-                matrixContent = matrixContent + tableWrapper;
-            }
-
-            var tableWrapper = '<table>' + matrixContent + '</table>';
-
-            document.getElementById("matrix").innerHTML = tableWrapper;
-
-            serveContent(0, 0);
-
-        });
+    function romanize(num) {
+        if (!+num)
+            return false;
+        var digits = String(+num).split(""),
+                key = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM",
+                    "", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC",
+                    "", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"],
+                roman = "",
+                i = 3;
+        while (i--)
+            roman = (key[+digits.pop() + (i * 10)] || "") + roman;
+        return Array(+digits.join("") + 1).join("M") + roman;
     }
 
 
@@ -147,13 +181,17 @@
 
         validateButtons();
 
-        var task = retrieveTask(currentStage, currentTask);
-        var title = task.title;
-        var content = task.content;
-
-        var servedContent = '<p>Title:' + title + '</p><p>Content:' + content + '</p>';
-
-        document.getElementById("main-view").innerHTML = servedContent;
+        var url = "matrix/stage" + currentStage + "/task" + currentTask;
+        var request = $.get(url);
+        $.when(request).done(
+                function (json) {
+                    var content = JSON.parse(json).content;
+                    var header = "Stage: " + currentStage + " Task: " + currentTask;
+                    var view = header + "<br>" + content;
+                    $("#main-view").html(view);
+                }).fail(function () {
+                    alert("Unable to serve content")
+                });
     }
 
     function incrementContent(stageIncrement, taskIncrement) {
@@ -193,21 +231,10 @@
     }
 
 
-    function retrieveTask(stage, task) {
-
-        var stage = matrix[stage].stage;
-        var stageTasks = stage.tasks;
-        var task = stageTasks[task];
-
-        return task.task;
-    }
-
-
     function validateButtons() {
 
-        alert("STAGE: " + currentStage + " TASK: " + currentTask);
         //UP
-        if (currentTask <= 1) {
+        if (currentTask <= 0) {
             document.getElementById("upBtn").disabled = true;
         }
         else {
@@ -215,7 +242,7 @@
         }
 
         //DOWN
-        if (currentTask >= MAX_STAGE) {
+        if (currentTask >= MAX_TASKS-1) {
             document.getElementById("downBtn").disabled = true;
         }
         else {
@@ -223,7 +250,7 @@
         }
 
         //LEFT
-        if (currentStage <= 1) {
+        if (currentStage <= 0) {
             document.getElementById("leftBtn").disabled = true;
         }
         else {
@@ -231,7 +258,7 @@
         }
 
         //RIGHT
-        if (currentStage >= MAX_TASKS) {
+        if (currentStage >= MAX_STAGE-1) {
             document.getElementById("rightBtn").disabled = true;
         }
         else {
