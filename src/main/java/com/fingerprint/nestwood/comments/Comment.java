@@ -1,18 +1,34 @@
 package com.fingerprint.nestwood.comments;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by SBurroug on 9/4/2015.
  */
 public class Comment {
 
-    String comment;
-    Date postDate;
-    String name;
 
-    public Comment() {
+    private String commentText;
+    private List<Comment> childComments;
+    private String name;
+    private Date timestamp;
 
+
+    public String getCommentText() {
+        return commentText;
+    }
+
+    public void setCommentText(String commentText) {
+        this.commentText = commentText;
+    }
+
+    public List<Comment> getChildComments() {
+        return childComments;
+    }
+
+    public void setChildComments(List<Comment> childComments) {
+        this.childComments = childComments;
     }
 
     public String getName() {
@@ -23,19 +39,11 @@ public class Comment {
         this.name = name;
     }
 
-    public String getComment() {
-        return comment;
+    public Date getTimestamp() {
+        return timestamp;
     }
 
-    public void setComment(String comment) {
-        this.comment = comment;
-    }
-
-    public Date getPostDate() {
-        return postDate;
-    }
-
-    public void setPostDate(Date postDate) {
-        this.postDate = postDate;
+    public void setTimestamp(Date timestamp) {
+        this.timestamp = timestamp;
     }
 }

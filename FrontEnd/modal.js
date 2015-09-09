@@ -7,14 +7,11 @@
 
 // JavaScript should be made compatible with libraries other than jQuery by
 // wrapping it with an "anonymous closure".
-(function ($, window, document, undefined) {
 
   // Function for hiding and displaying the modal
-  $('.toggle--modal').once().click(function(e) {
+  $('.toggle--modal').click(function(e) {
     e.preventDefault();
     e.stopPropagation();
     $('.modal__overlay').toggleClass('is-active');
     $(this).toggleClass('is-active');
   });
-
-})(jQuery, this, this.document);
