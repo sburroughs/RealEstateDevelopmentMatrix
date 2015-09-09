@@ -34,6 +34,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: auto;
 }
 
+.main-content {
+    border-top: 5px solid #575A48;
+}
+
 table, td, th {
     border: 2px solid black;
     width: 10%;
@@ -130,4 +134,41 @@ table, td, th {
     top: 2px;
     right: 0;
     color: #575A48;
+}
+
+header {
+    overflow: hidden;
+}
+
+.site__name {
+    float: left;
+    display: inline-block;
+}
+
+.menu--main {
+    float: right;
+}
+
+.menu--main__list {
+    list-style: none;
+    margin: 0;
+}
+
+.menu--main__item {
+    display: inline-block;
+    border: 1px solid #575A48;
+    border-radius: 5px 5px 0 0;
+}
+
+.menu--main__link {
+    display: block;
+    background: #2A2A2D;
+    color: #F2ECE9;
+    padding: 10px 20px;
+}
+
+.menu--main__link:hover,
+.menu--main__link:focus {
+    background: #303440;
+    color: #F2ECE9;
 }
