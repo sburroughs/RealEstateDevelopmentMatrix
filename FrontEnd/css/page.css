@@ -61,7 +61,7 @@ table, td, th {
 }
 
 .modal__overlay {
-    display: none;
+    visibility: hidden;
     background: rgba(0, 0, 0, .75);
     position: fixed;
     overflow: hidden;
@@ -71,10 +71,14 @@ table, td, th {
     width: 100%;
     z-index: 99999;
     text-align: center;
+    opacity: 0;
+    transition:visibility 0s linear 0.3s,opacity 0.3s linear;
 }
 
 .modal__overlay.is-active {
-    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
 }
 
 .modal__wrap {
