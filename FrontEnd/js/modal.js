@@ -10,7 +10,7 @@
 (function ($, window, document, undefined) {
 
   // Function for hiding and displaying the modal
-  $('.toggle--modal').once().click(function(e) {
+  $('.toggle--modal').click(function(e) {
     e.preventDefault();
     e.stopPropagation();
     $('.modal__overlay').toggleClass('is-active');

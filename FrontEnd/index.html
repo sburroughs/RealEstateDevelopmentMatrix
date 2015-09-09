@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="page.css">
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/simple-line-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/page.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 <body onload="servePage()">
 
@@ -46,23 +47,18 @@
     <div id="matrix">
         <!--THIS CONTENT WILL BE SERVED VIA NAVIGATION SCRIPTS-->
     </div>
+
+  <a href="#" class="toggle--modal">Modal trigger</a>
 </div>
 
 <div class="modal__overlay">
   <div class="modal__wrap">
     <div class="modal__navigation">
-      <div id="top-nav" class="modal__button--top">
-        <button id="upBtn" type="button" onclick="incrementContent(0, -1)">Navigate to Cell Above</button>
-      </div>
-      <div id="left-nav"  class="modal__button--left">
-        <button id="leftBtn" type="button" onclick="incrementContent(-1, 0)">Navigate to Cell Left</button>
-      </div>
-      <div id="right-nav" class="modal__button--right">
-        <button id="rightBtn" type="button" onclick="incrementContent(1, 0)">Navigate to Cell Right</button>
-      </div>
-      <div id="bottom-nav"  class="modal__button--bottom">
-        <button id="downBtn" type="button" onclick="incrementContent(0, 1)">Navigate to Cell Below</button>
-      </div>
+      <a href="#" class="modal__button toggle--modal icon-close">Close Modal</a>
+      <a href="#" id="upBtn" type="button" onclick="incrementContent(0, -1)" class="modal__button modal__button--top icon-arrow-up-circle">Navigate to Cell Above</a>
+      <a href="#" id="leftBtn" type="button" onclick="incrementContent(-1, 0)" class="modal__button modal__button--left icon-arrow-left-circle">Navigate to Cell Left</a>
+      <a href="#" id="rightBtn" type="button" onclick="incrementContent(1, 0)" class="modal__button modal__button--right icon-arrow-right-circle">Navigate to Cell Right</a>
+      <a href="#" id="downBtn" type="button" onclick="incrementContent(0, 1)" class="modal__button modal__button--bottom icon-arrow-down-circle">Navigate to Cell Below</a>
     </div>
 
     <div id="main-view" class="modal__content">
@@ -86,7 +82,7 @@
     Copyright &copy; Granite Road, LLC.
   </footer>
 
-  <script src="modal.js"></script>
+  <script src="js/modal.js"></script>
 </div>
 
 <script>
