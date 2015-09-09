@@ -74,7 +74,6 @@ table, td, th {
     height: 100%;
     width: 100%;
     z-index: 99999;
-    text-align: center;
     opacity: 0;
     transition:visibility 0s linear 0.3s,opacity 0.3s linear;
 }
@@ -97,6 +96,10 @@ table, td, th {
 
 .modal__content {
     overflow: scroll;
+}
+
+.modal__navigation {
+    text-align: center;
 }
 
 .modal__button {
@@ -171,4 +174,25 @@ header {
 .menu--main__link:focus {
     background: #303440;
     color: #F2ECE9;
+}
+
+.comment__list {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.form__item {
+    display: block;
+}
+
+label {
+    color: #848284;
+    margin-bottom: 5px;
+}
+
+textarea,
+input {
+    margin-bottom: 15px;
+    width: 100%;
+    border: 1px solid #848284;
 }
