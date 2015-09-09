@@ -1,24 +1,8 @@
-#top-nav {
-
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5%;
 }
-
-#left-nav {
-
-}
-
-#right-nav {
-
-}
-
-#bottom-nav {
-
-}
-
-.header {
-    background: purple;
-
-}
-
 
 
 #main-view {
@@ -28,15 +12,10 @@
     height: 500px;
 }
 
-#matrix {
-
-}
-
 .matrix-task {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    background: orange;
 }
 
 table, td, th {
@@ -62,6 +41,13 @@ table, td, th {
 
 #comments {
     width: 80%;
-    background: green;
     margin: auto;
+}
+
+.modal__overlay {
+    display: none;
+}
+
+.modal__overlay.is-active {
+    display: block;
 }

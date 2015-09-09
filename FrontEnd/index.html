@@ -8,7 +8,18 @@
 </head>
 <body onload="servePage()">
 
-<div class="header">
+<header class="container">
+  <div class="site__name">Site Name Goes Here</div>
+  <nav class="menu--main">
+    <a href="#">Matrix</a>
+    <a href="#">Third Dimension</a>
+    <a href="#">Process of Real Estate Development</a>
+    <a href="#">Handbook</a>
+    <a href="#">Glossary</a>
+  </nav>
+</header>
+
+<div class="main-content container">
     <h1>Real Estate Development Matrix</h1>
 
     <h2>A Multi-Disciplinary Project</h2>
@@ -37,44 +48,45 @@
     </div>
 </div>
 
-<div class="center-wrapper">
-    <div id="top-nav">
-        <button id="upBtn" type="button" onclick="incrementContent(0, -1)">UP ARROW</button>
+<div class="modal__overlay">
+  <div class="modal__wrap">
+    <div class="modal__navigation">
+      <div id="top-nav" class="modal__button--top">
+        <button id="upBtn" type="button" onclick="incrementContent(0, -1)">Navigate to Cell Above</button>
+      </div>
+      <div id="left-nav"  class="modal__button--left">
+        <button id="leftBtn" type="button" onclick="incrementContent(-1, 0)">Navigate to Cell Left</button>
+      </div>
+      <div id="right-nav" class="modal__button--right">
+        <button id="rightBtn" type="button" onclick="incrementContent(1, 0)">Navigate to Cell Right</button>
+      </div>
+      <div id="bottom-nav"  class="modal__button--bottom">
+        <button id="downBtn" type="button" onclick="incrementContent(0, 1)">Navigate to Cell Below</button>
+      </div>
     </div>
 
-
-    <div id="left-nav">
-        <button id="leftBtn" type="button" onclick="incrementContent(-1, 0)">LEFT ARROW</button>
+    <div id="main-view" class="modal__content">
+      <!--THIS CONTENT WILL BE SERVED VIA NAVIGATION SCRIPTS-->
+      Unable to Load Content
     </div>
 
-    <div id="main-view">
-        <!--THIS CONTENT WILL BE SERVED VIA NAVIGATION SCRIPTS-->
-        Unable to Load Content
-    </div>
-
-    <div id="right-nav">
-        <button id="rightBtn" type="button" onclick="incrementContent(1, 0)">RIGHT ARROW</button>
-    </div>
-
-
-    <div id="bottom-nav">
-        <button id="downBtn" type="button" onclick="incrementContent(0, 1)">DOWN ARROW</button>
-    </div>
-</div>
-
-<div id="comments">
-
-    <form method='post'>
+    <div class="comment__list" id="comments">
+      <form method='post'>
         Name:<br/>
         <input type='text' name='name' id='name'/>
         <br/>
         Comment:<br/>
         <textarea name='comment' id='comment'></textarea><br/>
         <input type='submit' value='Submit'/>
-    </form>
+      </form>
+    </div>
+  </div>
 
-    <div id="breakpoint"></div>
+  <footer>
+    Copyright &copy; Granite Road, LLC.
+  </footer>
 
+  <script src="modal.js"></script>
 </div>
 
 <script>
