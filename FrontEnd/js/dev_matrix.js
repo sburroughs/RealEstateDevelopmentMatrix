@@ -7,7 +7,6 @@ var currentTask = 1;
 var matrix;
 
 function servePage() {
-
     try {
         serveMatrix();
     }
@@ -70,7 +69,7 @@ function serveMatrix() {
         var matrixContent = stageHeadingHtml + taskContent;
         var tableWrapper = '<table>' + matrixContent + '</table>';
 
-        $("#matrix").html(tableWrapper);
+        $("#matrix").html(matrixContent);
 
     }
     catch (error) {
@@ -102,25 +101,24 @@ function romanize(num) {
 
 function serveContent(stageIndex, taskIndex) {
 
-    //currentStage = stageIndex;
-    //currentTask = taskIndex;
-    //
-    //validateButtons();
-    //
-    ////var url = "matrix/stage" + currentStage + "/task" + currentTask;
-    ////var request = $.get(url);
-    ////$.when(request).done(
-    ////    function (json) {
-    //var json = '{"title":null,"content":"This is sample content loaded by the thing."}';
-    //
-    //var content = JSON.parse(json).content;
-    //var header = "Stage: " + currentStage + " Task: " + currentTask;
-    //var view = header + "<br>" + content;
-    //$("#main-view").html(view);
-    //alert('yeah');
-    ////}).fail(function () {
-    ////    alert("Unable to serve content")
-    ////});
+    currentStage = stageIndex;
+    currentTask = taskIndex;
+
+    validateButtons();
+
+    //var url = "matrix/stage" + currentStage + "/task" + currentTask;
+    //var request = $.get(url);
+    //$.when(request).done(
+    //    function (json) {
+    var json = '{"title":null,"content":"This is sample content loaded by the thing."}';
+
+    var content = JSON.parse(json).content;
+    var header = "Stage: " + currentStage + " Task: " + currentTask;
+    var view = header + "<br>" + content;
+    $("#main-view").html(view);
+    //}).fail(function () {
+    //    alert("Unable to serve content")
+    //});
 }
 
 function incrementContent(stageIncrement, taskIncrement) {
