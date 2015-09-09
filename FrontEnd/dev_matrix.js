@@ -76,12 +76,12 @@ function serveMatrix() {
         alert(error);
     }
 
-    $('.toggle--modal').click(function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        $('.modal__overlay').toggleClass('is-active');
-        $(this).toggleClass('is-active');
-    });
+    //$('.toggle--modal').click(function (e) {
+    //    e.preventDefault();
+    //    e.stopPropagation();
+    //    $('.modal__overlay').toggleClass('is-active');
+    //    $(this).toggleClass('is-active');
+    //});
 
 //}
 //   ).fail(function () {
