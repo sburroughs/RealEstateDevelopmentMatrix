@@ -5,7 +5,9 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/simple-line-icons.css">
     <link rel="stylesheet" type="text/css" href="css/page.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="dev_matrix.js"></script>
+
 </head>
 <body onload="servePage()">
 
@@ -76,6 +78,7 @@
         <input type='submit' value='Submit'/>
       </form>
     </div>
+
   </div>
 
   <footer>
@@ -84,200 +87,6 @@
 
   <script src="js/modal.js"></script>
 </div>
-
-<script>
-
-    var MAX_STAGE = 7;
-    var MAX_TASKS = 8;
-
-    var currentStage = 1;
-    var currentTask = 1;
-
-    var matrix;
-
-    function servePage() {
-        try {
-            serveMatrix();
-        }
-        catch (error) {
-            alert(error);
-        }
-
-        try {
-            serveComments();
-        }
-        catch (error) {
-            alert(error);
-        }
-    }
-
-    function serveMatrix() {
-
-        var dStage = $.get("/matrix/headers/stage");
-        var dTask = $.get("/matrix/headers/task");
-        $.when(dStage, dTask).done(
-                function (stageJson, taskJson) {
-
-                    try {
-                        ;
-                        var stageHeader = JSON.parse(stageJson[0]).headers;
-                        var taskHeader = JSON.parse(taskJson[0]).headers;
-
-                        var stageLength = stageHeader.length;
-                        var taskLength = taskHeader.length;
-
-
-                        var stageHeadingHtml = "<tr><th></th>";
-                        for (var i = 0; i < stageLength; i++) {
-                            var stageHeadTitle = stageHeader[i].title;
-                            stageHeadingHtml += "<th>" + stageHeadTitle + "</th>";
-                        }
-                        stageHeadingHtml += "</tr>"
-
-                        var taskContent = "";
-                        for (var i = 0; i < taskLength; i++) {
-
-                            var taskTitle = taskHeader[i].title;
-                            taskContent += "<tr><th>" + taskTitle + "</th>";
-                            for (var j = 0; j < stageLength; j++) {
-                                var stageTitle = stageHeader[j].title;
-
-                                var combinedTitle = romanize(i + 1) + "." + (j + 1) + " " + stageTitle + " in " + taskTitle;
-                                taskContent += "<td onclick='serveContent(" + j + "," + i + ")'>" + combinedTitle + "</td> ";
-
-                            }
-
-                            taskContent += "</tr>";
-
-                        }
-
-                        var matrixContent = stageHeadingHtml + taskContent;
-                        var tableWrapper = '<table>' + matrixContent + '</table>';
-
-                        $("#matrix").html(matrixContent);
-
-                    }
-                    catch (error) {
-                        alert(error);
-                    }
-                }
-        ).fail(function () {
-                    alert("Unable to load Matrix")
-                });
-
-    }
-
-    function romanize(num) {
-        if (!+num)
-            return false;
-        var digits = String(+num).split(""),
-                key = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM",
-                    "", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC",
-                    "", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"],
-                roman = "",
-                i = 3;
-        while (i--)
-            roman = (key[+digits.pop() + (i * 10)] || "") + roman;
-        return Array(+digits.join("") + 1).join("M") + roman;
-    }
-
-
-    function serveContent(stageIndex, taskIndex) {
-
-        currentStage = stageIndex;
-        currentTask = taskIndex;
-
-        validateButtons();
-
-        var url = "matrix/stage" + currentStage + "/task" + currentTask;
-        var request = $.get(url);
-        $.when(request).done(
-                function (json) {
-                    var content = JSON.parse(json).content;
-                    var header = "Stage: " + currentStage + " Task: " + currentTask;
-                    var view = header + "<br>" + content;
-                    $("#main-view").html(view);
-                }).fail(function () {
-                    alert("Unable to serve content")
-                });
-    }
-
-    function incrementContent(stageIncrement, taskIncrement) {
-
-        var stage = currentStage + stageIncrement;
-        var task = currentTask + taskIncrement;
-
-        serveContent(stage, task);
-
-    }
-
-    function serveComments() {
-
-        var comments = retrieveComments();
-
-        var insert = "";
-        for (var i = 0; i < comments.length; i++) {
-
-            var comment = comments[i].comment;
-            var name = comment.name;
-            var value = comment.value;
-
-            var nextComment = '<div class="existing-comment">' + value + '</div>';
-            insert = insert + nextComment;
-        }
-
-        document.getElementById("breakpoint").innerHTML = insert;
-
-    }
-
-    function retrieveComments() {
-
-        var response = '{"comments":[{"comment":{"name":"Kim","value":"I think this could work"}},{"comment":{"name":"Shane","value":"Do you think this could work?"}}]}';
-
-        var comments = JSON.parse(response);
-        return comments.comments;
-    }
-
-
-    function validateButtons() {
-
-        //UP
-        if (currentTask <= 0) {
-            document.getElementById("upBtn").disabled = true;
-        }
-        else {
-            document.getElementById("upBtn").disabled = false;
-        }
-
-        //DOWN
-        if (currentTask >= MAX_TASKS-1) {
-            document.getElementById("downBtn").disabled = true;
-        }
-        else {
-            document.getElementById("downBtn").disabled = false;
-        }
-
-        //LEFT
-        if (currentStage <= 0) {
-            document.getElementById("leftBtn").disabled = true;
-        }
-        else {
-            document.getElementById("leftBtn").disabled = false;
-        }
-
-        //RIGHT
-        if (currentStage >= MAX_STAGE-1) {
-            document.getElementById("rightBtn").disabled = true;
-        }
-        else {
-            document.getElementById("rightBtn").disabled = false;
-        }
-
-
-    }
-
-</script>
-
 
 </body>
 </html>
