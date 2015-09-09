@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title></title>
-  <link rel="stylesheet" type="text/css" href="css/simple-line-icons.css">
-  <link rel="stylesheet" type="text/css" href="css/page.css">
-  <link href='https://fonts.googleapis.com/css?family=Cinzel:400,700|Lato:400,300,700' rel='stylesheet' type='text/css'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="dev_matrix.js"></script>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/simple-line-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/page.css">
+    <link href='https://fonts.googleapis.com/css?family=Cinzel:400,700|Lato:400,300,700' rel='stylesheet'
+          type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/dev_matrix.js"></script>
 
 </head>
 <body onload="servePage()">
 
 <header class="container">
-  <div class="site__name">Site Name Goes Here</div>
-  <nav class="menu--main">
-    <a href="#">Matrix</a>
-    <a href="#">Third Dimension</a>
-    <a href="#">Process of Real Estate Development</a>
-    <a href="#">Handbook</a>
-    <a href="#">Glossary</a>
-  </nav>
+    <div class="site__name">Site Name Goes Here</div>
+    <nav class="menu--main">
+        <a href="#">Matrix</a>
+        <a href="#">Third Dimension</a>
+        <a href="#">Process of Real Estate Development</a>
+        <a href="#">Handbook</a>
+        <a href="#">Glossary</a>
+    </nav>
 </header>
 
 <div class="main-content container">
@@ -47,46 +48,48 @@
         Development matrix can help the student understand the process, risks, and value creation in real estate
         development. If you click on any blue link in the Matrix below, it will take you to a detailed explanation</p>
 
-  <a href="#" class="toggle--modal">Modal Trigger</a>
-
     <div id="matrix">
         <!--THIS CONTENT WILL BE SERVED VIA NAVIGATION SCRIPTS-->
     </div>
 </div>
 
 <div class="modal__overlay">
-  <div class="modal__wrap">
-    <div class="modal__navigation">
-      <a href="#" class="modal__button toggle--modal icon-close">Close Modal</a>
-      <a href="#" id="upBtn" type="button" onclick="incrementContent(0, -1)" class="modal__button modal__button--top icon-arrow-up-circle">Navigate to Cell Above</a>
-      <a href="#" id="leftBtn" type="button" onclick="incrementContent(-1, 0)" class="modal__button modal__button--left icon-arrow-left-circle">Navigate to Cell Left</a>
-      <a href="#" id="rightBtn" type="button" onclick="incrementContent(1, 0)" class="modal__button modal__button--right icon-arrow-right-circle">Navigate to Cell Right</a>
-      <a href="#" id="downBtn" type="button" onclick="incrementContent(0, 1)" class="modal__button modal__button--bottom icon-arrow-down-circle">Navigate to Cell Below</a>
+    <div class="modal__wrap">
+        <div class="modal__navigation">
+            <a href="#" class="modal__button toggle--modal icon-close">Close Modal</a>
+            <a href="#" id="upBtn" type="button" onclick="incrementContent(0, -1)"
+               class="modal__button modal__button--top icon-arrow-up-circle">Navigate to Cell Above</a>
+            <a href="#" id="leftBtn" type="button" onclick="incrementContent(-1, 0)"
+               class="modal__button modal__button--left icon-arrow-left-circle">Navigate to Cell Left</a>
+            <a href="#" id="rightBtn" type="button" onclick="incrementContent(1, 0)"
+               class="modal__button modal__button--right icon-arrow-right-circle">Navigate to Cell Right</a>
+            <a href="#" id="downBtn" type="button" onclick="incrementContent(0, 1)"
+               class="modal__button modal__button--bottom icon-arrow-down-circle">Navigate to Cell Below</a>
+        </div>
+
+        <div id="main-view" class="modal__content">
+            <!--THIS CONTENT WILL BE SERVED VIA NAVIGATION SCRIPTS-->
+            Unable to Load Content
+        </div>
+
+        <div class="comment__list" id="comments">
+            <form method='post'>
+                Name:<br/>
+                <input type='text' name='name' id='name'/>
+                <br/>
+                Comment:<br/>
+                <textarea name='comment' id='comment'></textarea><br/>
+                <input type='submit' value='Submit'/>
+            </form>
+        </div>
+
     </div>
 
-    <div id="main-view" class="modal__content">
-      <!--THIS CONTENT WILL BE SERVED VIA NAVIGATION SCRIPTS-->
-      Unable to Load Content
-    </div>
+    <footer>
+        Copyright &copy; Granite Road, LLC.
+    </footer>
 
-    <div class="comment__list" id="comments">
-      <form method='post'>
-        Name:<br/>
-        <input type='text' name='name' id='name'/>
-        <br/>
-        Comment:<br/>
-        <textarea name='comment' id='comment'></textarea><br/>
-        <input type='submit' value='Submit'/>
-      </form>
-    </div>
-
-  </div>
-
-  <footer>
-    Copyright &copy; Granite Road, LLC.
-  </footer>
-
-  <script src="js/modal.js"></script>
+    <script src="js/modal.js"></script>
 </div>
 
 </body>

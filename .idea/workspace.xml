@@ -7,12 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2688208-2e97-4733-a97b-df2ef1578219" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/SBurroug.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/dev_matrix.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/comments/Comment.java" afterPath="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/comments/Comment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/comments/CommentsDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/comments/CommentsDAO.java" />
+      <change type="MOVED" beforePath="C:\Development\Personal\RealEstateDevMatrix\FrontEnd\dev_matrix.js" afterPath="$PROJECT_DIR$/FrontEnd/js/dev_matrix.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/index.html" afterPath="$PROJECT_DIR$/FrontEnd/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/modal.js" afterPath="$PROJECT_DIR$/FrontEnd/modal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/js/modal.js" afterPath="$PROJECT_DIR$/FrontEnd/js/modal.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RealEstateDevMatrix.iws" />
@@ -40,18 +37,28 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FrontEnd/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.0">
-              <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+            <state vertical-scroll-proportion="-14.846154">
+              <caret line="63" column="84" selection-start-line="63" selection-start-column="84" selection-end-line="63" selection-end-column="84" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dev_matrix.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FrontEnd/dev_matrix.js">
+      <file leaf-file-name="dev_matrix.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrontEnd/js/dev_matrix.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2073955">
-              <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="150" column="34" selection-start-line="150" selection-start-column="34" selection-end-line="150" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modal.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FrontEnd/js/modal.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.32130584">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -73,6 +80,9 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1510#1511#0" expanded="false" />
+                <element signature="e#1550#1551#0" expanded="false" />
                 <marker date="1441764387259" expanded="true" signature="702:761" placeholder="SELECT * FRO..comments..." />
                 <marker date="1441764387259" expanded="true" signature="702:802" placeholder="SELECT * FRO..comments..." />
               </folding>
@@ -85,25 +95,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#323#324#0" expanded="true" />
-                <element signature="e#357#358#0" expanded="true" />
-                <element signature="e#411#412#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#504#505#0" expanded="true" />
-                <element signature="e#540#541#0" expanded="true" />
-                <element signature="e#605#606#0" expanded="true" />
-                <element signature="e#655#656#0" expanded="true" />
-                <element signature="e#686#687#0" expanded="true" />
-                <element signature="e#713#714#0" expanded="true" />
-                <element signature="e#753#754#0" expanded="true" />
-                <element signature="e#785#786#0" expanded="true" />
-                <element signature="e#819#820#0" expanded="true" />
-                <element signature="e#851#852#0" expanded="true" />
-                <element signature="e#899#900#0" expanded="true" />
-                <element signature="e#941#942#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -154,8 +146,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/comments/Comment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/comments/CommentsDAO.java" />
         <option value="$PROJECT_DIR$/FrontEnd/modal.js" />
-        <option value="$PROJECT_DIR$/FrontEnd/index.html" />
         <option value="$PROJECT_DIR$/FrontEnd/dev_matrix.js" />
+        <option value="$PROJECT_DIR$/FrontEnd/js/dev_matrix.js" />
+        <option value="$PROJECT_DIR$/FrontEnd/index.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/js/modal.js" />
       </list>
     </option>
   </component>
@@ -179,10 +173,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1928" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -223,8 +217,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -385,7 +379,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -409,6 +403,7 @@
       <recent name="com.fingerprint.nestwood.matrix" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Development\Personal\RealEstateDevMatrix\FrontEnd\js" />
       <recent name="C:\Development\Personal\RealEstateDevMatrix\src\main\resources" />
       <recent name="C:\Development\Personal\RealEstateDevMatrix\src\main\webapp" />
       <recent name="C:\Development\Personal\RealEstateDevMatrix\FrontEnd" />
@@ -429,8 +424,9 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/dev_matrix.js</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/index.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/page.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/js/modal.js</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -438,7 +434,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/modal.js</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -892,7 +887,8 @@
       <workItem from="1441396496317" duration="6451000" />
       <workItem from="1441475981292" duration="31801000" />
       <workItem from="1441735078750" duration="1078000" />
-      <workItem from="1441744551170" duration="9001000" />
+      <workItem from="1441744551170" duration="9655000" />
+      <workItem from="1441772960371" duration="6897000" />
     </task>
     <task id="LOCAL-00001" summary="Everything man. Like everything is updated. IDK what I'm even working on anymore.">
       <created>1441402324101</created>
@@ -912,15 +908,21 @@
       <option name="project" value="LOCAL" />
       <updated>1441713911931</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="hardcoded expected content for theming">
+      <created>1441768966523</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1441768966524</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119512000" />
+    <option name="totallyTimeSpent" value="127063000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -929,11 +931,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32642487" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34054053" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21342282" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30703625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30703625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -941,13 +942,14 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5167785" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5167785" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32348993" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -966,7 +968,8 @@
     <MESSAGE value="Everything man. Like everything is updated. IDK what I'm even working on anymore." />
     <MESSAGE value="Updated Rest service with new endpoints and new data structures to return. Ui still needs work" />
     <MESSAGE value="Updated Content" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Content" />
+    <MESSAGE value="hardcoded expected content for theming" />
+    <option name="LAST_COMMIT_MESSAGE" value="hardcoded expected content for theming" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -979,14 +982,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FrontEnd/page.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/content/headers.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1007,25 +1002,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#540#541#0" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#713#714#0" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#819#820#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-            <element signature="e#899#900#0" expanded="true" />
-            <element signature="e#941#942#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1047,7 +1024,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1069,7 +1045,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1091,7 +1066,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1121,7 +1095,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1151,7 +1124,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1231,12 +1203,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#219#220#0" expanded="false" />
-            <element signature="e#249#250#0" expanded="false" />
-            <element signature="e#305#306#0" expanded="false" />
-            <element signature="e#343#344#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1244,10 +1210,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="e#185#186#0" expanded="false" />
-            <element signature="e#209#210#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1262,7 +1224,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1270,10 +1231,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <element signature="e#1282#1283#0" expanded="false" />
-            <element signature="e#1315#1316#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1281,9 +1238,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1298,14 +1252,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#207#208#0" expanded="false" />
-            <element signature="e#273#274#0" expanded="false" />
-            <element signature="e#315#316#0" expanded="false" />
-            <element signature="e#345#346#0" expanded="false" />
-            <element signature="e#513#514#0" expanded="false" />
-            <element signature="e#561#562#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1337,7 +1283,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1349,45 +1294,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/page.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1663113">
-          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/comments/Comment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#540#541#0" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#713#714#0" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#819#820#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-            <element signature="e#899#900#0" expanded="true" />
-            <element signature="e#941#942#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/modal.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/comments/CommentsDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43729904">
-          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1510#1511#0" expanded="false" />
+            <element signature="e#1550#1551#0" expanded="false" />
+            <marker date="1441764387259" expanded="true" signature="702:761" placeholder="SELECT * FRO..comments..." />
+            <marker date="1441764387259" expanded="true" signature="702:802" placeholder="SELECT * FRO..comments..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1401,27 +1326,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.0">
-          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+        <state vertical-scroll-proportion="-14.846154">
+          <caret line="63" column="84" selection-start-line="63" selection-start-column="84" selection-end-line="63" selection-end-column="84" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/comments/CommentsDAO.java">
+    <entry file="file://$PROJECT_DIR$/FrontEnd/js/dev_matrix.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <marker date="1441764387259" expanded="true" signature="702:761" placeholder="SELECT * FRO..comments..." />
-            <marker date="1441764387259" expanded="true" signature="702:802" placeholder="SELECT * FRO..comments..." />
-          </folding>
+          <caret line="150" column="34" selection-start-line="150" selection-start-column="34" selection-end-line="150" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/dev_matrix.js">
+    <entry file="file://$PROJECT_DIR$/FrontEnd/js/modal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2073955">
-          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.32130584">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
           <folding />
         </state>
       </provider>
