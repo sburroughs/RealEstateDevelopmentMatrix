@@ -84,6 +84,7 @@ function serveMatrix() {
 
 }
 
+
 function romanize(num) {
     if (!+num)
         return false;
@@ -110,10 +111,17 @@ function serveContent(stageIndex, taskIndex) {
     //var request = $.get(url);
     //$.when(request).done(
     //    function (json) {
-    var json = '{"title":null,"content":"This is sample content loaded by the thing."}';
+
+    //TODO: remove below. Sample content
+    var json = null;
+    if(currentStage % 2 == 0) {
+        json = '{"title":null,"content":"The “Land Banker” acquires or holds undeveloped or “raw”  that he believes will become attractive for future development through general and broad market trends or perhaps.  Land bankers can be active in the pursue the acquisiton of  opportunistic “land buys”.  Although many land bankers can  be advertant land owners such as estates or government agencies or public utilities.  This is a relatively passive investment position.  Good examples of “land bankers” are public utilities, universities, and inheritors of the “family farm.” When the market conditions are right, the land banker then sells the land to a “land packager”.   Click on the blue link below to move to the next block in the matrix.       Stage 2 Land Packaging "}';
+    } else {
+        json = '{"title":null,"content":"This is an alternate set of Demo content. It is much shorter than the other content."}';
+    }
 
     var content = JSON.parse(json).content;
-    var header = "Stage: " + currentStage + " Task: " + currentTask;
+    var header = "Stage: " + (currentStage +1)+ " Task: " + (currentTask +1);
     var view = header + "<br>" + content;
     $("#main-view").html(view);
     //}).fail(function () {
@@ -164,7 +172,6 @@ function retrieveComments() {
 
 
 function validateButtons() {
-
     //UP
     if (currentTask <= 0) {
         document.getElementById("upBtn").disabled = true;
