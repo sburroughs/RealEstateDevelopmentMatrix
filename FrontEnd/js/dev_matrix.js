@@ -45,7 +45,7 @@ function serveMatrix() {
         var stageHeadingHtml = "<tr><th></th>";
         for (var i = 0; i < stageLength; i++) {
             var stageHeadTitle = stageHeader[i].title;
-            stageHeadingHtml += "<th>" + stageHeadTitle + "</th>";
+            stageHeadingHtml += "<th>" + (i + 1) + " " + stageHeadTitle + "</th>";
         }
         stageHeadingHtml += "</tr>"
 
@@ -53,11 +53,11 @@ function serveMatrix() {
         for (var i = 0; i < taskLength; i++) {
 
             var taskTitle = taskHeader[i].title;
-            taskContent += "<tr><th>" + taskTitle + "</th>";
+            taskContent += "<tr><th>" + romanize(i + 1) + " " + taskTitle + "</th>";
             for (var j = 0; j < stageLength; j++) {
                 var stageTitle = stageHeader[j].title;
 
-                var combinedTitle = romanize(i + 1) + "." + (j + 1) + " " + stageTitle + " in " + taskTitle;
+                var combinedTitle = romanize(i + 1) + "." + (j + 1) + "<br>" + stageTitle + "<br>" + taskTitle;
                 taskContent += "<td onclick='serveContent(" + j + "," + i + ")'><a href='#' class='toggle--modal'>" + combinedTitle + "</a></td> ";
 
             }
@@ -114,14 +114,14 @@ function serveContent(stageIndex, taskIndex) {
 
     //TODO: remove below. Sample content
     var json = null;
-    if(currentStage % 2 == 0) {
+    if (currentStage % 2 == 0) {
         json = '{"title":null,"content":"The “Land Banker” acquires or holds undeveloped or “raw”  that he believes will become attractive for future development through general and broad market trends or perhaps.  Land bankers can be active in the pursue the acquisiton of  opportunistic “land buys”.  Although many land bankers can  be advertant land owners such as estates or government agencies or public utilities.  This is a relatively passive investment position.  Good examples of “land bankers” are public utilities, universities, and inheritors of the “family farm.” When the market conditions are right, the land banker then sells the land to a “land packager”.   Click on the blue link below to move to the next block in the matrix.       Stage 2 Land Packaging "}';
     } else {
         json = '{"title":null,"content":"This is an alternate set of Demo content. It is much shorter than the other content."}';
     }
 
     var content = JSON.parse(json).content;
-    var header = "Stage: " + (currentStage +1)+ " Task: " + (currentTask +1);
+    var header = "Stage: " + (currentStage + 1) + " Task: " + (currentTask + 1);
     var view = header + "<br>" + content;
     $("#main-view").html(view);
     //}).fail(function () {
