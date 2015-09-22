@@ -1,6 +1,8 @@
 body {
     background: #F2ECE9;
     font-size: 16px;
+  line-height: 1.4em;
+  font-weight: 300;
     font-family: 'Lato', sans-serif;
     color: #2A2A2D;
 }
@@ -8,6 +10,11 @@ body {
 a {
     color: #575A48;
     text-decoration: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
 }
 
 a:hover,
@@ -34,14 +41,34 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: auto;
 }
 
-.main-content {
-    border-top: 5px solid #575A48;
+.menu--main {
+  margin-top: 2.5em;
+    border-bottom: 2px solid #848284;
 }
 
 table, td, th {
-    border: 2px solid black;
-    width: 10%;
     text-align:center;
+  border: 1px solid #848284;
+  border-collapse: collapse;
+}
+
+table {
+  box-shadow: 5px 5px 15px silver;
+  margin-bottom: 4em;
+}
+
+td, th {
+  padding: 15px 10px;
+}
+
+th {
+  background: #303440;
+  color: #848284;
+  font-weight: 300;
+}
+
+td {
+  font-weight: 400;
 }
 
 .center-wrapper {
@@ -58,11 +85,6 @@ table, td, th {
     border: 2px solid black;
     padding: 20px;
 
-}
-
-#comments {
-    width: 80%;
-    margin: auto;
 }
 
 .modal__overlay {
@@ -87,16 +109,13 @@ table, td, th {
 
 .modal__wrap {
     background: #F2ECE9;
+  box-shadow: 5px 5px 15px black;
     width: 80%;
     max-height: 80%;
     max-width: 800px;
     margin: 100px auto;
     padding: 2em 3em;
     position: relative;
-}
-
-.modal__content {
-    overflow: scroll;
 }
 
 .modal__navigation {
@@ -126,6 +145,11 @@ table, td, th {
     bottom: -75px;
 }
 
+.modal__button--left,
+.modal__button--right {
+  top: 40%;
+}
+
 .modal__button--left {
     left: -75px;
 }
@@ -144,9 +168,13 @@ header {
     overflow: hidden;
 }
 
-.site__name {
+.site__logo {
     float: left;
     display: inline-block;
+  height: auto;
+    width: 200px;
+  text-indent: 99999px;
+  overflow: hidden;
 }
 
 .menu--main {
@@ -166,8 +194,8 @@ header {
 
 .menu--main__link {
     display: block;
-    background: #2A2A2D;
-    color: #F2ECE9;
+    background: #303440;
+    color: #848284;
     padding: 10px 20px;
 }
 
@@ -178,8 +206,14 @@ header {
 }
 
 .comment__list {
+  margin: 0;
     margin-top: 2em;
     margin-bottom: 2em;
+  max-width: 50%;
+}
+
+.comment__title {
+  font-size: 1em;
 }
 
 .form__item {
@@ -188,12 +222,23 @@ header {
 
 label {
     color: #848284;
+  font-size: .9em;
+  font-weight: 300;
     margin-bottom: 5px;
 }
 
 textarea,
 input {
     margin-bottom: 15px;
-    width: 100%;
-    border: 1px solid #848284;
+    width: 80%;
+    border: none;
+  padding: 15px 10px;
+}
+
+.button {
+  color: #848284;
+  background: #303440;
+  font-family: Cinzel;
+  font-size: 1em;
+  font-weight: 400;
 }

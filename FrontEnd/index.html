@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Real Estate Development Matrix</title>
     <link rel="stylesheet" type="text/css" href="css/simple-line-icons.css">
     <link rel="stylesheet" type="text/css" href="css/page.css">
     <link href='https://fonts.googleapis.com/css?family=Cinzel:400,700|Lato:400,300,700' rel='stylesheet'
@@ -15,7 +15,7 @@
 <body onload="servePage()">
 
 <header class="container">
-    <div class="site__name">Site Name Goes Here</div>
+    <div class="site__logo"><a href="#">Granite&nbsp;Road<img src="img/final-logo.png" alt="Granite Road Logo" /> </a></div>
     <nav class="menu--main">
         <ul class="menu--main__list">
             <li class="menu--main__item"><a class="menu--main__link" href="#">Development Matrix</a></li>
@@ -78,14 +78,14 @@
         </div>
 
         <div class="comment__list" id="comments">
-            <h2>Leave a Comment</h2>
+            <h2 class="comment__title">Leave a Comment</h2>
 
             <form method='post'>
                 <label class="form__item" for="name">Name:</label>
                 <input class="form__item" type='text' name='name' id='name'/>
                 <label class="form__item" for="comment">Comment:</label>
                 <textarea class="form__item" name='comment' id='comment'></textarea><br/>
-                <input type='submit' value='Submit'/>
+                <input class="button" type='submit' value='Submit'/>
             </form>
         </div>
 
