@@ -69,7 +69,7 @@ function serveMatrix() {
         var matrixContent = stageHeadingHtml + taskContent;
         var tableWrapper = '<table>' + matrixContent + '</table>';
 
-        $("#matrix").html(matrixContent);
+        $("#matrix").html(tableWrapper);
 
     }
     catch (error) {
