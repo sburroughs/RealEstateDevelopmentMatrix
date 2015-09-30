@@ -1,4 +1,4 @@
-package com.fingerprint.nestwood.matrix;
+package com.fingerprint.nestwood.util;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

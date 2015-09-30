@@ -13,74 +13,61 @@ function servePage() {
     catch (error) {
         alert(error);
     }
-
-    try {
-        serveComments();
-    }
-    catch (error) {
-        alert(error);
-    }
 }
 
 function serveMatrix() {
 
-    // var dStage = $.get("/matrix/headers/stage");
-    //  var dTask = $.get("/matrix/headers/task");
-    //  $.when(dStage, dTask).done(
-    //      function (stageJson, taskJson) {
+    var dStage = $.get("/matrix/headers/stage");
+    var dTask = $.get("/matrix/headers/task");
+    $.when(dStage, dTask).done(
+        /**
+         * Takes in json for an object defining the stage and task structure and content.
+         * Content outlined in javadoc for backend layer.
+         * @param stageJson
+         * @param taskJson
+         */
+        function (stage, task) {
+            try {
+                var stageHeader = JSON.parse(stage[0]).headers;
+                var taskHeader = JSON.parse(task[0]).headers;
 
-    try {
-        var stageJson = '{"headers":[{"title":"Land Banking","content":"sdfgdsfd"},{"title":"Land Packaging","content":"dfgfdgfd"},{"title":"Land Development","content":"sagdfsagdf"},{"title":"Building Development","content":"sadfdsafdsf"},{"title":"Building Operations","content":"asdfashah"},{"title":"Building Renovation","content":"gfdsgfdsg"},{"title":"Building Redevelopment","content":"afdsfdsaf"}]}';
-        var taskJson = '{"headers":[{"title":"Acquisition","content":"This is content"},{"title":"Financing","content":"This is content"},{"title":"Marketing Studies and Marketing Strategies","content":"This is also content"},{"title":"Environmental Studies","content":"This is content"},{"title":"Approvals and Permits","content":"Content"},{"title":"Improvements","content":"Content"},{"title":"Transportation and Accessability","content":"Content"}]}';
+                var stageLength = stageHeader.length;
+                var taskLength = taskHeader.length;
 
-        //TODO: remove ^
-        //TODO: change to taskJson[0]
-        var stageHeader = JSON.parse(stageJson).headers;
-        var taskHeader = JSON.parse(taskJson).headers;
+                var stageHeadingHtml = "<tr><td></td>";
+                for (var i = 1; i <= stageLength; i++) {
+                    var stageHeadTitle = stageHeader[i - 1].title;
+                    stageHeadingHtml += "<th onclick='serveStageHeader(" + i + ")'><a href='#' class='toggle--modal'>" + (i) + " " + stageHeadTitle + "</a></th>"
+                }
+                stageHeadingHtml += "</tr>";
 
-        var stageLength = stageHeader.length;
-        var taskLength = taskHeader.length;
+                var taskContent = "";
+                for (var i = 1; i <= taskLength; i++) {
+                    var taskTitle = taskHeader[i - 1].title;
+                    taskContent += "<tr><th onclick='serveTaskHeader(" + i + ")'><a href='#' class='toggle--modal'>" + romanize(i) + " " + taskTitle + "</a></th>";
+                    for (var j = 1; j <= stageLength; j++) {
+                        var stageTitle = stageHeader[j - 1].title;
+                        var combinedTitle = romanize(i) + "." + j + "<br>" + stageTitle + "<br>" + taskTitle;
+                        taskContent += "<td onclick='serveContent(" + j + "," + i + ")'><a href='#' class='toggle--modal'>" + combinedTitle + "</a></td> ";
+                    }
+                    taskContent += "</tr>";
+                }
 
+                var matrixContent = stageHeadingHtml + taskContent;
+                var tableWrapper = '<table>' + matrixContent + '</table>';
 
-        var stageHeadingHtml = "<tr><th></th>";
-        for (var i = 0; i < stageLength; i++) {
-            var stageHeadTitle = stageHeader[i].title;
-            stageHeadingHtml += "<th>" + (i + 1) + " " + stageHeadTitle + "</th>";
-        }
-        stageHeadingHtml += "</tr>"
-
-        var taskContent = "";
-        for (var i = 0; i < taskLength; i++) {
-
-            var taskTitle = taskHeader[i].title;
-            taskContent += "<tr><th>" + romanize(i + 1) + " " + taskTitle + "</th>";
-            for (var j = 0; j < stageLength; j++) {
-                var stageTitle = stageHeader[j].title;
-
-                var combinedTitle = romanize(i + 1) + "." + (j + 1) + "<br>" + stageTitle + "<br>" + taskTitle;
-                taskContent += "<td onclick='serveContent(" + j + "," + i + ")'><a href='#' class='toggle--modal'>" + combinedTitle + "</a></td> ";
+                $("#matrix").html(tableWrapper);
 
             }
+            catch (error) {
+                alert(error);
+            }
 
-            taskContent += "</tr>";
 
         }
-
-        var matrixContent = stageHeadingHtml + taskContent;
-        var tableWrapper = '<table>' + matrixContent + '</table>';
-
-        $("#matrix").html(tableWrapper);
-
-    }
-    catch (error) {
-        alert(error);
-    }
-
-
-//}
-//   ).fail(function () {
-//           alert("Unable to load Matrix")
-//       });
+    ).fail(function () {
+            alert("Unable to load Matrix.")
+        });
 
 }
 
@@ -107,27 +94,38 @@ function serveContent(stageIndex, taskIndex) {
 
     validateButtons();
 
-    //var url = "matrix/stage" + currentStage + "/task" + currentTask;
-    //var request = $.get(url);
-    //$.when(request).done(
-    //    function (json) {
+    var url = "/matrix/stage" + currentStage + "/task" + currentTask;
+    serveModal(url);
 
-    //TODO: remove below. Sample content
-    var json = null;
-    if (currentStage % 2 == 0) {
-        json = '{"title":null,"content":"The “Land Banker” acquires or holds undeveloped or “raw”  that he believes will become attractive for future development through general and broad market trends or perhaps.  Land bankers can be active in the pursue the acquisiton of  opportunistic “land buys”.  Although many land bankers can  be advertant land owners such as estates or government agencies or public utilities.  This is a relatively passive investment position.  Good examples of “land bankers” are public utilities, universities, and inheritors of the “family farm.” When the market conditions are right, the land banker then sells the land to a “land packager”.   Click on the blue link below to move to the next block in the matrix.       Stage 2 Land Packaging "}';
-    } else {
-        json = '{"title":null,"content":"This is an alternate set of Demo content. It is much shorter than the other content."}';
-    }
-
-    var content = JSON.parse(json).content;
-    var header = "Stage: " + (currentStage + 1) + " Task: " + (currentTask + 1);
-    var view = header + "<br>" + content;
-    $("#main-view").html(view);
-    //}).fail(function () {
-    //    alert("Unable to serve content")
-    //});
 }
+
+function serveTaskHeader(index) {
+    var url = "/matrix/headers/task/" + index;
+    serveModal(url);
+}
+
+function serveStageHeader(index) {
+    var url = "/matrix/headers/stage/" + index;
+    serveModal(url);
+}
+
+function serveModal(url) {
+
+    var request = $.get(url);
+    $.when(request).done(
+        function (json) {
+            var node = JSON.parse(json);
+            var content = node.content;
+            var title = node.title;
+            var header = "<h1>" + title + "</h1>";
+            var view = header + "<br>" + content;
+            $("#main-view").html(view);
+        }).fail(function () {
+            alert("Unable to retrieve content: " + url);
+        });
+
+}
+
 
 function incrementContent(stageIncrement, taskIncrement) {
 
@@ -136,38 +134,6 @@ function incrementContent(stageIncrement, taskIncrement) {
 
     serveContent(stage, task);
 
-}
-
-function serveComments() {
-
-    //var comments = retrieveComments();
-    //
-    //var insert = "";
-    //for (var i = 0; i < comments.length; i++) {
-    //
-    //    var comment = comments[i].comment;
-    //    var name = comment.name;
-    //    var value = comment.value;
-    //
-    //    var nextComment = '<div class="existing-comment">' + value + '</div>';
-    //    insert = insert + nextComment;
-    //}
-    //
-    //
-    //var node = document.createElement("LI");                 // Create a <li> node
-    //var textnode = document.createTextNode("Water");         // Create a text node
-    //node.appendChild(textnode);                              // Append the text to <li>
-    //document.getElementById("myList").appendChild(node);     // Append <li> to <ul> with id="myList"
-
-
-}
-
-function retrieveComments() {
-
-    var response = '{"comments":[{"comment":{"name":"Kim","value":"I think this could work"}},{"comment":{"name":"Shane","value":"Do you think this could work?"}}]}';
-
-    var comments = JSON.parse(response);
-    return comments.comments;
 }
 
 

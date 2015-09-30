@@ -1,4 +1,4 @@
-package com.fingerprint.nestwood.matrix;
+package com.fingerprint.nestwood.matrix.messages;
 
 /**
  * Created by SBurroug on 9/5/2015.

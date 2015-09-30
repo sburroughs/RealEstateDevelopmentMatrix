@@ -1,4 +1,4 @@
-package com.fingerprint.nestwood.comments;
+package com.fingerprint.nestwood.matrix.messages;
 
 import java.util.Date;
 import java.util.List;
@@ -13,7 +13,6 @@ public class Comment {
     private List<Comment> childComments;
     private String name;
     private Date timestamp;
-
 
     public String getCommentText() {
         return commentText;

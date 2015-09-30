@@ -1,4 +1,4 @@
-package com.fingerprint.nestwood.matrix;
+package com.fingerprint.nestwood.matrix.messages;
 
 import java.util.List;
 
