@@ -6,38 +6,28 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2688208-2e97-4733-a97b-df2ef1578219" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/dao/CommentsDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/DevelopmentMatrixFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/messages/HeaderType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/dao/MatrixContentDAO.java" />
+    <list default="true" id="c2688208-2e97-4733-a97b-df2ef1578219" name="Default" comment="Added images and extra content">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/img/buildingdevelopment.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/img/buildingoperations.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/img/buildingrenovation.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/img/how-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/img/how-to-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/img/how-to-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/img/how-to-4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/img/landbanking.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/img/landdevelopment.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/img/landpackaging.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/img/process-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/img/process-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/img/process-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/img/process-4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/img/propertyredevelopment.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/img/third-dim-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/img/third-dim-2.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/dao/MatrixDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/dao/MatrixHeaderDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/pages/handbook.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/pages/how-to-read-matrix.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/pages/process.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/pages/third-dimension.html" />
-      <change type="DELETED" beforePath="C:\Development\Personal\RealEstateDevMatrix\.idea\libraries\Maven__org_apache_logging_log4j_log4j_api_2_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Development\Personal\RealEstateDevMatrix\.idea\libraries\Maven__org_apache_logging_log4j_log4j_core_2_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Development\Personal\RealEstateDevMatrix\src\main\java\com\fingerprint\nestwood\comments\CommentsDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Development\Personal\RealEstateDevMatrix\src\main\resources\content\content.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Development\Personal\RealEstateDevMatrix\src\main\resources\content\headers.xml" afterPath="" />
-      <change type="MOVED" beforePath="C:\Development\Personal\RealEstateDevMatrix\src\main\java\com\fingerprint\nestwood\comments\Comment.java" afterPath="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/messages/Comment.java" />
-      <change type="MOVED" beforePath="C:\Development\Personal\RealEstateDevMatrix\src\main\java\com\fingerprint\nestwood\matrix\DevelopmentMatrix.java" afterPath="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/messages/DevelopmentMatrix.java" />
-      <change type="MOVED" beforePath="C:\Development\Personal\RealEstateDevMatrix\src\main\java\com\fingerprint\nestwood\matrix\JSON.java" afterPath="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/util/JSON.java" />
-      <change type="MOVED" beforePath="C:\Development\Personal\RealEstateDevMatrix\src\main\java\com\fingerprint\nestwood\matrix\MatrixBuildException.java" afterPath="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/messages/MatrixBuildException.java" />
-      <change type="MOVED" beforePath="C:\Development\Personal\RealEstateDevMatrix\src\main\java\com\fingerprint\nestwood\matrix\MatrixContent.java" afterPath="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/messages/MatrixContent.java" />
-      <change type="MOVED" beforePath="C:\Development\Personal\RealEstateDevMatrix\src\main\java\com\fingerprint\nestwood\matrix\MatrixHeader.java" afterPath="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/messages/MatrixHeader.java" />
-      <change type="MOVED" beforePath="C:\Development\Personal\RealEstateDevMatrix\src\main\java\com\fingerprint\nestwood\matrix\MatrixNode.java" afterPath="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/messages/MatrixNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/MatrixBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/MatrixBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RealEstateDevMatrix.iml" afterPath="$PROJECT_DIR$/RealEstateDevMatrix.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/RealEstateDevMatrix_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/RealEstateDevMatrix_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/RealEstateDevelopmentMatrixService.java" afterPath="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/RealEstateDevelopmentMatrixService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/js/dev_matrix.js" afterPath="$PROJECT_DIR$/FrontEnd/js/dev_matrix.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/index.html" afterPath="$PROJECT_DIR$/FrontEnd/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/css/page.css" afterPath="$PROJECT_DIR$/FrontEnd/css/page.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/content.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/headers.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RealEstateDevMatrix.iws" />
@@ -61,7 +51,18 @@
     <favorites_list name="RealEstateDevMatrix" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="MatrixDAO.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/dao/MatrixDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5330033">
+              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -87,7 +88,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/MatrixTask.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/MatrixStage.java" />
         <option value="$PROJECT_DIR$/../../ECMS/ECMS-EcmsUI/ECMS-EcmsUI.iml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/Header.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/MatrixBuildException.java" />
         <option value="$PROJECT_DIR$/src/main/resources/test.txt" />
@@ -135,6 +135,7 @@
         <option value="$PROJECT_DIR$/FrontEnd/pages/how-to-read-matrix.html" />
         <option value="$PROJECT_DIR$/FrontEnd/pages/process.html" />
         <option value="$PROJECT_DIR$/FrontEnd/pages/third-dimension.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -795,7 +796,7 @@
       <workItem from="1442940387726" duration="651000" />
       <workItem from="1442968386010" duration="5482000" />
       <workItem from="1443337715043" duration="17439000" />
-      <workItem from="1443481892085" duration="39916000" />
+      <workItem from="1443481892085" duration="40280000" />
     </task>
     <task id="LOCAL-00001" summary="Everything man. Like everything is updated. IDK what I'm even working on anymore.">
       <created>1441402324101</created>
@@ -851,13 +852,19 @@
       <option name="project" value="LOCAL" />
       <updated>1442883652124</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="For the love of god, why did I not commit sooner.  Service near complete, still needs comments. Theme needs doin and what not.">
+      <created>1443587393884</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1443587393884</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="212321000" />
+    <option name="totallyTimeSpent" value="212685000" />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -871,18 +878,18 @@
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32324323" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864866" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26632124" sideWeight="0.50319827" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3437838" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34300518" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864866" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1708108" sideWeight="0.4978678" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20895523" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20895523" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -899,6 +906,9 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
@@ -911,6 +921,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Everything man. Like everything is updated. IDK what I'm even working on anymore." />
     <MESSAGE value="Updated Rest service with new endpoints and new data structures to return. Ui still needs work" />
     <MESSAGE value="Updated Content" />
@@ -920,7 +931,12 @@
     <MESSAGE value="Modified sample content and sample demo operations" />
     <MESSAGE value="Updated Matrix and updated content" />
     <MESSAGE value="that feel when table" />
-    <option name="LAST_COMMIT_MESSAGE" value="that feel when table" />
+    <MESSAGE value="For the love of god, why did I not commit sooner.  Service near complete, still needs comments. Theme needs doin and what not." />
+    <MESSAGE value="Added images and extra content" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added images and extra content" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1034,14 +1050,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03586498">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.4/commons-io-2.4.jar!/org/apache/commons/io/IOUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35280898">
@@ -1075,6 +1083,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16102841">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="e#194#195#0" expanded="false" />
+            <element signature="e#218#219#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1154,14 +1166,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/development_matrix.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1174,14 +1178,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35459185">
           <caret line="1264" column="0" selection-start-line="1264" selection-start-column="0" selection-end-line="1264" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/dao/MatrixDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.973747">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1230,10 +1226,10 @@
           <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#641#642#0" expanded="false" />
-            <element signature="e#670#671#0" expanded="false" />
-            <element signature="e#641#642#0" expanded="false" />
-            <element signature="e#670#671#0" expanded="false" />
+            <element signature="e#630#631#0" expanded="false" />
+            <element signature="e#655#656#0" expanded="false" />
+            <element signature="e#630#631#0" expanded="false" />
+            <element signature="e#655#656#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1288,7 +1284,7 @@
         <state vertical-scroll-proportion="0.3733108">
           <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
           <folding>
-            <element signature="e#458#459#0" expanded="false" />
+            <element signature="e#462#463#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1353,10 +1349,10 @@
         <state vertical-scroll-proportion="-13.076923">
           <caret line="163" column="29" selection-start-line="163" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1369,6 +1365,22 @@
             <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05610561">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/dao/MatrixDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5330033">
+          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
