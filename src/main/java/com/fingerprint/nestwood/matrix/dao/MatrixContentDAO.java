@@ -4,6 +4,7 @@ import com.fingerprint.nestwood.matrix.messages.MatrixContent;
 import com.fingerprint.nestwood.matrix.messages.MatrixNode;
 
 import java.beans.PropertyVetoException;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -17,7 +18,7 @@ public class MatrixContentDAO extends MatrixDAO {
     private static int MAX_STAGE = 7;
     private static int MAX_TASK = 8;
 
-    public MatrixContentDAO() throws PropertyVetoException {
+    public MatrixContentDAO() throws PropertyVetoException, IOException {
         super();
     }
 

@@ -4,21 +4,21 @@ import com.fingerprint.nestwood.matrix.messages.Comment;
 import com.fingerprint.nestwood.matrix.messages.DevelopmentMatrix;
 
 import java.beans.PropertyVetoException;
+import java.io.IOException;
 import java.sql.*;
-import java.util.ArrayList;
 
 /**
  * Created by SBurroug on 9/6/2015.
  */
 public class CommentsDAO extends MatrixDAO {
 
-    public CommentsDAO() throws PropertyVetoException {
+    public CommentsDAO() throws PropertyVetoException, IOException {
         super();
     }
 
     public Comment getComments(int stage, int task) throws SQLException {
 
-        Comment comment = addChildComments(null, stage, task, 0);
+        Comment comment = addChildComments(new Comment(), stage, task, 0);
 
         return comment;
     }
@@ -33,7 +33,6 @@ public class CommentsDAO extends MatrixDAO {
                 ps.setInt(1, stageId);
                 ps.setInt(2, taskId);
                 ps.setInt(3, parentId);
-
                 try (ResultSet rs = ps.executeQuery()) {
                     while (rs.next()) {
                         String text = rs.getString("comment");
@@ -49,10 +48,6 @@ public class CommentsDAO extends MatrixDAO {
                         int updatedParentId = rs.getInt("comment_id");
                         addChildComments(comment, stageId, taskId, updatedParentId);
 
-                        if (parent == null || parent.getChildComments() == null) {
-                            parent = new Comment();
-                            parent.setChildComments(new ArrayList<Comment>());
-                        }
                         parent.getChildComments().add(comment);
 
                     }
@@ -83,7 +78,7 @@ public class CommentsDAO extends MatrixDAO {
                     //populate stageheader
                     rs.next();
                     int stageId = rs.getInt("id");
-                    Comment comment = addChildComments(null, stageId, 0, 0);
+                    Comment comment = addChildComments(new Comment(), stageId, 0, 0);
                     //Applies Comment to header
                     matrix.getStageHeader().getHeaders().get(stageId - 1).setRootComment(comment);
                 }
@@ -104,7 +99,7 @@ public class CommentsDAO extends MatrixDAO {
                     rs.next();
                     //populate task header
                     int taskId = rs.getInt("id");
-                    Comment comment = addChildComments(null, 0, taskId, 0);
+                    Comment comment = addChildComments(new Comment(), 0, taskId, 0);
                     //Applies Comment to header
                     matrix.getStageHeader().getHeaders().get(taskId - 1).setRootComment(comment);
 
@@ -114,7 +109,7 @@ public class CommentsDAO extends MatrixDAO {
             //APPLIES COMMENTS TO CONTENT
             for (int stage = 1; stage < stageCount; stage++) {
                 for (int task = 1; task < taskCount; task++) {
-                    Comment comment = addChildComments(null, stage, task, 0);
+                    Comment comment = addChildComments(new Comment(), stage, task, 0);
                     matrix.getMatrix().getContent(stage, task).setRootComment(comment);
                 }
             }

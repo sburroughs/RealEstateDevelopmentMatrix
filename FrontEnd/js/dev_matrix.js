@@ -120,7 +120,36 @@ function serveModal(url) {
             var header = "<h1>" + title + "</h1>";
             var view = header + "<br>" + content;
             $("#main-view").html(view);
-        }).fail(function () {
+
+            var commentsBlock = "";
+
+
+            var rootComment = node.rootComment;
+            var rootChildren = rootComment.childComments;
+            for (var i = 0; i < rootChildren.length; i++) {
+                var comment = rootChildren[i];
+                commentsBlock += "<div class='comment'><span>Name: " + comment.name + "</span>";
+                commentsBlock += "<p>" + comment.commentText + "</p>";
+                commentsBlock += "<span>Timestamp: " + comment.timestamp + " </span>";
+                var commentChildren = comment.childComments;
+                for (var j = 0; j < commentChildren.length; j++) {
+                    var childComment = commentChildren[j];
+                    commentsBlock += "<br>";
+                    commentsBlock += "<div class='child_comment'><span>Name: " + childComment.name + "</span><br>";
+                    commentsBlock += "<p>" + childComment.commentText + "</p>";
+                    commentsBlock += "<span>Timestamp: " + childComment.timestamp + " </span>";
+                    commentsBlock += "</div>";
+                }
+
+                commentsBlock += "</div>";
+
+            }
+
+            $("div#comments").replaceWith(commentsBlock);
+
+        }
+    ).
+        fail(function () {
             alert("Unable to retrieve content: " + url);
         });
 

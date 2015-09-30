@@ -1,6 +1,5 @@
 package com.fingerprint.nestwood.matrix;
 
-import com.fingerprint.nestwood.DevelopmentMatrixFactory;
 import com.fingerprint.nestwood.matrix.messages.DevelopmentMatrix;
 import com.fingerprint.nestwood.util.JSON;
 import org.apache.logging.log4j.LogManager;

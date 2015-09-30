@@ -7,12 +7,17 @@ import com.fingerprint.nestwood.matrix.messages.DevelopmentMatrix;
 import com.fingerprint.nestwood.matrix.messages.HeaderType;
 import com.fingerprint.nestwood.matrix.messages.MatrixContent;
 import com.fingerprint.nestwood.matrix.messages.MatrixHeader;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.beans.PropertyVetoException;
+import java.io.IOException;
 import java.sql.SQLException;
 
 
 public class MatrixBuilder {
+
+    Logger logger = LogManager.getLogger(MatrixBuilder.class);
 
     CommentsDAO commentsDAO;
     MatrixContentDAO matrixDAO;
@@ -23,8 +28,8 @@ public class MatrixBuilder {
             commentsDAO = new CommentsDAO();
             matrixDAO = new MatrixContentDAO();
             headerDAO = new MatrixHeaderDAO();
-        } catch (PropertyVetoException e) {
-            e.printStackTrace();
+        } catch (PropertyVetoException | IOException e) {
+            logger.error("Issue instantiating MatrixBuilder resource", e);
         }
     }
 
@@ -43,7 +48,6 @@ public class MatrixBuilder {
 
         return matrix;
     }
-
 
 
 }

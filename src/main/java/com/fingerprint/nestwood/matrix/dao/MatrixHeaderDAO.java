@@ -7,6 +7,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.beans.PropertyVetoException;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -21,7 +22,7 @@ public class MatrixHeaderDAO extends MatrixDAO {
 
     private Logger log = LogManager.getLogger(MatrixHeaderDAO.class);
 
-    public MatrixHeaderDAO() throws PropertyVetoException {
+    public MatrixHeaderDAO() throws PropertyVetoException, IOException {
         super();
     }
 
@@ -40,10 +41,12 @@ public class MatrixHeaderDAO extends MatrixDAO {
                     while (rs.next()) {
                         String title = rs.getString("title");
                         String content = rs.getString("content");
+                        String path = rs.getString("image_path");
 
                         MatrixNode node = new MatrixNode();
                         node.setTitle(title);
                         node.setContent(content);
+                        node.setAuxiliaryInformation(path);
 
                         headers.add(node);
                     }

@@ -1,6 +1,5 @@
-package com.fingerprint.nestwood;
+package com.fingerprint.nestwood.matrix;
 
-import com.fingerprint.nestwood.matrix.MatrixBuilder;
 import com.fingerprint.nestwood.matrix.messages.DevelopmentMatrix;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -15,14 +14,12 @@ public class DevelopmentMatrixFactory {
     private static Logger logger = LogManager.getLogger(DevelopmentMatrixFactory.class);
 
     private static DevelopmentMatrix matrix = null;
-    private static DevelopmentMatrixFactory ourInstance = new DevelopmentMatrixFactory();
-
-    private DevelopmentMatrixFactory() {
-        refresh();
-    }
-
     public static DevelopmentMatrix getInstance() {
+        if (matrix == null) {
+            refresh();
+        }
         return matrix;
+
     }
 
     public static void refresh() {

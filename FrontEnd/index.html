@@ -15,7 +15,8 @@
 <body onload="servePage()">
 
 <header class="container">
-    <div class="site__logo"><a href="#">Granite&nbsp;Road<img src="img/final-logo.png" alt="Granite Road Logo" /> </a></div>
+    <div class="site__logo"><a href="#">Granite&nbsp;Road<img src="img/final-logo.png" alt="Granite Road Logo"/> </a>
+    </div>
     <nav class="menu--main">
         <ul class="menu--main__list">
             <li class="menu--main__item"><a class="menu--main__link" href="index.html">Development Matrix</a></li>
@@ -76,7 +77,7 @@
             Unable to Load Content
         </div>
 
-        <div class="comment__list" id="comments">
+        <div class="comment__list">
             <h2 class="comment__title">Leave a Comment</h2>
 
             <form method='post'>
@@ -86,7 +87,12 @@
                 <textarea class="form__item" name='comment' id='comment'></textarea><br/>
                 <input class="button" type='submit' value='Submit'/>
             </form>
+
+            <div class="comment__list" id="comments">
+                <!--THIS CONTENT WILL BE SERVED VIA RESTFUL SERVICE CALLS-->
+            </div>
         </div>
+
 
     </div>
 </div>
