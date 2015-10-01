@@ -119,10 +119,16 @@ function serveModal(url) {
             var title = node.title;
             var header = "<h1>" + title + "</h1>";
             var view = header + "<br>" + content;
+
+            //Handlers case for stage image path
+            var image_path = node.auxiliaryInformation;
+            if (image_path) {
+                view = view + "<br><img src='img/" + image_path + "'>";
+            }
+
             $("#main-view").html(view);
 
             var commentsBlock = "";
-
 
             var rootComment = node.rootComment;
             var rootChildren = rootComment.childComments;
@@ -131,6 +137,7 @@ function serveModal(url) {
                 commentsBlock += "<div class='comment'><span>Name: " + comment.name + "</span>";
                 commentsBlock += "<p>" + comment.commentText + "</p>";
                 commentsBlock += "<span>Timestamp: " + comment.timestamp + " </span>";
+
                 var commentChildren = comment.childComments;
                 for (var j = 0; j < commentChildren.length; j++) {
                     var childComment = commentChildren[j];
