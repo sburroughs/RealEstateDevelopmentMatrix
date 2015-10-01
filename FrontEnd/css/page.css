@@ -8,18 +8,21 @@ body {
 }
 
 a {
-    color: #575A48;
+    color: #8a925e;
     text-decoration: none;
 }
 
 img {
+    display: inline-block;
     height: auto;
     max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
 }
 
 a:hover,
 a:focus {
-    color: #303440;
+    color: #475376;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -63,8 +66,8 @@ td, th {
 
 th {
     background: #303440;
-    color: #848284;
-    font-weight: 300;
+    color: #8a925e;
+    font-weight: 700;
 }
 
 td {
@@ -219,18 +222,6 @@ header {
 
 .comment__title {
     font-size: 1em;
-}
-
-.comment {
-    background-color: #848284;
-    width: 90%;
-
-}
-
-.child_comment {
-    background-color: aqua;
-    width: 80%;
-    border: solid 1px;
 }
 
 .form__item {
