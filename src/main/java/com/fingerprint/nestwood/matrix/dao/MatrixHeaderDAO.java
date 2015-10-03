@@ -41,12 +41,10 @@ public class MatrixHeaderDAO extends MatrixDAO {
                     while (rs.next()) {
                         String title = rs.getString("title");
                         String content = rs.getString("content");
-                        String path = rs.getString("image_path");
 
                         MatrixNode node = new MatrixNode();
                         node.setTitle(title);
                         node.setContent(content);
-                        node.setAuxiliaryInformation(path);
 
                         headers.add(node);
                     }

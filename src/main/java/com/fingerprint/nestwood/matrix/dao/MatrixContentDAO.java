@@ -17,6 +17,7 @@ public class MatrixContentDAO extends MatrixDAO {
 
     private static int MAX_STAGE = 7;
     private static int MAX_TASK = 8;
+    //TODO: Get this dynamically
 
     public MatrixContentDAO() throws PropertyVetoException, IOException {
         super();
@@ -29,7 +30,7 @@ public class MatrixContentDAO extends MatrixDAO {
         try (Connection connection = super.getConnection()) {
             String statement = "SELECT * FROM development_matrix.content WHERE  task_id = ?";
             try (PreparedStatement ps = connection.prepareStatement(statement)) {
-                for (int i = 1; i <= MAX_STAGE; i++) {
+                for (int i = 1; i <= MAX_TASK; i++) {
                     ps.setInt(1, i);
                     try (ResultSet rs = ps.executeQuery()) {
                         while (rs.next()) {

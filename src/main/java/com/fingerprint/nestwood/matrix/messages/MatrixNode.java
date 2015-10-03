@@ -8,7 +8,6 @@ public class MatrixNode {
     private String title;
     private String content;
     private Comment rootComment;
-    private String auxiliaryInformation;
 
     public String getTitle() {
         return title;
@@ -34,11 +33,4 @@ public class MatrixNode {
         this.rootComment = rootComment;
     }
 
-    public String getAuxiliaryInformation() {
-        return auxiliaryInformation;
-    }
-
-    public void setAuxiliaryInformation(String auxiliaryInformation) {
-        this.auxiliaryInformation = auxiliaryInformation;
-    }
 }

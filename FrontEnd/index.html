@@ -20,6 +20,8 @@
     <nav class="menu--main">
         <ul class="menu--main__list">
             <li class="menu--main__item"><a class="menu--main__link" href="index.html">Development Matrix</a></li>
+            <li class="menu--main__item"><a class="menu--main__link" href="pages/how-to-read-matrix.html">Using the
+                Matrix</a></li>
             <li class="menu--main__item"><a class="menu--main__link" href="pages/process.html">Development Process</a>
             </li>
             <li class="menu--main__item"><a class="menu--main__link" href="pages/third-dimension.html">Third
@@ -51,7 +53,8 @@
 
     <p>The Development Matrix can be used as a descriptive, normative, or predictive model. As a pedagogical tool, the
         Development matrix can help the student understand the process, risks, and value creation in real estate
-        development. In order to <a href="pages/how-to-read-matrix.html">Read the matrix</a> click a matrix cell below.
+        development. For more information click a matrix cell below. Click here for information <a
+                href="pages/how-to-read-matrix.html">Using the matrix</a>.
     </p>
 
     <div id="matrix">Unable to Load Development Matrix. . .
@@ -62,13 +65,13 @@
     <div class="modal__wrap">
         <div class="modal__navigation">
             <a href="#" class="modal__button toggle--modal icon-close">Close Modal</a>
-            <a href="#" id="upBtn" type="button" onclick="incrementContent(0, -1)"
+            <a href="#" id="upBtn" type="button" onclick="navigateContent(0, -1)"
                class="modal__button modal__button--top icon-arrow-up-circle">Navigate to Cell Above</a>
-            <a href="#" id="leftBtn" type="button" onclick="incrementContent(-1, 0)"
+            <a href="#" id="leftBtn" type="button" onclick="navigateContent(-1, 0)"
                class="modal__button modal__button--left icon-arrow-left-circle">Navigate to Cell Left</a>
-            <a href="#" id="rightBtn" type="button" onclick="incrementContent(1, 0)"
+            <a href="#" id="rightBtn" type="button" onclick="navigateContent(1, 0)"
                class="modal__button modal__button--right icon-arrow-right-circle">Navigate to Cell Right</a>
-            <a href="#" id="downBtn" type="button" onclick="incrementContent(0, 1)"
+            <a href="#" id="downBtn" type="button" onclick="navigateContent(0, 1)"
                class="modal__button modal__button--bottom icon-arrow-down-circle">Navigate to Cell Below</a>
         </div>
 

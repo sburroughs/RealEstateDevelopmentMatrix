@@ -2,27 +2,30 @@ body {
     background: #F2ECE9;
     font-size: 16px;
     line-height: 1.4em;
-    font-weight: 300;
+    font-weight: 400;
     font-family: 'Lato', sans-serif;
     color: #2A2A2D;
 }
 
+body.is-fixed {
+    overflow: hidden;
+}
+
 a {
-    color: #8a925e;
-    text-decoration: none;
+    color: #475376;
 }
 
 img {
     display: inline-block;
     height: auto;
     max-width: 100%;
-    width: 100%;
+    width: 60%;
     margin: 0 auto;
 }
 
 a:hover,
 a:focus {
-    color: #475376;
+    color: #8a925e;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -53,11 +56,16 @@ table, td, th {
     text-align: center;
     border: 1px solid #848284;
     border-collapse: collapse;
+    cursor: pointer;
 }
 
 table {
     box-shadow: 5px 5px 15px silver;
     margin-bottom: 4em;
+}
+
+table a {
+    text-decoration: none;
 }
 
 td, th {
@@ -66,8 +74,11 @@ td, th {
 
 th {
     background: #303440;
-    color: #8a925e;
     font-weight: 700;
+}
+
+th a {
+    color: #8a925e;
 }
 
 td {
@@ -83,11 +94,9 @@ td {
 }
 
 .existing-comment {
-
     border-radius: 20px;
     border: 2px solid black;
     padding: 20px;
-
 }
 
 .modal__overlay {
@@ -105,7 +114,8 @@ td {
 }
 
 .modal__content {
-
+    overflow: auto;
+    max-height: 100%;
 }
 
 .modal__overlay.is-active {
@@ -119,15 +129,18 @@ td {
     box-shadow: 5px 5px 15px black;
     width: 80%;
     max-width: 800px;
+    height: 70%;
     margin: 100px auto;
     padding: 2em 3em;
     position: relative;
-    max-height: 65%;
-    overflow: scroll;
 }
 
 .modal__navigation {
     text-align: center;
+}
+
+.modal__navigation a {
+    text-decoration: none;
 }
 
 .modal__button {
@@ -205,6 +218,7 @@ header {
     background: #303440;
     color: #848284;
     padding: 10px 20px;
+    text-decoration: none;
 }
 
 .menu--main__link:hover,

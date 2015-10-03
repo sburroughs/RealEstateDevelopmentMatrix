@@ -26,47 +26,40 @@ function serveMatrix() {
          * @param stageJson
          * @param taskJson
          */
-        function (stage, task) {
-            try {
-                var stageHeader = JSON.parse(stage[0]).headers;
-                var taskHeader = JSON.parse(task[0]).headers;
+        function populateMatrix(stageJson, taskJson) {
 
-                var stageLength = stageHeader.length;
-                var taskLength = taskHeader.length;
+            var stageHeader = JSON.parse(stageJson[0]).headers;
+            var taskHeader = JSON.parse(taskJson[0]).headers;
 
-                var stageHeadingHtml = "<tr><td></td>";
-                for (var i = 1; i <= stageLength; i++) {
-                    var stageHeadTitle = stageHeader[i - 1].title;
-                    stageHeadingHtml += "<th onclick='serveStageHeader(" + i + ")'><a href='#' class='toggle--modal'>" + (i) + " " + stageHeadTitle + "</a></th>"
-                }
-                stageHeadingHtml += "</tr>";
+            var stageLength = stageHeader.length;
+            var taskLength = taskHeader.length;
 
-                var taskContent = "";
-                for (var i = 1; i <= taskLength; i++) {
-                    var taskTitle = taskHeader[i - 1].title;
-                    taskContent += "<tr><th onclick='serveTaskHeader(" + i + ")'><a href='#' class='toggle--modal'>" + romanize(i) + " " + taskTitle + "</a></th>";
-                    for (var j = 1; j <= stageLength; j++) {
-                        var stageTitle = stageHeader[j - 1].title;
-                        var combinedTitle = romanize(i) + "." + j + "<br>" + stageTitle + "<br>" + taskTitle;
-                        taskContent += "<td onclick='serveContent(" + j + "," + i + ")'><a href='#' class='toggle--modal'>" + combinedTitle + "</a></td> ";
-                    }
-                    taskContent += "</tr>";
-                }
-
-                var matrixContent = stageHeadingHtml + taskContent;
-                var tableWrapper = '<table>' + matrixContent + '</table>';
-
-                $("#matrix").html(tableWrapper);
-
+            var stageHeadingHtml = "<tr><td></td>";
+            for (var i = 1; i <= stageLength; i++) {
+                var stageHeadTitle = stageHeader[i - 1].title;
+                stageHeadingHtml += "<th class='toggle--modal' onclick='serveContent(" + i + ",0)'><a href='#'>" + (i) + " " + stageHeadTitle + "</a></th>"
             }
-            catch (error) {
-                alert(error);
+            stageHeadingHtml += "</tr>";
+
+            var taskContent = "";
+            for (var i = 1; i <= taskLength; i++) {
+                var taskTitle = taskHeader[i - 1].title;
+                taskContent += "<tr><th class='toggle--modal' onclick='serveContent(0," + i + ")'><a href='#'>" + romanize(i) + " " + taskTitle + "</a></th>";
+                for (var j = 1; j <= stageLength; j++) {
+                    var stageTitle = stageHeader[j - 1].title;
+                    var combinedTitle = romanize(i) + "." + j + "<br>" + stageTitle + "<br>" + taskTitle;
+                    taskContent += "<td class='toggle--modal' onclick='serveContent(" + j + "," + i + ")'><a href='#'>" + combinedTitle + "</a></td> ";
+                }
+                taskContent += "</tr>";
             }
 
+            var matrixContent = stageHeadingHtml + taskContent;
+            var tableWrapper = '<table>' + matrixContent + '</table>';
 
+            $("#matrix").html(tableWrapper);
         }
     ).fail(function () {
-            alert("Unable to load Matrix.")
+            console.error("Unable to load content for url: " + url);
         });
 
 }
@@ -86,125 +79,74 @@ function romanize(num) {
     return Array(+digits.join("") + 1).join("M") + roman;
 }
 
-
-function serveContent(stageIndex, taskIndex) {
-
-    currentStage = stageIndex;
-    currentTask = taskIndex;
-
-    validateButtons();
-
-    var url = "/matrix/stage" + currentStage + "/task" + currentTask;
-    serveModal(url);
-
-}
-
-function serveTaskHeader(index) {
-    var url = "/matrix/headers/task/" + index;
-    serveModal(url);
-}
-
-function serveStageHeader(index) {
-    var url = "/matrix/headers/stage/" + index;
-    serveModal(url);
-}
-
 function serveModal(url) {
 
     var request = $.get(url);
     $.when(request).done(
-        function (json) {
+        function populateModal(json) {
             var node = JSON.parse(json);
             var content = node.content;
             var title = node.title;
             var header = "<h1>" + title + "</h1>";
             var view = header + "<br>" + content;
 
-            //Handlers case for stage image path
-            var image_path = node.auxiliaryInformation;
-            if (image_path) {
-                view = view + "<br><img src='img/" + image_path + "'>";
-            }
-
             $("#main-view").html(view);
-
-            var commentsBlock = "";
-
-            var rootComment = node.rootComment;
-            var rootChildren = rootComment.childComments;
-            for (var i = 0; i < rootChildren.length; i++) {
-                var comment = rootChildren[i];
-                commentsBlock += "<div class='comment'><span>Name: " + comment.name + "</span>";
-                commentsBlock += "<p>" + comment.commentText + "</p>";
-                commentsBlock += "<span>Timestamp: " + comment.timestamp + " </span>";
-
-                var commentChildren = comment.childComments;
-                for (var j = 0; j < commentChildren.length; j++) {
-                    var childComment = commentChildren[j];
-                    commentsBlock += "<br>";
-                    commentsBlock += "<div class='child_comment'><span>Name: " + childComment.name + "</span><br>";
-                    commentsBlock += "<p>" + childComment.commentText + "</p>";
-                    commentsBlock += "<span>Timestamp: " + childComment.timestamp + " </span>";
-                    commentsBlock += "</div>";
-                }
-
-                commentsBlock += "</div>";
-
-            }
-
-            $("div#comments").replaceWith(commentsBlock);
-
         }
-    ).
-        fail(function () {
-            alert("Unable to retrieve content: " + url);
+    ).fail(function () {
+            console.error("Unable to load content for url: " + url);
         });
-
 }
 
 
-function incrementContent(stageIncrement, taskIncrement) {
+function navigateContent(stageIncrement, taskIncrement) {
 
     var stage = currentStage + stageIncrement;
     var task = currentTask + taskIncrement;
 
-    serveContent(stage, task);
-
+    if (validate(stage, task)) {
+        serveContent(stage, task);
+    }
 }
 
 
-function validateButtons() {
+function serveContent(stage, task) {
+
+    currentStage = stage;
+    currentTask = task;
+
+    var url = null;
+    if (stage > 0 && task > 0) {
+        url = "/matrix/stage" + stage + "/task" + task;
+    }
+    else if (task == 0) {
+        url = "/matrix/headers/stage/" + stage;
+    }
+    else if (stage == 0) {
+        url = "/matrix/headers/task/" + task;
+    }
+
+    serveModal(url);
+}
+
+function validate(stageIndex, taskIndex) {
+
+    var valid = true;
     //UP
-    if (currentTask <= 0) {
-        document.getElementById("upBtn").disabled = true;
+    if (taskIndex < 0) {
+        valid = false;
     }
-    else {
-        document.getElementById("upBtn").disabled = false;
-    }
-
     //DOWN
-    if (currentTask >= MAX_TASKS - 1) {
-        document.getElementById("downBtn").disabled = true;
+    if (taskIndex > MAX_TASKS) {
+        valid = false;
     }
-    else {
-        document.getElementById("downBtn").disabled = false;
-    }
-
     //LEFT
-    if (currentStage <= 0) {
-        document.getElementById("leftBtn").disabled = true;
+    if (stageIndex < 0) {
+        valid = false;
     }
-    else {
-        document.getElementById("leftBtn").disabled = false;
-    }
-
     //RIGHT
-    if (currentStage >= MAX_STAGE - 1) {
-        document.getElementById("rightBtn").disabled = true;
-    }
-    else {
-        document.getElementById("rightBtn").disabled = false;
+    if (stageIndex > MAX_STAGE) {
+        valid = false;
     }
 
-
+    return valid;
 }

@@ -6,12 +6,30 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2688208-2e97-4733-a97b-df2ef1578219" name="Default" comment="Added Comments View">
+    <list default="true" id="c2688208-2e97-4733-a97b-df2ef1578219" name="Default" comment="Release changes">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/matrix_config.properties" />
-      <change type="DELETED" beforePath="C:\Development\Personal\RealEstateDevMatrix\content\content.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Development\Personal\RealEstateDevMatrix\content\headers.xml" afterPath="" />
+    </list>
+    <list id="9d38e549-a2ef-4833-ba74-fe37ea3484de" name="Rejected commit: Default" comment="Release changes">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/img/under_construction.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/js/sprintf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/fonts/Simple-Line-Icons.eot" afterPath="$PROJECT_DIR$/FrontEnd/fonts/Simple-Line-Icons.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/fonts/Simple-Line-Icons.ttf" afterPath="$PROJECT_DIR$/FrontEnd/fonts/Simple-Line-Icons.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/fonts/Simple-Line-Icons.woff2" afterPath="$PROJECT_DIR$/FrontEnd/fonts/Simple-Line-Icons.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/fonts/Simple-Line-Icons.woff" afterPath="$PROJECT_DIR$/FrontEnd/fonts/Simple-Line-Icons.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/dao/MatrixContentDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/dao/MatrixContentDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/dao/MatrixHeaderDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/dao/MatrixHeaderDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/messages/MatrixNode.java" afterPath="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/messages/MatrixNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RealEstateDevMatrix.iml" afterPath="$PROJECT_DIR$/RealEstateDevMatrix.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/fonts/Simple-Line-Icons.svg" afterPath="$PROJECT_DIR$/FrontEnd/fonts/Simple-Line-Icons.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/js/dev_matrix.js" afterPath="$PROJECT_DIR$/FrontEnd/js/dev_matrix.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/pages/handbook.html" afterPath="$PROJECT_DIR$/FrontEnd/pages/handbook.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/pages/how-to-read-matrix.html" afterPath="$PROJECT_DIR$/FrontEnd/pages/how-to-read-matrix.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/index.html" afterPath="$PROJECT_DIR$/FrontEnd/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/js/modal.js" afterPath="$PROJECT_DIR$/FrontEnd/js/modal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/css/page.css" afterPath="$PROJECT_DIR$/FrontEnd/css/page.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/pages/process.html" afterPath="$PROJECT_DIR$/FrontEnd/pages/process.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/css/simple-line-icons.css" afterPath="$PROJECT_DIR$/FrontEnd/css/simple-line-icons.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/pages/third-dimension.html" afterPath="$PROJECT_DIR$/FrontEnd/pages/third-dimension.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RealEstateDevMatrix.iws" />
@@ -20,6 +38,11 @@
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <file path="$PROJECT_DIR$/FrontEnd/js/sprintf.js" ignored="false" />
+    <file path="$PROJECT_DIR$/FrontEnd/pages/how-to-read-matrix.html" ignored="false" />
+    <file path="$PROJECT_DIR$/FrontEnd/pages/third-dimension.html" ignored="false" />
+    <file path="$PROJECT_DIR$/FrontEnd/css/page.css" ignored="false" />
+    <file path="$PROJECT_DIR$/FrontEnd/index.html" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,71 +59,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="handbook.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrontEnd/pages/handbook.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.5384617">
+              <caret line="19" column="60" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="dev_matrix.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FrontEnd/js/dev_matrix.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36702126">
-              <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+            <state vertical-scroll-proportion="1.6532847">
+              <caret line="67" column="24" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEnd/css/page.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="216" column="14" selection-start-line="216" selection-start-column="14" selection-end-line="216" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEnd/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.88461536">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommentsDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/dao/CommentsDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="97" column="56" selection-start-line="97" selection-start-column="56" selection-end-line="97" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <marker date="1443599296951" expanded="true" signature="769:882" placeholder="SELECT * FRO..comments..." />
-                <marker date="1443599296951" expanded="true" signature="2284:2359" placeholder="SELECT COUNT..." />
-                <marker date="1443599296951" expanded="true" signature="2664:2722" placeholder="SELECT * FRO..headers..." />
-                <marker date="1443599296951" expanded="true" signature="3371:3445" placeholder="SELECT COUNT..." />
-                <marker date="1443599296951" expanded="true" signature="3747:3805" placeholder="SELECT * FRO..headers..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DevelopmentMatrixFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/DevelopmentMatrixFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MatrixBuilder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/MatrixBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -128,15 +102,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/Header.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/MatrixBuildException.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/test.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/JSON.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/FrontEnd/page.css" />
         <option value="$PROJECT_DIR$/FrontEnd/modal.js" />
         <option value="$PROJECT_DIR$/FrontEnd/dev_matrix.js" />
-        <option value="$PROJECT_DIR$/FrontEnd/js/modal.js" />
         <option value="$PROJECT_DIR$/src/main/resources/content/headers.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/comments/Comment.java" />
         <option value="$PROJECT_DIR$/FrontEnd/third_dimension.html" />
@@ -154,20 +123,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/HeaderType.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/messages/DevelopmentMatrix.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/messages/MatrixNode.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/messages/MatrixContent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/DevelopmentMatrixFactory.java" />
         <option value="$PROJECT_DIR$/FrontEnd/third-dimension.html" />
         <option value="$PROJECT_DIR$/FrontEnd/process.html" />
         <option value="$PROJECT_DIR$/FrontEnd/how-to-read-matrix.html" />
-        <option value="$PROJECT_DIR$/FrontEnd/pages/how-to-read-matrix.html" />
-        <option value="$PROJECT_DIR$/FrontEnd/pages/process.html" />
-        <option value="$PROJECT_DIR$/FrontEnd/pages/third-dimension.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/FrontEnd/pages/handbook.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/dao/MatrixContentDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/dao/MatrixHeaderDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/MatrixBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/resources/matrix_config.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/matrix_config.sample.properties" />
@@ -176,11 +138,27 @@
         <option value="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/messages/Comment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/dao/CommentsDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/RealEstateDevelopmentMatrixService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/dao/MatrixContentDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/messages/MatrixNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/dao/MatrixHeaderDAO.java" />
+        <option value="$PROJECT_DIR$/FrontEnd/pages/third-dimension.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/pages/how-to-read-matrix.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/pages/process.html" />
+        <option value="$PROJECT_DIR$/../../Tools/apache-tomcat-8.0.26/webapps/ROOT/js/modal.js" />
+        <option value="$PROJECT_DIR$/FrontEnd/js/modal.js" />
         <option value="$PROJECT_DIR$/FrontEnd/css/page.css" />
+        <option value="$PROJECT_DIR$/FrontEnd/js/sprintf.js" />
         <option value="$PROJECT_DIR$/FrontEnd/index.html" />
+        <option value="$PROJECT_DIR$/../../Tools/apache-tomcat-8.0.26/webapps/ROOT/css/page.css" />
+        <option value="$PROJECT_DIR$/../../Tools/apache-tomcat-8.0.26/webapps/ROOT/js/dev_matrix.js" />
+        <option value="$PROJECT_DIR$/FrontEnd/pages/handbook.html" />
         <option value="$PROJECT_DIR$/FrontEnd/js/dev_matrix.js" />
       </list>
     </option>
+  </component>
+  <component name="JsBowerSettings">
+    <exe-path>C:\Users\sburroug\AppData\Roaming\npm\bower.cmd</exe-path>
+    <config-path />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
   <component name="JsGulpfileManager">
@@ -218,28 +196,13 @@
             <id>Android Lint</id>
           </State>
           <State>
-            <id>Code style issuesJava</id>
+            <id>Encapsulation issuesJava</id>
           </State>
           <State>
-            <id>Compiler issuesJava</id>
+            <id>Error handlingJava</id>
           </State>
           <State>
-            <id>Finalization issuesJava</id>
-          </State>
-          <State>
-            <id>GeneralJavaScript</id>
-          </State>
-          <State>
-            <id>Groovy</id>
-          </State>
-          <State>
-            <id>Inheritance issuesJava</id>
-          </State>
-          <State>
-            <id>J2ME issuesJava</id>
-          </State>
-          <State>
-            <id>JSP Inspections</id>
+            <id>JUnit issuesJava</id>
           </State>
           <State>
             <id>Java</id>
@@ -248,38 +211,15 @@
             <id>Java language level migration aidsJava</id>
           </State>
           <State>
-            <id>JavaBeans issuesJava</id>
-          </State>
-          <State>
             <id>JavaScript</id>
           </State>
           <State>
-            <id>Numeric issuesJava</id>
+            <id>Logging issuesJava</id>
           </State>
           <State>
-            <id>OtherGroovy</id>
-          </State>
-          <State>
-            <id>Performance issuesJava</id>
-          </State>
-          <State>
-            <id>Probable bugsJava</id>
-          </State>
-          <State>
-            <id>Security issuesJava</id>
-          </State>
-          <State>
-            <id>Serialization issuesJava</id>
-          </State>
-          <State>
-            <id>Verbose or redundant code constructsJava</id>
+            <id>Potentially confusing code constructsJavaScript</id>
           </State>
         </expanded-state>
-        <selected-state>
-          <State>
-            <id>Android</id>
-          </State>
-        </selected-state>
       </profile-state>
     </entry>
   </component>
@@ -334,199 +274,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RealEstateDevMatrix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RealEstateDevMatrix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RealEstateDevMatrix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RealEstateDevMatrix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RealEstateDevMatrix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RealEstateDevMatrix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nestwood" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RealEstateDevMatrix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RealEstateDevMatrix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nestwood" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="matrix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RealEstateDevMatrix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RealEstateDevMatrix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nestwood" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="matrix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RealEstateDevMatrix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RealEstateDevMatrix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="FrontEnd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RealEstateDevMatrix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RealEstateDevMatrix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FrontEnd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RealEstateDevMatrix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RealEstateDevMatrix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FrontEnd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -539,10 +295,10 @@
     <property name="recentsLimit" value="5" />
     <property name="js.buildTools.grunt.node_interpreter" value="" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript.Bower" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Tools/apache-tomcat-8.0.26/webapps/ROOT/css/page.css" />
     <property name="dynamic.classpath" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
@@ -551,6 +307,7 @@
       <recent name="com.fingerprint.nestwood.matrix" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Development\Personal\RealEstateDevMatrix\FrontEnd" />
       <recent name="C:\Development\Personal\RealEstateDevMatrix\FrontEnd\media" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -560,120 +317,6 @@
       <recent name="C:\Development\Personal\RealEstateDevMatrix\FrontEnd\img" />
       <recent name="C:\Development\Personal\RealEstateDevMatrix\FrontEnd\js" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/css/page.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/index.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/pages/how-to-read-matrix.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/pages/process.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/pages/third-dimension.html</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/RealEstateDevMatrix/FrontEnd/index.html">
@@ -1051,7 +694,10 @@
       <workItem from="1443337715043" duration="17439000" />
       <workItem from="1443481892085" duration="52864000" />
       <workItem from="1443624920476" duration="1281000" />
-      <workItem from="1443660556526" duration="5548000" />
+      <workItem from="1443660556526" duration="6315000" />
+      <workItem from="1443713713979" duration="84000" />
+      <workItem from="1443724392999" duration="2760000" />
+      <workItem from="1443812078591" duration="17271000" />
     </task>
     <task id="LOCAL-00001" summary="Everything man. Like everything is updated. IDK what I'm even working on anymore.">
       <created>1441402324101</created>
@@ -1125,11 +771,17 @@
       <option name="project" value="LOCAL" />
       <updated>1443599331336</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added images to stages">
+      <created>1443668609595</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1443668609595</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232098000" />
+    <option name="totallyTimeSpent" value="252980000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1141,25 +793,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864866" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3362162" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864866" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26632124" sideWeight="0.50319827" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34594595" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32864866" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34594595" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864866" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1708108" sideWeight="0.4978678" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21055438" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31567568" sideWeight="0.4968017" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1170,7 +823,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31606218" sideWeight="0.4968017" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -1201,7 +853,9 @@
     <MESSAGE value="For the love of god, why did I not commit sooner.  Service near complete, still needs comments. Theme needs doin and what not." />
     <MESSAGE value="Added images and extra content" />
     <MESSAGE value="Added Comments View" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Comments View" />
+    <MESSAGE value="added images to stages" />
+    <MESSAGE value="Release changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Release changes" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1231,34 +885,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/messages/DevelopmentMatrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/MatrixBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/RealEstateDevelopmentMatrixService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/messages/DevelopmentMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1337,23 +963,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/js/modal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28716215">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/messages/MatrixBuildException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16102841">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/img/buildingdevelopment.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/messages/HeaderType.java">
@@ -1382,13 +996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34805652">
           <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/messages/MatrixNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43001688">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1435,29 +1042,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/img/landpackaging.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/messages/MatrixContent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3733108">
           <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/pages/how-to-read-matrix.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.076923">
-          <caret line="163" column="29" selection-start-line="163" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/pages/third-dimension.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21624589">
-          <caret line="22" column="105" selection-start-line="22" selection-start-column="105" selection-end-line="22" selection-end-column="105" />
         </state>
       </provider>
     </entry>
@@ -1466,20 +1054,6 @@
         <state vertical-scroll-proportion="0.05610561">
           <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/pages/handbook.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57678574">
-          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/dao/MatrixContentDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1504,16 +1078,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/MatrixBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/messages/Comment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26968974">
@@ -1535,21 +1099,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/dao/CommentsDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="97" column="56" selection-start-line="97" selection-start-column="56" selection-end-line="97" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1443599296951" expanded="true" signature="769:882" placeholder="SELECT * FRO..comments..." />
-            <marker date="1443599296951" expanded="true" signature="2284:2359" placeholder="SELECT COUNT..." />
-            <marker date="1443599296951" expanded="true" signature="2664:2722" placeholder="SELECT * FRO..headers..." />
-            <marker date="1443599296951" expanded="true" signature="3371:3445" placeholder="SELECT COUNT..." />
-            <marker date="1443599296951" expanded="true" signature="3747:3805" placeholder="SELECT * FRO..headers..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/RealEstateDevelopmentMatrixService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1558,18 +1107,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/DevelopmentMatrixFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/dao/MatrixHeaderDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.30843115">
+          <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/pages/process.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/messages/MatrixNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.038462">
-          <caret line="55" column="8" selection-start-line="55" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.16328709">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding>
+            <element signature="e#619#620#0" expanded="false" />
+            <element signature="e#665#666#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/MatrixBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1814301">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/DevelopmentMatrixFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41728923">
+          <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/dao/CommentsDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49306297">
+          <caret line="97" column="56" selection-start-line="97" selection-start-column="56" selection-end-line="97" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Tools/apache-tomcat-8.0.26/webapps/ROOT/js/modal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45617172">
+          <caret line="15" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Tools/apache-tomcat-8.0.26/webapps/ROOT/js/dev_matrix.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.103449">
+          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
           <folding />
         </state>
       </provider>
@@ -1577,33 +1168,57 @@
     <entry file="file://$PROJECT_DIR$/FrontEnd/css/page.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="216" column="14" selection-start-line="216" selection-start-column="14" selection-end-line="216" selection-end-column="14" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Tools/apache-tomcat-8.0.26/webapps/ROOT/css/page.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.59577465">
+          <caret line="76" column="21" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.88461536">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/dao/MatrixHeaderDAO.java">
+    <entry file="file://$PROJECT_DIR$/FrontEnd/pages/how-to-read-matrix.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79932547">
-          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="157" column="12" selection-start-line="157" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/pages/handbook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="19" column="60" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fingerprint/nestwood/matrix/dao/MatrixContentDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3153457">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
           <folding>
-            <marker date="1443589854825" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..headers..." />
+            <marker date="1443725474647" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..content..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd/js/dev_matrix.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36702126">
-          <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.6532847">
+          <caret line="67" column="24" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
           <folding />
         </state>
       </provider>

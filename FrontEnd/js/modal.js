@@ -12,4 +12,5 @@ $(document).on('click', '.toggle--modal', function (e) {
     e.preventDefault();
     e.stopPropagation();
     $('.modal__overlay').toggleClass('is-active');
+    $('body').toggleClass('is-fixed');
 });

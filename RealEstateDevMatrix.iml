@@ -54,5 +54,6 @@
     <orderEntry type="library" name="Maven: com.mchange:c3p0:0.9.5.1" level="project" />
     <orderEntry type="library" name="Maven: com.mchange:mchange-commons-java:0.2.10" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.36" level="project" />
+    <orderEntry type="library" name="jQuery-2.0.0" level="application" />
   </component>
 </module>
