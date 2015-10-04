@@ -91,6 +91,8 @@ function serveModal(url) {
             var view = header + "<br>" + content;
 
             $("#main-view").html(view);
+            $("#main-view").scrollTop(0);
+
         }
     ).fail(function () {
             console.error("Unable to load content for url: " + url);

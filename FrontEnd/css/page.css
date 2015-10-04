@@ -16,7 +16,7 @@ a {
 }
 
 img {
-    display: inline-block;
+    display: block;
     height: auto;
     max-width: 100%;
     width: 60%;
@@ -264,3 +264,4 @@ input {
     font-size: 1em;
     font-weight: 400;
 }
+
