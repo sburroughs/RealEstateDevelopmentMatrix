@@ -1,3 +1,4 @@
 /target
 /.idea
 /log
+/src/main/resources/matrix_config.properties
