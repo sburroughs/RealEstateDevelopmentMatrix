@@ -28,7 +28,8 @@
 
     </script>
 </head>
-<body onload="servePage()">
+
+<body>
 
 <header class="container">
     <div class="site__logo"><a href="#">Granite&nbsp;Road<img src="img/final-logo.png" alt="Granite Road Logo"/> </a>
@@ -229,7 +230,6 @@
         </table>
     </div>
 
-
 </div>
 
 <div class="modal__overlay">
@@ -246,30 +246,29 @@
                class="modal__button modal__button--bottom icon-arrow-down-circle">Navigate to Cell Below</a>
         </div>
 
-        <div id="main-view" class="modal__content">
-            <!--THIS CONTENT WILL BE SERVED VIA NAVIGATION SCRIPTS-->
-            Unable to Load Content
-
+        <div class="modal__content">
+            <div id="modal_view">
+                <!-- Served by matrix script -->
+            </div>
+            <br>
+            <hr>
             <div class="comment__list">
-                <h2 class="comment__title">Leave a Comment</h2>
+                <h2 class="comment__title">Discussion</h2>
 
-                <form method='post'>
-                    <label class="form__item" for="name">Name:</label>
-                    <input class="form__item" type='text' name='name' id='name'/>
-                    <label class="form__item" for="comment">Comment:</label>
-                    <textarea class="form__item" name='comment' id='comment'></textarea><br/>
-                    <input class="button" type='submit' value='Submit'/>
-                </form>
+                <iframe id="comments"
+                        src="javascript:void(0)"
+                        scrolling="no"
+                        frameborder="1"
+                        width="100%"
+                        height="400">
+                </iframe>
 
-                <div class="comment__list" id="comments">
-                    <!--THIS CONTENT WILL BE SERVED VIA RESTFUL SERVICE CALLS-->
-                </div>
             </div>
         </div>
-
-
     </div>
+
 </div>
+
 
 <footer>
     Copyright &copy; Granite Road, LLC.
