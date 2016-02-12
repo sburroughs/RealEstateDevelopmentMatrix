@@ -28,8 +28,8 @@
 
     </script>
 </head>
-<body onload="servePage()">
-<!-- Load Google Analytics -->
+
+<body>
 
 <header class="container">
     <div class="site__logo"><a href="#">Granite&nbsp;Road<img src="img/final-logo.png" alt="Granite Road Logo"/> </a>
@@ -75,8 +75,161 @@
                 href="pages/how-to-read-matrix.html">Using the matrix</a>.
     </p>
 
-    <div id="matrix">Unable to Load Development Matrix. . .
-        <!--THIS CONTENT WILL BE SERVED VIA NAVIGATION SCRIPTS--></div>
+    <div id="matrix">
+        <table>
+            <tbody>
+            <tr>
+                <td></td>
+                <th class="toggle--modal" onclick="serveContent(1,0)"><a href="#">1 Land Banking</a></th>
+                <th class="toggle--modal" onclick="serveContent(2,0)"><a href="#">2 Land Packaging</a></th>
+                <th class="toggle--modal" onclick="serveContent(3,0)"><a href="#">3 Land Development</a></th>
+                <th class="toggle--modal" onclick="serveContent(4,0)"><a href="#">4 Building Development</a></th>
+                <th class="toggle--modal" onclick="serveContent(5,0)"><a href="#">5 Building Operations</a></th>
+                <th class="toggle--modal" onclick="serveContent(6,0)"><a href="#">6 Building Renovation</a></th>
+                <th class="toggle--modal" onclick="serveContent(7,0)"><a href="#">7 Property Redevelopment</a></th>
+            </tr>
+            <tr>
+                <th class="toggle--modal" onclick="serveContent(0,1)"><a href="#">I Acquisition</a></th>
+                <td class="toggle--modal" onclick="serveContent(1,1)"><a href="#">I.1<br>Land Banking<br>Acquisition</a>
+                </td>
+                <td class="toggle--modal" onclick="serveContent(2,1)"><a href="#">I.2<br>Land
+                    Packaging<br>Acquisition</a></td>
+                <td class="toggle--modal" onclick="serveContent(3,1)"><a href="#">I.3<br>Land Development<br>Acquisition</a>
+                </td>
+                <td class="toggle--modal" onclick="serveContent(4,1)"><a href="#">I.4<br>Building Development<br>Acquisition</a>
+                </td>
+                <td class="toggle--modal" onclick="serveContent(5,1)"><a href="#">I.5<br>Building Operations<br>Acquisition</a>
+                </td>
+                <td class="toggle--modal" onclick="serveContent(6,1)"><a href="#">I.6<br>Building Renovation<br>Acquisition</a>
+                </td>
+                <td class="toggle--modal" onclick="serveContent(7,1)"><a href="#">I.7<br>Property Redevelopment<br>Acquisition</a>
+                </td>
+            </tr>
+            <tr>
+                <th class="toggle--modal" onclick="serveContent(0,2)"><a href="#">II Financing</a></th>
+                <td class="toggle--modal" onclick="serveContent(1,2)"><a href="#">II.1<br>Land Banking<br>Financing</a>
+                </td>
+                <td class="toggle--modal" onclick="serveContent(2,2)"><a href="#">II.2<br>Land
+                    Packaging<br>Financing</a></td>
+                <td class="toggle--modal" onclick="serveContent(3,2)"><a href="#">II.3<br>Land Development<br>Financing</a>
+                </td>
+                <td class="toggle--modal" onclick="serveContent(4,2)"><a href="#">II.4<br>Building Development<br>Financing</a>
+                </td>
+                <td class="toggle--modal" onclick="serveContent(5,2)"><a href="#">II.5<br>Building Operations<br>Financing</a>
+                </td>
+                <td class="toggle--modal" onclick="serveContent(6,2)"><a href="#">II.6<br>Building Renovation<br>Financing</a>
+                </td>
+                <td class="toggle--modal" onclick="serveContent(7,2)"><a href="#">II.7<br>Property Redevelopment<br>Financing</a>
+                </td>
+            </tr>
+            <tr>
+                <th class="toggle--modal" onclick="serveContent(0,3)"><a href="#">
+                    III Market Studies and Marketing Strategies</a></th>
+                <td class="toggle--modal" onclick="serveContent(1,3)"><a href="#">III.1<br>Land Banking<br>Market
+                    Studies and Marketing Strategies</a></td>
+                <td class="toggle--modal" onclick="serveContent(2,3)"><a href="#">III.2<br>Land Packaging<br>Market
+                    Studies and Marketing Strategies</a></td>
+                <td class="toggle--modal" onclick="serveContent(3,3)"><a href="#">III.3<br>Land Development<br>Market
+                    Studies and Marketing Strategies</a></td>
+                <td class="toggle--modal" onclick="serveContent(4,3)"><a href="#">III.4<br>Building Development<br>Market
+                    Studies and Marketing Strategies</a></td>
+                <td class="toggle--modal" onclick="serveContent(5,3)"><a href="#">III.5<br>Building Operations<br>Market
+                    Studies and Marketing Strategies</a></td>
+                <td class="toggle--modal" onclick="serveContent(6,3)"><a href="#">III.6<br>Building Renovation<br>Market
+                    Studies and Marketing Strategies</a></td>
+                <td class="toggle--modal" onclick="serveContent(7,3)"><a href="#">III.7<br>Property Redevelopment<br>Market
+                    Studies and Marketing Strategies</a></td>
+            </tr>
+            <tr>
+                <th class="toggle--modal" onclick="serveContent(0,4)"><a href="#">IV Environmental</a></th>
+                <td class="toggle--modal" onclick="serveContent(1,4)"><a href="#">IV.1<br>Land Banking<br>Environmental</a>
+                </td>
+                <td class="toggle--modal" onclick="serveContent(2,4)"><a href="#">IV.2<br>Land Packaging<br>Environmental</a>
+                </td>
+                <td class="toggle--modal" onclick="serveContent(3,4)"><a href="#">IV.3<br>Land Development<br>Environmental</a>
+                </td>
+                <td class="toggle--modal" onclick="serveContent(4,4)"><a href="#">IV.4<br>Building Development<br>Environmental</a>
+                </td>
+                <td class="toggle--modal" onclick="serveContent(5,4)"><a href="#">IV.5<br>Building Operations<br>Environmental</a>
+                </td>
+                <td class="toggle--modal" onclick="serveContent(6,4)"><a href="#">IV.6<br>Building Renovation<br>Environmental</a>
+                </td>
+                <td class="toggle--modal" onclick="serveContent(7,4)"><a href="#">IV.7<br>Property Redevelopment<br>Environmental</a>
+                </td>
+            </tr>
+            <tr>
+                <th class="toggle--modal" onclick="serveContent(0,5)"><a href="#">V Approvals and Permits</a></th>
+                <td class="toggle--modal" onclick="serveContent(1,5)"><a href="#">V.1<br>Land Banking<br>Approvals and
+                    Permits</a></td>
+                <td class="toggle--modal" onclick="serveContent(2,5)"><a href="#">V.2<br>Land Packaging<br>Approvals and
+                    Permits</a></td>
+                <td class="toggle--modal" onclick="serveContent(3,5)"><a href="#">V.3<br>Land Development<br>Approvals
+                    and Permits</a></td>
+                <td class="toggle--modal" onclick="serveContent(4,5)"><a href="#">V.4<br>Building Development<br>Approvals
+                    and Permits</a></td>
+                <td class="toggle--modal" onclick="serveContent(5,5)"><a href="#">V.5<br>Building Operations<br>Approvals
+                    and Permits</a></td>
+                <td class="toggle--modal" onclick="serveContent(6,5)"><a href="#">V.6<br>Building Renovation<br>Approvals
+                    and Permits</a></td>
+                <td class="toggle--modal" onclick="serveContent(7,5)"><a href="#">V.7<br>Property Redevelopment<br>Approvals
+                    and Permits</a></td>
+            </tr>
+            <tr>
+                <th class="toggle--modal" onclick="serveContent(0,6)"><a href="#">VI Physical Improvements</a></th>
+                <td class="toggle--modal" onclick="serveContent(1,6)"><a href="#">VI.1<br>Land Banking<br>Physical
+                    Improvements</a></td>
+                <td class="toggle--modal" onclick="serveContent(2,6)"><a href="#">VI.2<br>Land Packaging<br>Physical
+                    Improvements</a></td>
+                <td class="toggle--modal" onclick="serveContent(3,6)"><a href="#">VI.3<br>Land Development<br>Physical
+                    Improvements</a></td>
+                <td class="toggle--modal" onclick="serveContent(4,6)"><a href="#">VI.4<br>Building Development<br>Physical
+                    Improvements</a></td>
+                <td class="toggle--modal" onclick="serveContent(5,6)"><a href="#">VI.5<br>Building Operations<br>Physical
+                    Improvements</a></td>
+                <td class="toggle--modal" onclick="serveContent(6,6)"><a href="#">VI.6<br>Building Renovation<br>Physical
+                    Improvements</a></td>
+                <td class="toggle--modal" onclick="serveContent(7,6)"><a href="#">VI.7<br>Property Redevelopment<br>Physical
+                    Improvements</a></td>
+            </tr>
+            <tr>
+                <th class="toggle--modal" onclick="serveContent(0,7)"><a href="#">VII Transportation and
+                    Accessibility</a></th>
+                <td class="toggle--modal" onclick="serveContent(1,7)"><a href="#">VII.1<br>Land Banking<br>Transportation
+                    and Accessibility</a></td>
+                <td class="toggle--modal" onclick="serveContent(2,7)"><a href="#">VII.2<br>Land Packaging<br>Transportation
+                    and Accessibility</a></td>
+                <td class="toggle--modal" onclick="serveContent(3,7)"><a href="#">VII.3<br>Land Development<br>Transportation
+                    and Accessibility</a></td>
+                <td class="toggle--modal" onclick="serveContent(4,7)"><a href="#">VII.4<br>Building Development<br>Transportation
+                    and Accessibility</a></td>
+                <td class="toggle--modal" onclick="serveContent(5,7)"><a href="#">VII.5<br>Building Operations<br>Transportation
+                    and Accessibility</a></td>
+                <td class="toggle--modal" onclick="serveContent(6,7)"><a href="#">VII.6<br>Building Renovation<br>Transportation
+                    and Accessibility</a></td>
+                <td class="toggle--modal" onclick="serveContent(7,7)"><a href="#">VII.7<br>Property Redevelopment<br>Transportation
+                    and Accessibility</a></td>
+            </tr>
+            <tr>
+                <th class="toggle--modal" onclick="serveContent(0,8)"><a href="#">VIII Sales and Disposition</a></th>
+                <td class="toggle--modal" onclick="serveContent(1,8)"><a href="#">VIII.1<br>Land Banking<br>Sales and
+                    Disposition</a></td>
+                <td class="toggle--modal" onclick="serveContent(2,8)"><a href="#">VIII.2<br>Land Packaging<br>Sales and
+                    Disposition</a></td>
+                <td class="toggle--modal" onclick="serveContent(3,8)"><a href="#">VIII.3<br>Land Development<br>Sales
+                    and Disposition</a></td>
+                <td class="toggle--modal" onclick="serveContent(4,8)"><a href="#">VIII.4<br>Building Development<br>Sales
+                    and Disposition</a></td>
+                <td class="toggle--modal" onclick="serveContent(5,8)"><a href="#">VIII.5<br>Building Operations<br>Sales
+                    and Disposition</a></td>
+                <td class="toggle--modal" onclick="serveContent(6,8)"><a href="#">VIII.6<br>Building Renovation<br>Sales
+                    and Disposition</a></td>
+                <td class="toggle--modal" onclick="serveContent(7,8)"><a href="#">VIII.7<br>Property Redevelopment<br>Sales
+                    and Disposition</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
 </div>
 
 <div class="modal__overlay">
@@ -93,30 +246,29 @@
                class="modal__button modal__button--bottom icon-arrow-down-circle">Navigate to Cell Below</a>
         </div>
 
-        <div id="main-view" class="modal__content">
-            <!--THIS CONTENT WILL BE SERVED VIA NAVIGATION SCRIPTS-->
-            Unable to Load Content
-
+        <div class="modal__content">
+            <div id="modal_view">
+                <!-- Served by matrix script -->
+            </div>
+            <br>
+            <hr>
             <div class="comment__list">
-                <h2 class="comment__title">Leave a Comment</h2>
+                <h2 class="comment__title">Discussion</h2>
 
-                <form method='post'>
-                    <label class="form__item" for="name">Name:</label>
-                    <input class="form__item" type='text' name='name' id='name'/>
-                    <label class="form__item" for="comment">Comment:</label>
-                    <textarea class="form__item" name='comment' id='comment'></textarea><br/>
-                    <input class="button" type='submit' value='Submit'/>
-                </form>
+                <iframe id="comments"
+                        src="javascript:void(0)"
+                        scrolling="no"
+                        frameborder="1"
+                        width="100%"
+                        height="400">
+                </iframe>
 
-                <div class="comment__list" id="comments">
-                    <!--THIS CONTENT WILL BE SERVED VIA RESTFUL SERVICE CALLS-->
-                </div>
             </div>
         </div>
-
-
     </div>
+
 </div>
+
 
 <footer>
     Copyright &copy; Granite Road, LLC.
