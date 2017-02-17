@@ -5,9 +5,12 @@
     <title>Real Estate Development Matrix</title>
     <link rel="stylesheet" type="text/css" href="../css/simple-line-icons.css">
     <link rel="stylesheet" type="text/css" href="../css/page.css">
-    <link href='https://fonts.googleapis.com/css?family=Cinzel:400,700|Lato:400,300,700' rel='stylesheet'
-          type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+            integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+            crossorigin="anonymous"></script>
+
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -28,24 +31,42 @@
 </head>
 <body>
 
-<header class="container">
-    <div class="site__logo"><a href="#">Granite&nbsp;Road<img src="../img/final-logo.png" alt="Granite Road Logo"/> </a>
-    </div>
-    <nav class="menu--main">
-        <ul class="menu--main__list">
-            <li class="menu--main__item"><a class="menu--main__link" href="../index.html">Development Matrix</a></li>
-            <li class="menu--main__item"><a class="menu--main__link" href="how-to-read-matrix.html">Using the Matrix</a>
+<header>
+    <nav class="navbar navbar-toggleable-sm navbar-light bg-faded">
+
+        <!--<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"-->
+        <!--data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"-->
+        <!--aria-label="Toggle navigation">-->
+        <!--<span class="navbar-toggler-icon"></span>-->
+        <!--</button>-->
+        <a class="navbar-brand" href="../index.html">Real Estate Development Matrix</a>
+
+        <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="how-to-read-matrix.html">Using the Matrix</a>
             </li>
-            <li class="menu--main__item"><a class="menu--main__link" href="process.html">Development Process</a></li>
-            <li class="menu--main__item"><a class="menu--main__link" href="third-dimension.html">Third Dimension</a>
+            <li class="nav-item">
+                <a class="nav-link" href="process.html">Development Process</a>
             </li>
-            <li class="menu--main__item"><a class="menu--main__link" href="faq.html">FAQ</a></li>
-            <li class="menu--main__item"><a class="menu--main__link" href="skills.html">Special Skills</a></li>
-            <li class="menu--main__item"><a class="menu--main__link" href="examples.html">Examples</a></li>
-            <li class="menu--main__item"><a class="menu--main__link" href="contact.html">Contact</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="third-dimension.html">Third Dimension</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+            <!--<li class="nav-item">-->
+            <!--<a class="nav-link" href="skills.html">Special Skills</a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+            <!--<a class="nav-link" href="examples.html">Examples</a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+            <!--<a class="nav-link" href="contact.html">Contact</a>-->
+            <!--</li>-->
         </ul>
+        <!--</div>-->
     </nav>
-    <p>Real Estate Development Matrix</p>
 </header>
 
 <main class="main-content container">
@@ -937,8 +958,16 @@
 
 </main>
 
-<footer>
-    Copyright &copy; Granite Road, LLC.
+<footer class="footer">
+    <div class="container text-muted flex">
+        <div class="pr-5">
+            <p>Copyright &copy; Granite Road, LLC.</p>
+            <img class="small-image" src="../img/final-logo.png" alt="Granite Road Logo"/>
+        </div>
+        <ul class="list-unstyled">
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
 </footer>
 
 </body>
