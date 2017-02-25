@@ -18,7 +18,7 @@ var stages = [
 var tasks = [
     "Acquisition",
     "Financing",
-    "Market Studies and Marketing Strategies",
+    "Market Analysis and Strategies",
     "Environmental",
     "Approvals and Permits",
     "Physical Improvements",
