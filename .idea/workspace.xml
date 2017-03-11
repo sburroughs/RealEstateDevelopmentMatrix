@@ -6,10 +6,18 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2688208-2e97-4733-a97b-df2ef1578219" name="Default" comment="card img overlay and added static links for examples">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/script/examples_page.js" />
+    <list default="true" id="c2688208-2e97-4733-a97b-df2ef1578219" name="Default" comment="added task filtering on examples page">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/img/cityscape.jpg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FrontEnd/img/under_construction.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/index.html" afterPath="$PROJECT_DIR$/FrontEnd/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/pages/contact.html" afterPath="$PROJECT_DIR$/FrontEnd/pages/contact.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/pages/examples.html" afterPath="$PROJECT_DIR$/FrontEnd/pages/examples.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/pages/faq.html" afterPath="$PROJECT_DIR$/FrontEnd/pages/faq.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/pages/how-to-read-matrix.html" afterPath="$PROJECT_DIR$/FrontEnd/pages/how-to-read-matrix.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/pages/process.html" afterPath="$PROJECT_DIR$/FrontEnd/pages/process.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/pages/skills.html" afterPath="$PROJECT_DIR$/FrontEnd/pages/skills.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/pages/third-dimension.html" afterPath="$PROJECT_DIR$/FrontEnd/pages/third-dimension.html" />
     </list>
     <ignored path="RealEstateDevMatrix.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,31 +43,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FrontEnd/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="716">
-              <caret line="310" column="8" lean-forward="false" selection-start-line="310" selection-start-column="0" selection-end-line="311" selection-end-column="0" />
+            <state relative-caret-position="459">
+              <caret line="54" column="17" lean-forward="false" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEnd/css/page.css">
+      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrontEnd/pages/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="41" column="19" lean-forward="false" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+            <state relative-caret-position="510">
+              <caret line="54" column="17" lean-forward="false" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -68,18 +63,58 @@
       <file leaf-file-name="examples.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FrontEnd/pages/examples.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+            <state relative-caret-position="310">
+              <caret line="107" column="45" lean-forward="false" selection-start-line="107" selection-start-column="45" selection-end-line="107" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="examples_page.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEnd/script/examples_page.js">
+      <file leaf-file-name="faq.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrontEnd/pages/faq.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="733">
+              <caret line="53" column="17" lean-forward="false" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="how-to-read-matrix.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrontEnd/pages/how-to-read-matrix.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="782">
+              <caret line="58" column="17" lean-forward="false" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="process.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrontEnd/pages/process.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="56" column="17" lean-forward="false" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="skills.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrontEnd/pages/skills.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="56" column="17" lean-forward="false" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="third-dimension.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrontEnd/pages/third-dimension.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="55" column="17" lean-forward="false" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -107,9 +142,11 @@
       <find>card my-4</find>
       <find>t8stage1</find>
       <find>&lt;hr&gt;&lt;!</find>
+      <find>https://static.pexels.com/photos/41170/architecture-blue-building-business-41170.jpeg</find>
     </findStrings>
     <replaceStrings>
       <replace>class=&quot;card my-4&quot; id=&quot;txstagey&quot;</replace>
+      <replace>../img/cityscape.jpg</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -128,8 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/FrontEnd/pages/matrix/stage5/task3.html" />
-        <option value="$PROJECT_DIR$/FrontEnd/pages/matrix/stage5/task2.html" />
         <option value="$PROJECT_DIR$/FrontEnd/pages/matrix/stage6/task0.html" />
         <option value="$PROJECT_DIR$/FrontEnd/pages/matrix/stage6/task1.html" />
         <option value="$PROJECT_DIR$/FrontEnd/pages/matrix/stage6/task2.html" />
@@ -169,15 +204,17 @@
         <option value="$PROJECT_DIR$/FrontEnd/pages/matrix/stage1/task1.html" />
         <option value="$PROJECT_DIR$/FrontEnd/pages/matrix/stage3/task1.html" />
         <option value="$PROJECT_DIR$/FrontEnd/pages/matrix/stage6/task3.html" />
-        <option value="$PROJECT_DIR$/FrontEnd/pages/contact.html" />
         <option value="$PROJECT_DIR$/FrontEnd/pages/handbook.html" />
-        <option value="$PROJECT_DIR$/FrontEnd/pages/how-to-read-matrix.html" />
-        <option value="$PROJECT_DIR$/FrontEnd/pages/process.html" />
-        <option value="$PROJECT_DIR$/FrontEnd/pages/third-dimension.html" />
-        <option value="$PROJECT_DIR$/FrontEnd/index.html" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/FrontEnd/css/page.css" />
         <option value="$PROJECT_DIR$/FrontEnd/script/examples_page.js" />
+        <option value="$PROJECT_DIR$/FrontEnd/index.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/pages/contact.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/pages/faq.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/pages/how-to-read-matrix.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/pages/process.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/pages/skills.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/pages/third-dimension.html" />
         <option value="$PROJECT_DIR$/FrontEnd/pages/examples.html" />
       </list>
     </option>
@@ -313,6 +350,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RealEstateDevMatrix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RealEstateDevelopmentMatrix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontEnd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RealEstateDevMatrix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RealEstateDevelopmentMatrix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontEnd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -344,11 +417,11 @@
       <recent name="com.fingerprint.nestwood.matrix" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Development\Projects\RealEstateDevelopmentMatrix\FrontEnd\img" />
       <recent name="C:\Development\Personal\RealEstateDevMatrix\FrontEnd\pages\matrix\stage7" />
       <recent name="C:\Development\Personal\RealEstateDevMatrix\FrontEnd\pages\matrix\stage6" />
       <recent name="C:\Development\Personal\RealEstateDevMatrix\FrontEnd\pages\matrix\stage5" />
       <recent name="C:\Development\Personal\RealEstateDevMatrix\FrontEnd\pages\matrix\stage4" />
-      <recent name="C:\Development\Personal\RealEstateDevMatrix\FrontEnd\pages\matrix\stage3" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Development\Personal\RealEstateDevMatrix\FrontEnd\pages\matrix" />
@@ -1146,7 +1219,8 @@
     <MESSAGE value="Removed java project files, site is completely static" />
     <MESSAGE value="removed handbook" />
     <MESSAGE value="card img overlay and added static links for examples" />
-    <option name="LAST_COMMIT_MESSAGE" value="card img overlay and added static links for examples" />
+    <MESSAGE value="added task filtering on examples page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added task filtering on examples page" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1162,20 +1236,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FrontEnd/pages/matrix/stage5/task7.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/pages/matrix/stage5/task6.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="42" column="5" lean-forward="false" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd/pages/matrix/stage5/task5.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1433,31 +1493,19 @@
     <entry file="file://$PROJECT_DIR$/pom.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/matrix_config.properties" />
     <entry file="file://$PROJECT_DIR$/FrontEnd/pages/handbook.html" />
-    <entry file="file://$PROJECT_DIR$/FrontEnd/pages/third-dimension.html">
+    <entry file="file://$PROJECT_DIR$/FrontEnd/script/examples_page.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="425">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/pages/process.html">
+    <entry file="file://$PROJECT_DIR$/FrontEnd/css/page.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/pages/how-to-read-matrix.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/pages/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="391">
+          <caret line="41" column="19" lean-forward="false" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1472,34 +1520,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/css/page.css">
+    <entry file="file://$PROJECT_DIR$/FrontEnd/pages/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="41" column="19" lean-forward="false" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+        <state relative-caret-position="510">
+          <caret line="54" column="17" lean-forward="false" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/pages/faq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="733">
+          <caret line="53" column="17" lean-forward="false" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/pages/how-to-read-matrix.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="58" column="17" lean-forward="false" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/pages/process.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="56" column="17" lean-forward="false" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/pages/skills.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="56" column="17" lean-forward="false" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/pages/third-dimension.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="55" column="17" lean-forward="false" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="716">
-          <caret line="310" column="8" lean-forward="false" selection-start-line="310" selection-start-column="0" selection-end-line="311" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/script/examples_page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="459">
+          <caret line="54" column="17" lean-forward="false" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd/pages/examples.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+        <state relative-caret-position="310">
+          <caret line="107" column="45" lean-forward="false" selection-start-line="107" selection-start-column="45" selection-end-line="107" selection-end-column="45" />
           <folding />
         </state>
       </provider>
