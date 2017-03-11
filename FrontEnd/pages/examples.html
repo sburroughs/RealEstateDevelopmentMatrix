@@ -69,1492 +69,1550 @@
 <main class="main-content container">
     <h1>Examples</h1>
 
-    <hr><!--TASK 1-->
-    <div class="card">
-        <img class="card-img" height="200"
-             src="https://static.pexels.com/photos/41170/architecture-blue-building-business-41170.jpeg">
-        <div class="card-img-overlay card-inverse">
-            <h2 class="card-title">Task I. – Acquisition</h2>
+
+    <div class="row">
+
+        <div class="col-sm-3">
+            <h2>Task</h2>
+            <select multiple id="taskSelect">
+                <option value="1">I Acquisition</option>
+                <option value="2">II Financing</option>
+                <option value="3">III Market Analysis and Strategies</option>
+                <option value="4">IV Environmental</option>
+                <option value="5">V Approvals and Permits</option>
+                <option value="6">VI Physical Improvements</option>
+                <option value="7">VII Transportation and Accessibility</option>
+                <option value="8">VIII Sales and Disposition</option>
+            </select>
         </div>
 
-        <div class="card-block">
-            <div class="card my-4">
-                <h3 class="card-header">Stage 1 – Land Banking I.1</h3>
+        <!--<div class="col-sm-3">-->
+        <!--<h2>Stage</h2>-->
+        <!--<select multiple id="stageSelect">-->
+        <!--<option value="1">1 Land Banking</option>-->
+        <!--<option value="2">2 Land Packaging</option>-->
+        <!--<option value="3">3 Land Development</option>-->
+        <!--<option value="4">4 Building Development</option>-->
+        <!--<option value="5">5 Building Operations</option>-->
+        <!--<option value="6">6 Building Renovation</option>-->
+        <!--<option value="7">7 Property Redevelopment</option>-->
+        <!--</select>-->
+        <!--</div>-->
 
-                <div class="card-block">
-                    <h4>Armed Forces Retirement Home</h4>
-                    <p>
-                        <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage1/Armed+Forces+Retierment+Home.pdf">Armed
+        <div class="col-sm-6">
+            <p></p>
+            <button type="button" onclick="filter()">Filter</button>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div id="tasks">
+        <!--TASK 1-->
+        <div class="card" id="task1">
+            <img class="card-img" height="200"
+                 src="https://static.pexels.com/photos/41170/architecture-blue-building-business-41170.jpeg">
+            <div class="card-img-overlay card-inverse">
+                <h2 class="card-title">Task I. – Acquisition</h2>
+            </div>
+
+            <div class="card-block">
+                <div class="card my-4" id="t1stage1">
+                    <h3 class="card-header">Stage 1 – Land Banking I.1</h3>
+
+                    <div class="card-block">
+                        <h4>Armed Forces Retirement Home</h4>
+                        <p>
+                            <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage1/Armed+Forces+Retierment+Home.pdf">Armed
+                                Forces
+                                Retirement Home</a></p>
+                    </div>
+
+                    <div class="card-block">
+                        <h4>Crown Farm</h4>
+                        <p>
+                            <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage1/Crown+Farm.pdf">Crown
+                                Farm</a></p>
+                    </div>
+
+                    <div class="card-block">
+                        <h4>Duke Energy</h4>
+                        <p>
+                            <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage1/Duke+Energy.pdf">Duke
+                                Energy</a></p>
+                    </div>
+
+                    <div class="card-block">
+                        <h4>Kiwanis Trail</h4>
+                        <p>
+                            <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage1/Kiwanis+Trail.pdf">Kiwanis
+                                Trail</a></p>
+                    </div>
+
+                    <div class="card-block">
+                        <h4>Vanderbilt University</h4>
+                        <p>
+                            <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage1/Vanderbilt+University+and+Peabody+College.pdf">Vanderbilt
+                                University</a></p>
+                    </div>
+                </div>
+
+                <div class="card my-4" id="t1stage2">
+                    <h3 class="card-header">Stage 2 – Land Packaging I.2</h3>
+
+                    <div class="card-block">
+                        <h4>Armed Forces Retirement Home</h4>
+                        <p>
+                            <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage2/Armed+Forces+Retirement+Home.pdf">Armed
+                                Forces Retirement Home</a></p>
+                    </div>
+
+                    <div class="card-block">
+                        <h4>Crown Farm</h4>
+                        <p>
+                            <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage2/Crown+Farm.pdf">Crown
+                                Farm</a></p>
+                    </div>
+
+                    <div class="card-block">
+                        <h4>Potomac Yard</h4>
+                        <p>
+                            <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage2/Potomac+Yard+(with+overview).pdf">Potomac
+                                Yard</a></p>
+                    </div>
+
+                    <div class="card-block">
+                        <h4>Greensboro Grove Report</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/3.9.14_greensboro_grove_report.pdf">Greensboro
+                            Grove
+                            Report</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Armed Forces Retirement Home Overall Presentation</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/msre_afrh_packaging.pdf">Armed
                             Forces
-                        Retirement Home</a></p>
+                            Retirement
+                            Home Overall Presentation</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Armed Forces Retirement Home Response to RFP 12.09.05</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/_afrh_rfp_draft_12.09.05.pdf">Armed
+                            Forces
+                            Retirement Home Response to RFP 12.09.05</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Armed Forces Retirement Home Acquisition Memo</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/afrh_ic_memo_05_09_2008.doc">Armed
+                            Forces
+                            Retirement
+                            Home Acquisition Memo</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Armed Forces Retirement Home Hold Harmless Agreement</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/afrh_hold_harmless_agreement.pdf">Armed
+                            Forces
+                            Retirement Home Hold Harmless Agreement</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Armed Forces Retirement Home Project Highlights</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/afrh_project_highlights_oct_30_06.doc">Armed
+                                Forces
+                                Retirement Home Project Highlights</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>AFRH Response to issues in the Development Agreement and the Land ease</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACSyHwi6HHSjp_lLKTZnDMTa/Examples/MIller%20Ex/AFRH%207-6-07%20response%20to%20Crescent%20issues%20list%20%20%2845697391%20v1%29.DOC">AFRH
+                                7-6-07 response to Crescent issues list (45697391 v1)</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Letter of Intent for Cabin Mountain Land</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AABDGibPJ8AKu4urSmzZvgT0a/Examples/MIller%20Ex/9-4-07Letter_IntentCabin%20Mountainclean.DOC">9-4-07Letter_IntentCabin
+                                Mountainclean </a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Bells Landing Acquisition Memo to Investment Committee</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAoriodxfPDFJKXdhkG7LMJa/Examples/MIller%20Ex/Bells%20Landing%20White%20Paper%20%282%29.doc">Bells
+                                Landing White Paper (2)</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Lake Wylie Retail Land Acquisition Memo</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACspJJsQvC-s47cmJ-b4Im3a/Examples/MIller%20Ex/Lake%20Wylie%20Retail%20Land%20Memo.pdf">Lake
+                                Wylie Retail Land Memo</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>South Tryon Assemblage Acquisition Memo</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACRs5Rx2HFfdBgD11D40rcFa/Examples/MIller%20Ex/South%20Tryon%20Assempblage%20I.pdf">South
+                                Tryon Assempblage I</a></p>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAA3NcVgDt21R8V2DKaECEYBa/Examples/MIller%20Ex/South%20Tryon%20Assemblage%20II.pdf">South
+                                Tryon Assemblage II</a></p>
+                    </div>
                 </div>
 
-                <div class="card-block">
-                    <h4>Crown Farm</h4>
-                    <p>
-                        <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage1/Crown+Farm.pdf">Crown
-                            Farm</a></p>
+                <div class="card my-4" id="t1stage3">
+                    <h3 class="card-header">Stage 3 – Land Development I.3</h3>
+
+                    <div class="card-block">
+                        <h4>Potomac Yard</h4>
+                        <p>
+                            <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage3/Potomac+Yard.pdf">Potomac
+                                Yard</a></p>
+                    </div>
+
+                    <div class="card-block">
+                        <h4>Crown Farm</h4>
+                        <p>
+                            <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage3/Crown+Farm.pdf">Crown
+                                Farm</a></p>
+                    </div>
+
+                    <div class="card-block">
+                        <h4>Potomac Yard Acquisition Memo</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/potmomac_yard_acquisition_oct_2000.doc">Potomac
+                                Yard
+                                Acquisition Memo</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Armed Forces Retirement Home Acquisition Memo</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/afrh_ic_memo_05_09_2008.doc">Armed
+                            Forces
+                            Retirement
+                            Home Acquisition Memo</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Armed Forces Retirement Home Development Agreement</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/afrh_dev_agreemtn_redline.rtf">Armed
+                            Forces
+                            Retirement Home Development Agreement</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Westfields Letter of Intent</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/westfield_loi.doc">Westfields Letter
+                            of
+                            Intent</a>
+                        </p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Odum Farms Joint Venture Proposal</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/res._1985_odlum_farm.pdf">Odum Farms
+                            Joint
+                            Venture
+                            Proposal</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Industrial/Warehouse Silo Bend Equity Joint Venture</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/war_1988_silo_bend.pdf">Industrial/Warehouse
+                            Silo
+                            Bend Equity Joint Venture</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Industrial/Warehouse Silo Bend Phase II Equity Joint Venture</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/war_1989_silo_bend_ii.pdf">Industrial/Warehouse
+                            Silo
+                            Bend Phase II Equity Joint Venture</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Industrial/Warehouse T L James Equity Joint Venture</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/war._1985_t.l._james.pdf">Industrial/Warehouse
+                            T
+                            L
+                            James Equity Joint Venture</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Apartments Adobe Ranch Equity JV Proposal</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt_1986_adobe_ranch.pdf">Apartments
+                            Adobe
+                            Ranch
+                            Equity JV Proposal</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Armed Forces Retirement Home Acquisition Proposal</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/armed_forces_retirement_home_investment_memo.pdf">Armed
+                                Forces Retirement Home Acquisition Proposal</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>AFRH Development Agreement between CR and AFRH</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADS1S_BPhIWy57iwrSgIEkOa/Examples/MIller%20Ex/10.11.06_AFRH%20Development%20Agreement%20-%20Developer%20Review%20Draft.DOC">10.11.06_AFRH
+                                Development Agreement - Developer Review Draft</a></p>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACSyHwi6HHSjp_lLKTZnDMTa/Examples/MIller%20Ex/AFRH%207-6-07%20response%20to%20Crescent%20issues%20list%20%20%2845697391%20v1%29.DOC">AFRH
+                                7-6-07 response to Crescent issues list (45697391 v1</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>AFRH Acquisition Memo to Investment Committee</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAp5IrEnIilonaeppGkC6uVa/Examples/MIller%20Ex/AFRH%20IC%20Memo%2005.09.2008.doc">AFRH
+                                IC Memo 05.09.2008</a></p>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AABYq0juSzWuvEO-E4xoNJx9a/Examples/MIller%20Ex/AFRM%20White%20Paper%20Exhibits.pdf">AFRM
+                                White Paper Exhibits</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Belgate Mixed Use Financial Projections</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAD539b21etK2-0a3V0uib7Aa/Examples/MIller%20Ex/Belgate%20Proforma%20Consolidated%20Belk%20Tract%2002.20.07.xls">Belgate
+                                Proforma Consolidated Belk Tract 02.20.07</a></p>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAoWpt34LsyXhDrbT9laU4Ja/Examples/MIller%20Ex/Belgate%20Simple%20Proforma.xls">Belgate
+                                Simple Proforma</a></p>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACqAGTYKNuroGwheK9tOPhma/Examples/MIller%20Ex/Belk%20Tract%20Ikea%20Dev%2012%2019%2006.xls">Belk
+                                Tract Ikea Dev 12 19 06</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Belgate Acquisition Memo to Investment Committee</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AABOgtBFagu56T3jE2J8yLela/Examples/MIller%20Ex/Belgate%20White%20Paper.doc">Belgate
+                                White Paper</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Buckeye Industrial Park Acquisition Memo</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAWVovTlZkMfnECsMxlc1uFa/Examples/MIller%20Ex/Buckeye%20Industrial%20Park%20Proforma%20-%20Paul%20Klick%20-%20Revised%20-%20Current.xls">Buckeye
+                                Industrial Park Proforma - Paul Klick - Revised – Current</a></p>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAD67cbTBEcRxsqEtfePohEya/Examples/MIller%20Ex/Buckeye%20Investment%20Memorandum%206.08.07">Buckeye
+                                Investment Memorandum 6.08.07</a></p>
+                    </div>
                 </div>
 
-                <div class="card-block">
-                    <h4>Duke Energy</h4>
-                    <p>
-                        <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage1/Duke+Energy.pdf">Duke
-                            Energy</a></p>
+                <div class="card my-4" id="t1stage4">
+                    <h3 class="card-header">Stage 4 -Building Development I.4</h3>
+
+                    <div class="card-block">
+                        <h4>Potomac Yard</h4>
+                        <p>
+                            <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage4/Potomac+Yard.pdf">Potomac
+                                Yard</a></p>
+                    </div>
+
+                    <div class="card-block">
+                        <h4>Crown Farm</h4>
+                        <p>
+                            <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage4/Crown+Farm.pdf">Crown
+                                Farm</a></p>
+                    </div>
+
+                    <div class="card-block">
+                        <h4>Potomac Yard Arlington One and Two Potomac Yard Financial Feasibility
+                        </h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/bay_a_fin_info__may_26.xls">Potomac
+                            Yard
+                            Arlington
+                            One and Two Potomac Yard Financial Feasibility</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Potomac Yard Arlington Land Bay A “Back of the Envelope” Analysis</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/bote_for_land_bay_a.xls">Potomac
+                            Yard
+                            Arlington
+                            Land
+                            Bay A “Back of the Envelope” Analysis</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Airpark West “Back of the Envelope” Analysis</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/_airpark_bote.xls">Airpark West
+                            “Back of
+                            the
+                            Envelope” Analysis</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Airpark West Acquisition Memo</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apw_infrastructure_white_paper_and_exhibits_1-4.pdf">Airpark
+                                West Acquisition Memo</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>International Plaza Four “Back of the Envelope” Analysis</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/bote_internatioal_plaza_four.xls">International
+                            Plaza Four “Back of the Envelope” Analysis</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>International Plaza Four Acquisition Memo</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/int._pl._iv_white_paper_10_16.doc">International
+                            Plaza Four Acquisition Memo</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Phipps Tower “Back of the Envelope” Analysis</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/phipps_bote.xls">Phipps Tower “Back
+                            of
+                            the
+                            Envelope”
+                            Analysis</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>USF&G Office Building Acquisition Memo</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc_1986_usfg_office_bldg.pdf">USF&G
+                            Office
+                            Building
+                            Acquisition Memo</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>International Center Acquisition Memo</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc_1986_international_center_iii.pdf">International
+                                Center Acquisition Memo</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>TCRC Building Development Equity Joint Venture</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/res._1985_tcrc_building.pdf">TCRC
+                            Building
+                            Development Equity Joint Venture</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Phipps Tower Renderings</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACZ5Y9v1P29BX1S0fQZzD56a/Examples/MIller%20Ex/--1%20Phipps%20Southwest%20Perspective%20View%20From%20Lenox.jpg">1
+                                Phipps Southwest Perspective View From Lenox</a></p>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AABqnYMG7a8VFKa1VkoXFkzQa/Examples/MIller%20Ex/--2%20Phipps%20South%20Entry%20Plaza%20Perspective%20View.jpg">2
+                                Phipps South Entry Plaza Perspective View</a></p>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAClz24Xge71z2kY0_zRd5bxa/Examples/MIller%20Ex/--3%20Phipps%20Lobby%20Rendering.jpg">3
+                                Phipps Lobby Rendering</a></p>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAALuG5ztYbzK_LPwrwYW37la/Examples/MIller%20Ex/--4%20Phipps%20Site%20Plan%20Rendering.jpg">4
+                                Phipps Site Plan Rendering</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Airpark West Capitalization Analysis Warehouse</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACuA75i6fXjvOhicpqISCOKa/Examples/MIller%20Ex/AirPark%20West%20Example%20.xls">AirPark
+                                West Example</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Audrey Kell Retail Acquisition Memo</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAB91PAgre3y6drFu7q3J-gBa/Examples/MIller%20Ex/Ardrey%20Kell%20Retail%20Acq%20Memo.pdf">Ardrey
+                                Kell Retail Acq Memo</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Centerpoint Warehouse Acquisition Memo</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADbepRLG-M3WLhfxmQoGlmHa/Examples/MIller%20Ex/Centerpoint%20Warehouse%20Acq%20Memo.pdf">Centerpoint
+                                Warehouse Acq Memo</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Columbia Retail Acquisition Memo</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAd1sFLJjf1C3roLazIX46Ba/Examples/MIller%20Ex/Columbia%20Retail%20Acqusisiton%20Memo.pdf">Columbia
+                                Retail Acqusisiton Memo</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Crosstown Office Acquisition Memo</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADUD1Mvcs8xg20dJl6HERcza/Examples/MIller%20Ex/Crosstown%20Center%20Office%20Proposal.doc">Crosstown
+                                Center Office Proposal</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>ESP Office Build to Suit Proposal</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAjZK7fjw8nKQchYqAS7iada/Examples/MIller%20Ex/ESP%20Associates%20Build%20to%20Suit%20Memo%281%29.pdf">ESP
+                                Associates Build to Suit Memo(1)</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Huntersville Retail Acquisition Memo</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AABArzV4mwg-fLBaUumHGCNaa/Examples/MIller%20Ex/Huntersville%20Retail%20Land%20Purchase.pdf">Huntersville
+                                Retail Land Purchase</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>International Plaza Photos and Renderings</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADteIm9PQv5EwA1hoE0R21Wa/Examples/MIller%20Ex/IP%20Aerial%202006.jpg">IP
+                                Aerial 2006</a></p>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACnmkravsx_MPoXnoaEUDzOa/Examples/MIller%20Ex/IP4%20oblique%20rendering%201FP.jpg">IP4
+                                oblique rendering 1FP</a></p>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAnfxyMm9fbXxB7uheU_mZ0a/Examples/MIller%20Ex/IP4%20Rendering.jpg">IP4
+                                Rendering</a></p>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AABQN_cmDa3st7-7xfFeRmyoa/Examples/MIller%20Ex/IP4%20site%20plan.jpg">IP4
+                                site plan</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>International Plaza IV Acquisition Memo to Investment Committee</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AABCNdAw1cnLXpwr4ANXrsqEa/Examples/MIller%20Ex/IP4%20White%20Paper%2010%2016.doc">IP4
+                                White Paper 10 16</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Little River Retail Acquisition Memo</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AABGF3oP8uy9XDi9i-PtrY2ra/Examples/MIller%20Ex/Little%20River%20Revised%20Retail%20memo.pdf">Little
+                                River Revised Retail memo</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Ocean Isle Retail Acquisition Memo</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACLj803SPIv3No0rrR207U-a/Examples/MIller%20Ex/Ocean%20Isle%20Retail%20Memo.pdf">Ocean
+                                Isle Retail Memo</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Piedmont Town Center Acquisition Memo</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADug7LQkschqkTV7cFw2_Voa/Examples/MIller%20Ex/Peidmont%20Town%20Center%20Mixed%20Use%20Memo.pdf">Peidmont
+                                Town Center Mixed Use Memo</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Phipps Acquisition Memo</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAABHelHHnA3tbiMpxYcnzpYa/Examples/MIller%20Ex/Phipps%20Cover%20Memo%2011-5-07.pdf">Phipps
+                                Cover Memo 11-5-07</a></p>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAD6j4E0S0Q0eYdF87HV0MCba/Examples/MIller%20Ex/Phipps%20Investment%2011-5-07.pdf">Phipps
+                                Investment 11-5-07</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Land Bay Financial summary</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADraEyfL9IaXgY14yMfoj7ca/Examples/MIller%20Ex/PY%20Land%20Bay%20A%20Fin%20Info%20%20May%2026.xls">PY
+                                Land Bay A Fin Info May 26</a></p>
+                    </div>
                 </div>
 
-                <div class="card-block">
-                    <h4>Kiwanis Trail</h4>
-                    <p>
-                        <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage1/Kiwanis+Trail.pdf">Kiwanis
-                            Trail</a></p>
+                <div class="card my-4" id="t1stage5">
+                    <h3 class="card-header">Stage 5 – Building Operations I.5</h3>
+
+                    <div class="card-block">
+                        <h4>650 Massachusetts Avenue</h4>
+                        <p>
+                            <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage5/650+Massachusetts+Avenue.pdf">650
+                                Massachusetts Avenue</a></p>
+                    </div>
+
+                    <div class="card-block">
+                        <h4>1400 K Street</h4>
+                        <p>
+                            <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage5/1400+K+Street.pdf">1400
+                                K Street</a></p>
+                    </div>
+
+                    <div class="card-block">
+                        <h4>1812 N. Moore</h4>
+                        <p>
+                            <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage5/1812+N+Moore.pdf">1812
+                                N. Moore</a></p>
+                    </div>
+
+                    <div class="card-block">
+                        <h4>One and Two Potomac Yard</h4>
+                        <p>
+                            <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage5/One+&+Two+Potomac+Yard.pdf">One
+                                and
+                                Two Potomac Yard</a></p>
+                    </div>
+
+                    <div class="card-block">
+                        <h4>Office Greenbrier Tower I & II Acquisition Memo</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc_1988_greenbrier_towersiii.pdf">Office
+                            Greenbrier
+                            Tower I & II Acquisition Memo</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Office Atlanta Technology Center Joint Venture Proposal</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc_1988_atlanta_technology_center.pdf">Office
+                                Atlanta Technology Center Joint Venture Proposal</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Office Northeast Business Center Acquisition Memo</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc_1988_northeast_business_center.pdf">Office
+                                Northeast Business Center Acquisition Memo</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Retail Shadeland Station Acquisition Memo</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ret_1990_shadeland_station.pdf">Retail
+                            Shadeland
+                            Station Acquisition Memo</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Apartments Hampton Courts Acquisition Memo</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt_1988_hampton_courts.pdf">Apartments
+                            Hampton
+                            Courts Acquisition Memo</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Apartments Habersham Point Debt/Equity JV Proposal</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt_1989_habersham_pointe.pdf">Apartments
+                            Habersham
+                            Point Debt/Equity JV Proposal</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Apartments Bristol Bay Debt/Equity JV Proposal</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt_1989_bristol_bay.pdf">Apartments
+                            Bristol
+                            Bay
+                            Debt/Equity JV Proposal</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Apartments Penderbrook Debt/Equity JV Proposal</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt_1988_penderbrook.pdf">Apartments
+                            Penderbrook
+                            Debt/Equity JV Proposal</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Apartments St. Andrews Acquisition Memo</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt_1990_st._andrews_apartment.pdf">Apartments
+                            St.
+                            Andrews Acquisition Memo</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>CR Due Diligence Checklist</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACQ7fsEmfk_jvWplNGy4hyza/Examples/MIller%20Ex/Due%20Diligence%20Checklist%20.doc">Due
+                                Diligence Checklist</a></p>
+                    </div>
                 </div>
 
-                <div class="card-block">
-                    <h4>Vanderbilt University</h4>
-                    <p>
-                        <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage1/Vanderbilt+University+and+Peabody+College.pdf">Vanderbilt
-                            University</a></p>
-                </div>
-            </div>
+                <div class="card my-4" id="t1stage6">
+                    <h3 class="card-header">Stage 6 – Building Renovations I.6</h3>
 
-            <div class="card my-4">
-                <h3 class="card-header">Stage 2 – Land Packaging I.2</h3>
+                    <div class="card-block">
+                        <h4>1988 Warehouse Example</h4>
+                        <p>
+                            <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage6/1988+Warehouse.pdf">1988
+                                Warehouse
+                                Example</a></p>
+                    </div>
 
-                <div class="card-block">
-                    <h4>Armed Forces Retirement Home</h4>
-                    <p>
-                        <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage2/Armed+Forces+Retirement+Home.pdf">Armed
-                        Forces Retirement Home</a></p>
-                </div>
+                    <div class="card-block">
+                        <h4>2001 M Street </h4>
+                        <p>
+                            <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage6/2001+M+Street.pdf">2001
+                                M Street </a>
+                        </p>
+                    </div>
 
-                <div class="card-block">
-                    <h4>Crown Farm</h4>
-                    <p>
-                        <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage2/Crown+Farm.pdf">Crown
-                            Farm</a></p>
-                </div>
+                    <div class="card-block">
+                        <h4>Shops at Georgetown</h4>
+                        <p>
+                            <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage6/The+Shops+at+Georgetown.pdf">Shops
+                                at
+                                Georgetown</a></p>
+                    </div>
 
-                <div class="card-block">
-                    <h4>Potomac Yard</h4>
-                    <p>
-                        <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage2/Potomac+Yard+(with+overview).pdf">Potomac
-                        Yard</a></p>
-                </div>
-
-                <div class="card-block">
-                    <h4>Greensboro Grove Report</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/3.9.14_greensboro_grove_report.pdf">Greensboro
-                        Grove
-                        Report</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Armed Forces Retirement Home Overall Presentation</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/msre_afrh_packaging.pdf">Armed Forces
-                        Retirement
-                        Home Overall Presentation</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Armed Forces Retirement Home Response to RFP 12.09.05</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/_afrh_rfp_draft_12.09.05.pdf">Armed
-                        Forces
-                        Retirement Home Response to RFP 12.09.05</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Armed Forces Retirement Home Acquisition Memo</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/afrh_ic_memo_05_09_2008.doc">Armed
-                        Forces
-                        Retirement
-                        Home Acquisition Memo</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Armed Forces Retirement Home Hold Harmless Agreement</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/afrh_hold_harmless_agreement.pdf">Armed
-                        Forces
-                        Retirement Home Hold Harmless Agreement</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Armed Forces Retirement Home Project Highlights</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/afrh_project_highlights_oct_30_06.doc">Armed
-                        Forces
-                        Retirement Home Project Highlights</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>AFRH Response to issues in the Development Agreement and the Land ease</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACSyHwi6HHSjp_lLKTZnDMTa/Examples/MIller%20Ex/AFRH%207-6-07%20response%20to%20Crescent%20issues%20list%20%20%2845697391%20v1%29.DOC">AFRH
-                            7-6-07 response to Crescent issues list (45697391 v1)</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Letter of Intent for Cabin Mountain Land</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AABDGibPJ8AKu4urSmzZvgT0a/Examples/MIller%20Ex/9-4-07Letter_IntentCabin%20Mountainclean.DOC">9-4-07Letter_IntentCabin
-                            Mountainclean </a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Bells Landing Acquisition Memo to Investment Committee</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAoriodxfPDFJKXdhkG7LMJa/Examples/MIller%20Ex/Bells%20Landing%20White%20Paper%20%282%29.doc">Bells
-                            Landing White Paper (2)</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Lake Wylie Retail Land Acquisition Memo</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACspJJsQvC-s47cmJ-b4Im3a/Examples/MIller%20Ex/Lake%20Wylie%20Retail%20Land%20Memo.pdf">Lake
-                            Wylie Retail Land Memo</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>South Tryon Assemblage Acquisition Memo</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACRs5Rx2HFfdBgD11D40rcFa/Examples/MIller%20Ex/South%20Tryon%20Assempblage%20I.pdf">South
-                            Tryon Assempblage I</a></p>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAA3NcVgDt21R8V2DKaECEYBa/Examples/MIller%20Ex/South%20Tryon%20Assemblage%20II.pdf">South
-                            Tryon Assemblage II</a></p>
-                </div>
-            </div>
-
-            <div class="card my-4">
-                <h3 class="card-header">Stage 3 – Land Development I.3</h3>
-
-                <div class="card-block">
-                    <h4>Potomac Yard</h4>
-                    <p>
-                        <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage3/Potomac+Yard.pdf">Potomac
-                            Yard</a></p>
-                </div>
-
-                <div class="card-block">
-                    <h4>Crown Farm</h4>
-                    <p>
-                        <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage3/Crown+Farm.pdf">Crown
-                            Farm</a></p>
-                </div>
-
-                <div class="card-block">
-                    <h4>Potomac Yard Acquisition Memo</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/potmomac_yard_acquisition_oct_2000.doc">Potomac
-                        Yard
-                        Acquisition Memo</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Armed Forces Retirement Home Acquisition Memo</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/afrh_ic_memo_05_09_2008.doc">Armed
-                        Forces
-                        Retirement
-                        Home Acquisition Memo</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Armed Forces Retirement Home Development Agreement</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/afrh_dev_agreemtn_redline.rtf">Armed
-                        Forces
-                        Retirement Home Development Agreement</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Westfields Letter of Intent</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/westfield_loi.doc">Westfields Letter of
-                        Intent</a>
-                    </p>
-                </div>
-                <div class="card-block">
-                    <h4>Odum Farms Joint Venture Proposal</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/res._1985_odlum_farm.pdf">Odum Farms
-                        Joint
-                        Venture
-                        Proposal</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Industrial/Warehouse Silo Bend Equity Joint Venture</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/war_1988_silo_bend.pdf">Industrial/Warehouse
-                        Silo
-                        Bend Equity Joint Venture</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Industrial/Warehouse Silo Bend Phase II Equity Joint Venture</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/war_1989_silo_bend_ii.pdf">Industrial/Warehouse
-                        Silo
-                        Bend Phase II Equity Joint Venture</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Industrial/Warehouse T L James Equity Joint Venture</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/war._1985_t.l._james.pdf">Industrial/Warehouse
-                        T
-                        L
-                        James Equity Joint Venture</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Apartments Adobe Ranch Equity JV Proposal</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt_1986_adobe_ranch.pdf">Apartments
-                        Adobe
-                        Ranch
-                        Equity JV Proposal</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Armed Forces Retirement Home Acquisition Proposal</h4>
-                    <p>
-                        <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/armed_forces_retirement_home_investment_memo.pdf">Armed
-                            Forces Retirement Home Acquisition Proposal</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>AFRH Development Agreement between CR and AFRH</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADS1S_BPhIWy57iwrSgIEkOa/Examples/MIller%20Ex/10.11.06_AFRH%20Development%20Agreement%20-%20Developer%20Review%20Draft.DOC">10.11.06_AFRH
-                            Development Agreement - Developer Review Draft</a></p>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACSyHwi6HHSjp_lLKTZnDMTa/Examples/MIller%20Ex/AFRH%207-6-07%20response%20to%20Crescent%20issues%20list%20%20%2845697391%20v1%29.DOC">AFRH
-                            7-6-07 response to Crescent issues list (45697391 v1</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>AFRH Acquisition Memo to Investment Committee</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAp5IrEnIilonaeppGkC6uVa/Examples/MIller%20Ex/AFRH%20IC%20Memo%2005.09.2008.doc">AFRH
-                            IC Memo 05.09.2008</a></p>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AABYq0juSzWuvEO-E4xoNJx9a/Examples/MIller%20Ex/AFRM%20White%20Paper%20Exhibits.pdf">AFRM
-                            White Paper Exhibits</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Belgate Mixed Use Financial Projections</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAD539b21etK2-0a3V0uib7Aa/Examples/MIller%20Ex/Belgate%20Proforma%20Consolidated%20Belk%20Tract%2002.20.07.xls">Belgate
-                            Proforma Consolidated Belk Tract 02.20.07</a></p>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAoWpt34LsyXhDrbT9laU4Ja/Examples/MIller%20Ex/Belgate%20Simple%20Proforma.xls">Belgate
-                            Simple Proforma</a></p>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACqAGTYKNuroGwheK9tOPhma/Examples/MIller%20Ex/Belk%20Tract%20Ikea%20Dev%2012%2019%2006.xls">Belk
-                            Tract Ikea Dev 12 19 06</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Belgate Acquisition Memo to Investment Committee</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AABOgtBFagu56T3jE2J8yLela/Examples/MIller%20Ex/Belgate%20White%20Paper.doc">Belgate
-                            White Paper</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Buckeye Industrial Park Acquisition Memo</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAWVovTlZkMfnECsMxlc1uFa/Examples/MIller%20Ex/Buckeye%20Industrial%20Park%20Proforma%20-%20Paul%20Klick%20-%20Revised%20-%20Current.xls">Buckeye
-                            Industrial Park Proforma - Paul Klick - Revised – Current</a></p>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAD67cbTBEcRxsqEtfePohEya/Examples/MIller%20Ex/Buckeye%20Investment%20Memorandum%206.08.07">Buckeye
-                            Investment Memorandum 6.08.07</a></p>
-                </div>
-            </div>
-
-            <div class="card my-4">
-                <h3 class="card-header">Stage 4 -Building Development I.4</h3>
-
-                <div class="card-block">
-                    <h4>Potomac Yard</h4>
-                    <p>
-                        <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage4/Potomac+Yard.pdf">Potomac
-                            Yard</a></p>
-                </div>
-
-                <div class="card-block">
-                    <h4>Crown Farm</h4>
-                    <p>
-                        <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage4/Crown+Farm.pdf">Crown
-                            Farm</a></p>
-                </div>
-
-                <div class="card-block">
-                    <h4>Potomac Yard Arlington One and Two Potomac Yard Financial Feasibility
-                    </h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/bay_a_fin_info__may_26.xls">Potomac Yard
-                        Arlington
-                        One and Two Potomac Yard Financial Feasibility</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Potomac Yard Arlington Land Bay A “Back of the Envelope” Analysis</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/bote_for_land_bay_a.xls">Potomac Yard
-                        Arlington
-                        Land
-                        Bay A “Back of the Envelope” Analysis</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Airpark West “Back of the Envelope” Analysis</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/_airpark_bote.xls">Airpark West “Back of
-                        the
-                        Envelope” Analysis</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Airpark West Acquisition Memo</h4>
-                    <p>
-                        <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apw_infrastructure_white_paper_and_exhibits_1-4.pdf">Airpark
-                            West Acquisition Memo</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>International Plaza Four “Back of the Envelope” Analysis</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/bote_internatioal_plaza_four.xls">International
-                        Plaza Four “Back of the Envelope” Analysis</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>International Plaza Four Acquisition Memo</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/int._pl._iv_white_paper_10_16.doc">International
-                        Plaza Four Acquisition Memo</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Phipps Tower “Back of the Envelope” Analysis</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/phipps_bote.xls">Phipps Tower “Back of
-                        the
-                        Envelope”
-                        Analysis</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>USF&G Office Building Acquisition Memo</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc_1986_usfg_office_bldg.pdf">USF&G
-                        Office
-                        Building
-                        Acquisition Memo</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>International Center Acquisition Memo</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc_1986_international_center_iii.pdf">International
-                        Center Acquisition Memo</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>TCRC Building Development Equity Joint Venture</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/res._1985_tcrc_building.pdf">TCRC
-                        Building
-                        Development Equity Joint Venture</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Phipps Tower Renderings</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACZ5Y9v1P29BX1S0fQZzD56a/Examples/MIller%20Ex/--1%20Phipps%20Southwest%20Perspective%20View%20From%20Lenox.jpg">1
-                            Phipps Southwest Perspective View From Lenox</a></p>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AABqnYMG7a8VFKa1VkoXFkzQa/Examples/MIller%20Ex/--2%20Phipps%20South%20Entry%20Plaza%20Perspective%20View.jpg">2
-                            Phipps South Entry Plaza Perspective View</a></p>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAClz24Xge71z2kY0_zRd5bxa/Examples/MIller%20Ex/--3%20Phipps%20Lobby%20Rendering.jpg">3
-                            Phipps Lobby Rendering</a></p>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAALuG5ztYbzK_LPwrwYW37la/Examples/MIller%20Ex/--4%20Phipps%20Site%20Plan%20Rendering.jpg">4
-                            Phipps Site Plan Rendering</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Airpark West Capitalization Analysis Warehouse</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACuA75i6fXjvOhicpqISCOKa/Examples/MIller%20Ex/AirPark%20West%20Example%20.xls">AirPark
-                            West Example</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Audrey Kell Retail Acquisition Memo</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAB91PAgre3y6drFu7q3J-gBa/Examples/MIller%20Ex/Ardrey%20Kell%20Retail%20Acq%20Memo.pdf">Ardrey
-                            Kell Retail Acq Memo</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Centerpoint Warehouse Acquisition Memo</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADbepRLG-M3WLhfxmQoGlmHa/Examples/MIller%20Ex/Centerpoint%20Warehouse%20Acq%20Memo.pdf">Centerpoint
-                            Warehouse Acq Memo</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Columbia Retail Acquisition Memo</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAd1sFLJjf1C3roLazIX46Ba/Examples/MIller%20Ex/Columbia%20Retail%20Acqusisiton%20Memo.pdf">Columbia
-                            Retail Acqusisiton Memo</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Crosstown Office Acquisition Memo</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADUD1Mvcs8xg20dJl6HERcza/Examples/MIller%20Ex/Crosstown%20Center%20Office%20Proposal.doc">Crosstown
-                            Center Office Proposal</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>ESP Office Build to Suit Proposal</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAjZK7fjw8nKQchYqAS7iada/Examples/MIller%20Ex/ESP%20Associates%20Build%20to%20Suit%20Memo%281%29.pdf">ESP
-                            Associates Build to Suit Memo(1)</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Huntersville Retail Acquisition Memo</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AABArzV4mwg-fLBaUumHGCNaa/Examples/MIller%20Ex/Huntersville%20Retail%20Land%20Purchase.pdf">Huntersville
-                            Retail Land Purchase</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>International Plaza Photos and Renderings</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADteIm9PQv5EwA1hoE0R21Wa/Examples/MIller%20Ex/IP%20Aerial%202006.jpg">IP
-                            Aerial 2006</a></p>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACnmkravsx_MPoXnoaEUDzOa/Examples/MIller%20Ex/IP4%20oblique%20rendering%201FP.jpg">IP4
-                            oblique rendering 1FP</a></p>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAnfxyMm9fbXxB7uheU_mZ0a/Examples/MIller%20Ex/IP4%20Rendering.jpg">IP4
-                            Rendering</a></p>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AABQN_cmDa3st7-7xfFeRmyoa/Examples/MIller%20Ex/IP4%20site%20plan.jpg">IP4
-                            site plan</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>International Plaza IV Acquisition Memo to Investment Committee</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AABCNdAw1cnLXpwr4ANXrsqEa/Examples/MIller%20Ex/IP4%20White%20Paper%2010%2016.doc">IP4
-                            White Paper 10 16</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Little River Retail Acquisition Memo</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AABGF3oP8uy9XDi9i-PtrY2ra/Examples/MIller%20Ex/Little%20River%20Revised%20Retail%20memo.pdf">Little
-                            River Revised Retail memo</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Ocean Isle Retail Acquisition Memo</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACLj803SPIv3No0rrR207U-a/Examples/MIller%20Ex/Ocean%20Isle%20Retail%20Memo.pdf">Ocean
-                            Isle Retail Memo</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Piedmont Town Center Acquisition Memo</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADug7LQkschqkTV7cFw2_Voa/Examples/MIller%20Ex/Peidmont%20Town%20Center%20Mixed%20Use%20Memo.pdf">Peidmont
-                            Town Center Mixed Use Memo</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Phipps Acquisition Memo</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAABHelHHnA3tbiMpxYcnzpYa/Examples/MIller%20Ex/Phipps%20Cover%20Memo%2011-5-07.pdf">Phipps
-                            Cover Memo 11-5-07</a></p>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAD6j4E0S0Q0eYdF87HV0MCba/Examples/MIller%20Ex/Phipps%20Investment%2011-5-07.pdf">Phipps
-                            Investment 11-5-07</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Land Bay Financial summary</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADraEyfL9IaXgY14yMfoj7ca/Examples/MIller%20Ex/PY%20Land%20Bay%20A%20Fin%20Info%20%20May%2026.xls">PY
-                            Land Bay A Fin Info May 26</a></p>
-                </div>
-            </div>
-
-            <div class="card my-4">
-                <h3 class="card-header">Stage 5 – Building Operations I.5</h3>
-
-                <div class="card-block">
-                    <h4>650 Massachusetts Avenue</h4>
-                    <p>
-                        <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage5/650+Massachusetts+Avenue.pdf">650
-                        Massachusetts Avenue</a></p>
-                </div>
-
-                <div class="card-block">
-                    <h4>1400 K Street</h4>
-                    <p>
-                        <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage5/1400+K+Street.pdf">1400
-                            K Street</a></p>
-                </div>
-
-                <div class="card-block">
-                    <h4>1812 N. Moore</h4>
-                    <p>
-                        <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage5/1812+N+Moore.pdf">1812
-                            N. Moore</a></p>
-                </div>
-
-                <div class="card-block">
-                    <h4>One and Two Potomac Yard</h4>
-                    <p>
-                        <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage5/One+&+Two+Potomac+Yard.pdf">One
-                            and
-                        Two Potomac Yard</a></p>
-                </div>
-
-                <div class="card-block">
-                    <h4>Office Greenbrier Tower I & II Acquisition Memo</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc_1988_greenbrier_towersiii.pdf">Office
-                        Greenbrier
-                        Tower I & II Acquisition Memo</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Office Atlanta Technology Center Joint Venture Proposal</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc_1988_atlanta_technology_center.pdf">Office
-                        Atlanta Technology Center Joint Venture Proposal</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Office Northeast Business Center Acquisition Memo</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc_1988_northeast_business_center.pdf">Office
-                        Northeast Business Center Acquisition Memo</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Retail Shadeland Station Acquisition Memo</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ret_1990_shadeland_station.pdf">Retail
-                        Shadeland
-                        Station Acquisition Memo</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Apartments Hampton Courts Acquisition Memo</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt_1988_hampton_courts.pdf">Apartments
-                        Hampton
-                        Courts Acquisition Memo</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Apartments Habersham Point Debt/Equity JV Proposal</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt_1989_habersham_pointe.pdf">Apartments
-                        Habersham
-                        Point Debt/Equity JV Proposal</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Apartments Bristol Bay Debt/Equity JV Proposal</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt_1989_bristol_bay.pdf">Apartments
-                        Bristol
-                        Bay
-                        Debt/Equity JV Proposal</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Apartments Penderbrook Debt/Equity JV Proposal</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt_1988_penderbrook.pdf">Apartments
-                        Penderbrook
-                        Debt/Equity JV Proposal</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Apartments St. Andrews Acquisition Memo</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt_1990_st._andrews_apartment.pdf">Apartments
-                        St.
-                        Andrews Acquisition Memo</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>CR Due Diligence Checklist</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACQ7fsEmfk_jvWplNGy4hyza/Examples/MIller%20Ex/Due%20Diligence%20Checklist%20.doc">Due
-                            Diligence Checklist</a></p>
-                </div>
-            </div>
-
-            <div class="card my-4">
-                <h3 class="card-header">Stage 6 – Building Renovations I.6</h3>
-
-                <div class="card-block">
-                    <h4>1988 Warehouse Example</h4>
-                    <p>
-                        <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage6/1988+Warehouse.pdf">1988
-                            Warehouse
-                        Example</a></p>
-                </div>
-
-                <div class="card-block">
-                    <h4>2001 M Street </h4>
-                    <p>
-                        <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage6/2001+M+Street.pdf">2001
-                            M Street </a>
-                    </p>
-                </div>
-
-                <div class="card-block">
-                    <h4>Shops at Georgetown</h4>
-                    <p>
-                        <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage6/The+Shops+at+Georgetown.pdf">Shops
-                            at
-                        Georgetown</a></p>
-                </div>
-
-                <div class="card-block">
-                    <h4>Tysons Corner Shopping Center</h4>
-                    <p>
-                        <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage6/Tysons+Corner+Shopping+Center.pdf">Tysons
-                        Corner Shopping Center</a></p>
-                </div>
+                    <div class="card-block">
+                        <h4>Tysons Corner Shopping Center</h4>
+                        <p>
+                            <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage6/Tysons+Corner+Shopping+Center.pdf">Tysons
+                                Corner Shopping Center</a></p>
+                    </div>
 
 
-                <div class="card-block">
-                    <h4>Tysons Corner Acquisition Memo</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ret._1985_tysons_corner.pdf">Tysons
-                        Corner
-                        Acquisition Memo</a></p>
+                    <div class="card-block">
+                        <h4>Tysons Corner Acquisition Memo</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ret._1985_tysons_corner.pdf">Tysons
+                            Corner
+                            Acquisition Memo</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>LeVeque Acquisition Memo</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc._1987_the_leveque.pdf">LeVeque
+                            Acquisition
+                            Memo</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Oklahoma City Walmart Acquisition Memo</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ret_1991_oklahoma_city_wal-mart.pdf">Oklahoma
+                                City
+                                Walmart Acquisition Memo</a></p>
+                    </div>
                 </div>
-                <div class="card-block">
-                    <h4>LeVeque Acquisition Memo</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc._1987_the_leveque.pdf">LeVeque
-                        Acquisition
-                        Memo</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Oklahoma City Walmart Acquisition Memo</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ret_1991_oklahoma_city_wal-mart.pdf">Oklahoma
-                        City
-                        Walmart Acquisition Memo</a></p>
-                </div>
-            </div>
-            <div class="card my-4">
-                <h3 class="card-header">Stage 7- Property Redevelopment I.7</h3>
+                <div class="card my-4" id="t1stage7">
+                    <h3 class="card-header">Stage 7- Property Redevelopment I.7</h3>
 
-                <div class="card-block">
-                    <h4>Blatchford Edmonton Canada</h4>
-                    <p>
-                        <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage7/Blatchford+Edmonton+Canada.pdf">Blatchford
-                        Edmonton Canada</a></p>
-                </div>
+                    <div class="card-block">
+                        <h4>Blatchford Edmonton Canada</h4>
+                        <p>
+                            <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage7/Blatchford+Edmonton+Canada.pdf">Blatchford
+                                Edmonton Canada</a></p>
+                    </div>
 
-                <div class="card-block">
-                    <h4>St. Elizabeth</h4>
-                    <p>
-                        <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage7/St+Elizabeth.pdf">St.
-                        Elizabeth</a></p>
+                    <div class="card-block">
+                        <h4>St. Elizabeth</h4>
+                        <p>
+                            <a href="https://s3.amazonaws.com/realestatedevelopmentmatrix-resources/task1/stage7/St+Elizabeth.pdf">St.
+                                Elizabeth</a></p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <hr><!--TASK 2-->
 
-    <div class="card">
-        <img class="card-img" height="200"
-             src="https://static.pexels.com/photos/41170/architecture-blue-building-business-41170.jpeg">
-        <div class="card-img-overlay card-inverse">
-            <h2 class="card-title">Task II – Financing</h2>
-        </div>
-        <div class="card-block">
-            <div class="card my-4">
-                <h3 class="card-header">Stage 1 – Land Banking II.1</h3>
+        <div class="card" id="task2">
+            <img class="card-img" height="200"
+                 src="https://static.pexels.com/photos/41170/architecture-blue-building-business-41170.jpeg">
+            <div class="card-img-overlay card-inverse">
+                <h2 class="card-title">Task II – Financing</h2>
             </div>
+            <div class="card-block">
+                <div class="card my-4" id="t2stage1">
+                    <h3 class="card-header">Stage 1 – Land Banking II.1</h3>
+                </div>
 
-            <div class="card my-4">
-                <h3 class="card-header">Stage 2 – Land Packaging II.2</h3>
-                <div class="card-block">
-                    <h4>Crosstown Ground Lease Refinancing</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADLeRV6F_6NQ_ZFSpMBJtnBa/Examples/MIller%20Ex/Greenville%20Ground%20Lease%20Refi.pdf">Greenville
-                            Ground Lease Refi</a></p>
+                <div class="card my-4" id="t2stage2">
+                    <h3 class="card-header">Stage 2 – Land Packaging II.2</h3>
+                    <div class="card-block">
+                        <h4>Crosstown Ground Lease Refinancing</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADLeRV6F_6NQ_ZFSpMBJtnBa/Examples/MIller%20Ex/Greenville%20Ground%20Lease%20Refi.pdf">Greenville
+                                Ground Lease Refi</a></p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card my-4">
-                <h3 class="card-header">Stage 3 – Land Development II.3</h3>
-                <div class="card-block">
-                    <h4>Potomac Yard Arlington and Alexandria Budget Projections</h4>
-                    <p>
-                        <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/2002e_land_development_model_concept_plan.xls">Potomac
-                            Yard Arlington and Alexandria Budget Projections</a></p>
+                <div class="card my-4" id="t2stage3">
+                    <h3 class="card-header">Stage 3 – Land Development II.3</h3>
+                    <div class="card-block">
+                        <h4>Potomac Yard Arlington and Alexandria Budget Projections</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/2002e_land_development_model_concept_plan.xls">Potomac
+                                Yard Arlington and Alexandria Budget Projections</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Potomac Yard Arlington and Alexandria Land Valuations for Budgets</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/dbk-_potomac_yard_land_valuation_analysis_11-20-02.xls">Potomac
+                                Yard Arlington and Alexandria Land Valuations for Budgets</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Armed Forces Retirement Home Master Land Lease</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/afrh_master_lease_red_line.rtf">Armed
+                            Forces
+                            Retirement Home Master Land Lease</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Armed Forces Retirement Home Organizational Chart</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/afrh_spe_orgchart_11_05_2007.pdf">Armed
+                            Forces
+                            Retirement Home Organizational Chart</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Armed Forces Retirement Home Pricing model</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/afrh_pricing_model.xls">Armed Forces
+                            Retirement
+                            Home
+                            Pricing model</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Brook Highland Participating Mortgage</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/golres_1989_brookhighland.pdf">Brook
+                            Highland
+                            Participating Mortgage</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>AFRH Master Land Lease</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAD3KekbUP6F4AFabyopMbz5a/Examples/MIller%20Ex/10.11.06_AFRH%20Master%20Lease%20-%20Developer%20Review%20Draft.DOC">10.11.06_AFRH
+                                Master Lease - Developer Review Draft</a></p>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADNIXAxJlfDklSapV6DBCRCa/Examples/MIller%20Ex/10.11.06_AFRH%20Parcel%20Lease%20-%20Developer%20Review%20Draft.DOC">10.11.06_AFRH
+                                Parcel Lease - Developer Review Draft</a></p>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAw_PXZgZvSvFJXAd7zNEgPa/Examples/MIller%20Ex/Ground%20Lease%20Revised%209-3.xls">Ground
+                                Lease Revised 9-3</a></p>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAY15K_Yr5MX5tcv0qfFjJ4a/Examples/MIller%20Ex/Ground%20lease%20transmission%20revised%204.doc">Ground
+                                lease transmission revised 4</a></p>
+                    </div>
                 </div>
-                <div class="card-block">
-                    <h4>Potomac Yard Arlington and Alexandria Land Valuations for Budgets</h4>
-                    <p>
-                        <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/dbk-_potomac_yard_land_valuation_analysis_11-20-02.xls">Potomac
-                            Yard Arlington and Alexandria Land Valuations for Budgets</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Armed Forces Retirement Home Master Land Lease</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/afrh_master_lease_red_line.rtf">Armed
-                        Forces
-                        Retirement Home Master Land Lease</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Armed Forces Retirement Home Organizational Chart</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/afrh_spe_orgchart_11_05_2007.pdf">Armed
-                        Forces
-                        Retirement Home Organizational Chart</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Armed Forces Retirement Home Pricing model</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/afrh_pricing_model.xls">Armed Forces
-                        Retirement
-                        Home
-                        Pricing model</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Brook Highland Participating Mortgage</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/golres_1989_brookhighland.pdf">Brook
-                        Highland
-                        Participating Mortgage</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>AFRH Master Land Lease</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAD3KekbUP6F4AFabyopMbz5a/Examples/MIller%20Ex/10.11.06_AFRH%20Master%20Lease%20-%20Developer%20Review%20Draft.DOC">10.11.06_AFRH
-                            Master Lease - Developer Review Draft</a></p>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADNIXAxJlfDklSapV6DBCRCa/Examples/MIller%20Ex/10.11.06_AFRH%20Parcel%20Lease%20-%20Developer%20Review%20Draft.DOC">10.11.06_AFRH
-                            Parcel Lease - Developer Review Draft</a></p>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAw_PXZgZvSvFJXAd7zNEgPa/Examples/MIller%20Ex/Ground%20Lease%20Revised%209-3.xls">Ground
-                            Lease Revised 9-3</a></p>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAY15K_Yr5MX5tcv0qfFjJ4a/Examples/MIller%20Ex/Ground%20lease%20transmission%20revised%204.doc">Ground
-                            lease transmission revised 4</a></p>
-                </div>
-            </div>
 
-            <div class="card my-4">
-                <h3 class="card-header">Stage 4 -Building Development II.4</h3>
-                <div class="card-block">
-                    <h4>Potomac Yard Arlington Land Bay A Financing Proposal “Just the Facts”</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/just_the_facts_mar_19_clarified.xls">Potomac
-                        Yard
-                        Arlington Land Bay A Financing Proposal “Just the Facts”</a></p>
+                <div class="card my-4" id="t2stage4">
+                    <h3 class="card-header">Stage 4 -Building Development II.4</h3>
+                    <div class="card-block">
+                        <h4>Potomac Yard Arlington Land Bay A Financing Proposal “Just the Facts”</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/just_the_facts_mar_19_clarified.xls">Potomac
+                                Yard
+                                Arlington Land Bay A Financing Proposal “Just the Facts”</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Phipps Tower Joint Venture Memo</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/phipps_tower_memo.doc">Phipps Tower
+                            Joint
+                            Venture
+                            Memo</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>International Plaza Four Direct Capitalization Analysis</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAydpyjWA-9jkaSYLWfsJtwa/Examples/MIller%20Ex/IP4%20Direct%20Cap%20%20Anal.xls">IP4
+                                Direct Cap Anal</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Piedmont Town Center Financial Projections</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAzaI3Lia5OyvTGqF9vF19ua/Examples/MIller%20Ex/Piedmont%20Example%202.xls">Piedmont
+                                Example 2</a></p>
+                    </div>
                 </div>
-                <div class="card-block">
-                    <h4>Phipps Tower Joint Venture Memo</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/phipps_tower_memo.doc">Phipps Tower
-                        Joint
-                        Venture
-                        Memo</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>International Plaza Four Direct Capitalization Analysis</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAydpyjWA-9jkaSYLWfsJtwa/Examples/MIller%20Ex/IP4%20Direct%20Cap%20%20Anal.xls">IP4
-                            Direct Cap Anal</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Piedmont Town Center Financial Projections</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAzaI3Lia5OyvTGqF9vF19ua/Examples/MIller%20Ex/Piedmont%20Example%202.xls">Piedmont
-                            Example 2</a></p>
-                </div>
-            </div>
 
-            <div class="card my-4">
-                <h3 class="card-header">Stage 5 – Building Operations II.5</h3>
-                <div class="card-block">
-                    <h4>Bent Tree Tower Participating Mortgage Proposal</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc._1984_bent_tree.pdf">Bent Tree Tower
-                        Participating Mortgage Proposal</a></p>
+                <div class="card my-4" id="t2stage5">
+                    <h3 class="card-header">Stage 5 – Building Operations II.5</h3>
+                    <div class="card-block">
+                        <h4>Bent Tree Tower Participating Mortgage Proposal</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc._1984_bent_tree.pdf">Bent Tree
+                            Tower
+                            Participating Mortgage Proposal</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Overlook III Participating Mortgage Proposal</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc._1985_overlook_3.pdf">Overlook
+                            III
+                            Participating
+                            Mortgage Proposal</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Two Newton Place Participating Mortgage Proposal</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc._1986_two_newton_place.pdf">Two
+                            Newton Place
+                            Participating Mortgage Proposal</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Ohio EPA Participating Mortgage Proposal</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc_1986_ohio_epa.pdf">Ohio EPA
+                            Participating
+                            Mortgage Proposal</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Hunters Hill Participating Mortgage Proposal</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc_1986_hunterss_hill_i.pdf">Hunters
+                            Hill
+                            Participating Mortgage Proposal</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Office Ballston Corporate Center Participating Mortgage</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc_1986_ballston_corporate_center.pdf">Office
+                                Ballston Corporate Center Participating Mortgage</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>office Meadow Brook Buildings 1, 2, & 3 Participating Mortgage</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/meadow_brook_corporate_park.pdf">office
+                            Meadow
+                            Brook
+                            Buildings 1, 2, & 3 Participating Mortgage</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Office Centrepointe Participating Mortgage</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc._1987_centerpointe.pdf">Office
+                            Centrepointe
+                            Participating Mortgage</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Meadow Brook 300 Participating Mortgage</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc_1988_meadow_brook_300.pdf">Meadow
+                            Brook 300
+                            Participating Mortgage</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Howell Mill Square Participating Mortgage</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ret._1984_howell_mill_square.pdf">Howell
+                            Mill
+                            Square
+                            Participating Mortgage</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Duke Industrial Portfolio Participating Loan</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/duke_industrial_portfolio.pdf">Duke
+                            Industrial
+                            Portfolio Participating Loan</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Bolden Interstate Park Participating Mortgage</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ind.__1987_boulden_interstate_park.pdf">Bolden
+                                Interstate Park Participating Mortgage</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Bolden Interchange Park Participating Mortgage</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ind_1988_boulden_interchange_park_ii.pdf">Bolden
+                                Interchange Park Participating Mortgage</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Apartments Sullivan Portfolio Participating Mortgage</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt._1984_sullivan.pdf">Apartments
+                            Sullivan
+                            Portfolio Participating Mortgage</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Apartments Rancho Vallarta Participating Mortgage</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt._1985_rancho_vallarta.pdf">Apartments
+                            Rancho
+                            Vallarta Participating Mortgage</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Apartments Woodlawn Apartments Debt/Equity JV</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt_1988_woodlawn_gables.pdf">Apartments
+                            Woodlawn
+                            Apartments Debt/Equity JV</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Apartments Bowling Brook II Debt/Equity JV</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt._1989_bowling_brook.pdf">Apartments
+                            Bowling
+                            Brook II Debt/Equity JV</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Apartments Turnberry Lake village Participating Mortgage</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt_1989_turnberry_lake_village.pdf">Apartments
+                                Turnberry Lake village Participating Mortgage</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Apartments Bay court Participating Mortgage</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt._1989_bay_court.pdf">Apartments
+                            Bay
+                            court
+                            Participating Mortgage</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Apartments Trammel Crow Apartment Participating Mortgage</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt._1987_trammell_crow_apt.pdf">Apartments
+                            Trammel
+                            Crow Apartment Participating Mortgage</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Apartments Alden Pond Participating Mortgage</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/alden_pond_apartments.pdf">Apartments
+                            Alden Pond
+                            Participating Mortgage</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Apartments Vinings Participating Mortgage</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt_1990_vinings.pdf">Apartments
+                            Vinings
+                            Participating Mortgage</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Hotels Guest Quarters Participating Mortgage</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/guest_quarters_hotel.pdf">Hotels
+                            Guest
+                            Quarters
+                            Participating Mortgage</a></p>
+                    </div>
                 </div>
-                <div class="card-block">
-                    <h4>Overlook III Participating Mortgage Proposal</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc._1985_overlook_3.pdf">Overlook III
-                        Participating
-                        Mortgage Proposal</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Two Newton Place Participating Mortgage Proposal</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc._1986_two_newton_place.pdf">Two
-                        Newton Place
-                        Participating Mortgage Proposal</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Ohio EPA Participating Mortgage Proposal</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc_1986_ohio_epa.pdf">Ohio EPA
-                        Participating
-                        Mortgage Proposal</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Hunters Hill Participating Mortgage Proposal</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc_1986_hunterss_hill_i.pdf">Hunters
-                        Hill
-                        Participating Mortgage Proposal</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Office Ballston Corporate Center Participating Mortgage</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc_1986_ballston_corporate_center.pdf">Office
-                        Ballston Corporate Center Participating Mortgage</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>office Meadow Brook Buildings 1, 2, & 3 Participating Mortgage</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/meadow_brook_corporate_park.pdf">office
-                        Meadow
-                        Brook
-                        Buildings 1, 2, & 3 Participating Mortgage</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Office Centrepointe Participating Mortgage</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc._1987_centerpointe.pdf">Office
-                        Centrepointe
-                        Participating Mortgage</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Meadow Brook 300 Participating Mortgage</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ofc_1988_meadow_brook_300.pdf">Meadow
-                        Brook 300
-                        Participating Mortgage</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Howell Mill Square Participating Mortgage</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ret._1984_howell_mill_square.pdf">Howell
-                        Mill
-                        Square
-                        Participating Mortgage</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Duke Industrial Portfolio Participating Loan</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/duke_industrial_portfolio.pdf">Duke
-                        Industrial
-                        Portfolio Participating Loan</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Bolden Interstate Park Participating Mortgage</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ind.__1987_boulden_interstate_park.pdf">Bolden
-                        Interstate Park Participating Mortgage</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Bolden Interchange Park Participating Mortgage</h4>
-                    <p>
-                        <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/ind_1988_boulden_interchange_park_ii.pdf">Bolden
-                            Interchange Park Participating Mortgage</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Apartments Sullivan Portfolio Participating Mortgage</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt._1984_sullivan.pdf">Apartments
-                        Sullivan
-                        Portfolio Participating Mortgage</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Apartments Rancho Vallarta Participating Mortgage</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt._1985_rancho_vallarta.pdf">Apartments
-                        Rancho
-                        Vallarta Participating Mortgage</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Apartments Woodlawn Apartments Debt/Equity JV</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt_1988_woodlawn_gables.pdf">Apartments
-                        Woodlawn
-                        Apartments Debt/Equity JV</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Apartments Bowling Brook II Debt/Equity JV</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt._1989_bowling_brook.pdf">Apartments
-                        Bowling
-                        Brook II Debt/Equity JV</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Apartments Turnberry Lake village Participating Mortgage</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt_1989_turnberry_lake_village.pdf">Apartments
-                        Turnberry Lake village Participating Mortgage</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Apartments Bay court Participating Mortgage</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt._1989_bay_court.pdf">Apartments Bay
-                        court
-                        Participating Mortgage</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Apartments Trammel Crow Apartment Participating Mortgage</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt._1987_trammell_crow_apt.pdf">Apartments
-                        Trammel
-                        Crow Apartment Participating Mortgage</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Apartments Alden Pond Participating Mortgage</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/alden_pond_apartments.pdf">Apartments
-                        Alden Pond
-                        Participating Mortgage</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Apartments Vinings Participating Mortgage</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/apt_1990_vinings.pdf">Apartments Vinings
-                        Participating Mortgage</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Hotels Guest Quarters Participating Mortgage</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/guest_quarters_hotel.pdf">Hotels Guest
-                        Quarters
-                        Participating Mortgage</a></p>
-                </div>
-            </div>
 
-            <div class="card my-4">
-                <h3 class="card-header">Stage 6 – Building Renovations II.6</h3>
-                <div class="card-block">
-                    <h4>Hotels Annapolis Waterfront Participating Mortgage</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/annapolis_waterfront_hotel.pdf">Hotels
-                        Annapolis
-                        Waterfront Participating Mortgage</a></p>
+                <div class="card my-4" id="t2stage6">
+                    <h3 class="card-header">Stage 6 – Building Renovations II.6</h3>
+                    <div class="card-block">
+                        <h4>Hotels Annapolis Waterfront Participating Mortgage</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/annapolis_waterfront_hotel.pdf">Hotels
+                            Annapolis
+                            Waterfront Participating Mortgage</a></p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card my-4">
-                <h3 class="card-header">Stage 7- Property Redevelopment II.7</h3>
-            </div>
-        </div>
-    </div>
-    <hr><!--TASK 3-->
-
-    <div class="card">
-        <img class="card-img" height="200"
-             src="https://static.pexels.com/photos/41170/architecture-blue-building-business-41170.jpeg">
-        <div class="card-img-overlay card-inverse">
-            <h2 class="card-title">Task III – Marketing Analysis and Strategies</h2>
-        </div>
-
-        <div class="card-block">
-            <div class="card my-4">
-                <h3 class="card-header">Stage 1 – Land Banking III.1</h3>
-            </div>
-
-            <div class="card my-4">
-                <h3 class="card-header">Stage 2 – Land Packaging III.2</h3>
-                <div class="card-block">
-                    <h4>Armed Forces Retirement Home Press Release March 26 2007</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/afrh_press_release_03.26.07.pdf">Armed
-                        Forces
-                        Retirement Home Press Release March 26 2007</a></p>
+                <div class="card my-4" id="t2stage7">
+                    <h3 class="card-header">Stage 7- Property Redevelopment II.7</h3>
                 </div>
-                <div class="card-block">
-                    <h4>AFRH Press Release dated June 14 2006</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADlgtTd0Y6F5ZqEQjqAZ-DMa/Examples/MIller%20Ex/AFRH%20press%20release%20June%2014%2006.pdf">AFRH
-                            press release June 14 06</a></p>
-                </div>
-            </div>
-
-            <div class="card my-4">
-                <h3 class="card-header">Stage 3 – Land Development III.3</h3>
-                <div class="card-block">
-                    <h4>Potomac Yard Marketing</h4>
-                    <p>
-                        <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/potomac_yard_and_the_water_quality_of_the_potomac_river.pdf">Potomac
-                            Yard Marketing</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Potomac Yard Arlington Letter of Intent from Possible Buyers</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/arl._res_loi_sum_8_bidders.xls">Potomac
-                        Yard
-                        Arlington Letter of Intent from Possible Buyers</a></p>
-                </div>
-            </div>
-
-            <div class="card my-4">
-                <h3 class="card-header">Stage 4 -Building Development III.4</h3>
-                <div class="card-block">
-                    <h4>Potomac Yard Arlington One and Two Potomac Yard Marketing Brochure</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/20121105161247660.pdf">Potomac Yard
-                        Arlington
-                        One
-                        and Two Potomac Yard Marketing Brochure</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>NGA letter of Intent</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACkbjcECfhpY-doIEmggWM4a/Examples/MIller%20Ex/NGA%20lette%20of%20Intent.doc">NGA
-                            lette of Intent</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Presentation to NGA</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AABaJZUDAxi1hOidBsQBjdAda/Examples/MIller%20Ex/NGA%20Presentation.ppt">NGA
-                            Presentation</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Phipps Tower Press Release</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADGhPXgT-aw27LQwfWdholpa/Examples/MIller%20Ex/Phipps%20Tower%20Development%20-%20Press%20Release.jpg">Phipps
-                            Tower Development – Press Release</a></p>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADtacgXa6BHrqsDzQWVJGeKa/Examples/MIller%20Ex/Phipps%20Tower%20RE%20Development%20-%20March%2011%202008.doc">Phipps
-                            Tower RE Development – March 11 2008</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Westfields Marketing Brochure</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACXYtMXDpGACfABdXaIPCcSa/Examples/MIller%20Ex/Westfields%20Maarketing%20Brochure.pdf">Westfields
-                            Maarketing Brochure</a></p>
-                </div>
-            </div>
-
-            <div class="card my-4">
-                <h3 class="card-header">Stage 5 – Building Operations III.5</h3>
-                <div class="card-block">
-                    <h4>EPA Lease for One and Two Potomac yard</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAD2AxcTHKGc6ASaEx-pj3Qda/Examples/MIller%20Ex/PY%20EPA%20Final%20SF2%20w.%20Lessor%20comments%20%28option%20space%29%284.27.04%29.doc">PY
-                            EPA Final SF2 w. Lessor comments (option space)(4.27.04)</a></p>
-                </div>
-            </div>
-
-            <div class="card my-4">
-                <h3 class="card-header">Stage 6 – Building Renovations III.6</h3>
-            </div>
-
-            <div class="card my-4">
-                <h3 class="card-header">Stage 7- Property Redevelopment III.7</h3>
             </div>
         </div>
-    </div>
 
-    <hr><!--TASK 4-->
-
-    <div class="card">
-        <img class="card-img" height="200"
-             src="https://static.pexels.com/photos/41170/architecture-blue-building-business-41170.jpeg">
-        <div class="card-img-overlay card-inverse">
-            <h2 class="card-title">Task IV – Environmental</h2>
-        </div>
-
-        <div class="card-block">
-            <div class="card my-4">
-                <h3 class="card-header">Stage 1 – Land Banking IV.1</h3>
+        <div class="card" id="task3">
+            <img class="card-img" height="200"
+                 src="https://static.pexels.com/photos/41170/architecture-blue-building-business-41170.jpeg">
+            <div class="card-img-overlay card-inverse">
+                <h2 class="card-title">Task III – Marketing Analysis and Strategies</h2>
             </div>
 
-            <div class="card my-4">
-                <h3 class="card-header">Stage 2 – Land Packaging IV.2</h3>
-                <div class="card-block">
-                    <h4>Phase II Environmental Study Example</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADotfL6Rx7S2MQxyWQjaAo9a/Examples/MIller%20Ex/Environmental%20Reports%20ASTM_Phase_II_Example.pdf">Environmental
-                            Reports ASTM_Phase_II_Example</a></p>
+            <div class="card-block">
+                <div class="card my-4" id="t3stage1">
+                    <h3 class="card-header">Stage 1 – Land Banking III.1</h3>
                 </div>
-            </div>
 
-            <div class="card my-4">
-                <h3 class="card-header">Stage 3 – Land Development IV.3</h3>
-                <div class="card-block">
-                    <h4>Potomac Yard Arlington and Alexandria Alternative uses for Cinder Ballast</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/cinder_ballast_use_options.doc">Potomac
-                        Yard
-                        Arlington and Alexandria Alternative uses for Cinder Ballast</a></p>
+                <div class="card my-4" id="t3stage2">
+                    <h3 class="card-header">Stage 2 – Land Packaging III.2</h3>
+                    <div class="card-block">
+                        <h4>Armed Forces Retirement Home Press Release March 26 2007</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/afrh_press_release_03.26.07.pdf">Armed
+                            Forces
+                            Retirement Home Press Release March 26 2007</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>AFRH Press Release dated June 14 2006</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADlgtTd0Y6F5ZqEQjqAZ-DMa/Examples/MIller%20Ex/AFRH%20press%20release%20June%2014%2006.pdf">AFRH
+                                press release June 14 06</a></p>
+                    </div>
                 </div>
-                <div class="card-block">
-                    <h4>Potomac Yard Arlington Land Bay F Contaminated Soil Memo</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/land_bay_f_dirt_memo.doc">Potomac Yard
-                        Arlington
-                        Land Bay F Contaminated Soil Memo</a></p>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/land_bay_f_dirt_analysis_.xls">Potomac
-                        Yard
-                        Arlington Land Bay F Contaminated Soil Analysis</a></p>
+
+                <div class="card my-4" id="t3stage3">
+                    <h3 class="card-header">Stage 3 – Land Development III.3</h3>
+                    <div class="card-block">
+                        <h4>Potomac Yard Marketing</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/potomac_yard_and_the_water_quality_of_the_potomac_river.pdf">Potomac
+                                Yard Marketing</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Potomac Yard Arlington Letter of Intent from Possible Buyers</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/arl._res_loi_sum_8_bidders.xls">Potomac
+                            Yard
+                            Arlington Letter of Intent from Possible Buyers</a></p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card my-4">
-                <h3 class="card-header">Stage 4 -Building Development IV.4</h3>
-                <div class="card-block">
-                    <h4>Potomac Yard Arlington Greening of One and Two Potomac Yard</h4>
-                    <p>
-                        <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/3._the_greening_of_one_and_two_potomac_yard_v2.pdf">Potomac
-                            Yard Arlington Greening of One and Two Potomac Yard</a></p>
+                <div class="card my-4" id="t3stage4">
+                    <h3 class="card-header">Stage 4 -Building Development III.4</h3>
+                    <div class="card-block">
+                        <h4>Potomac Yard Arlington One and Two Potomac Yard Marketing Brochure</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/20121105161247660.pdf">Potomac Yard
+                            Arlington
+                            One
+                            and Two Potomac Yard Marketing Brochure</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>NGA letter of Intent</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACkbjcECfhpY-doIEmggWM4a/Examples/MIller%20Ex/NGA%20lette%20of%20Intent.doc">NGA
+                                lette of Intent</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Presentation to NGA</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AABaJZUDAxi1hOidBsQBjdAda/Examples/MIller%20Ex/NGA%20Presentation.ppt">NGA
+                                Presentation</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Phipps Tower Press Release</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADGhPXgT-aw27LQwfWdholpa/Examples/MIller%20Ex/Phipps%20Tower%20Development%20-%20Press%20Release.jpg">Phipps
+                                Tower Development – Press Release</a></p>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADtacgXa6BHrqsDzQWVJGeKa/Examples/MIller%20Ex/Phipps%20Tower%20RE%20Development%20-%20March%2011%202008.doc">Phipps
+                                Tower RE Development – March 11 2008</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Westfields Marketing Brochure</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACXYtMXDpGACfABdXaIPCcSa/Examples/MIller%20Ex/Westfields%20Maarketing%20Brochure.pdf">Westfields
+                                Maarketing Brochure</a></p>
+                    </div>
                 </div>
-                <div class="card-block">
-                    <h4>Potomac Yard Arlington Case study for USBGC LEED Certification</h4>
-                    <p>
-                        <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/case_study_one_and_two_potomac_yard.pdf">Potomac
-                            Yard Arlington Case study for USBGC LEED Certification</a></p>
-                    <p>
-                        <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/2._green_leasing_to_a_government_tenant_-_potomac_yard.pdf">Potomac
-                            Yard Green Leasing To Government Tenant</a></p>
+
+                <div class="card my-4" id="t3stage5">
+                    <h3 class="card-header">Stage 5 – Building Operations III.5</h3>
+                    <div class="card-block">
+                        <h4>EPA Lease for One and Two Potomac yard</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAD2AxcTHKGc6ASaEx-pj3Qda/Examples/MIller%20Ex/PY%20EPA%20Final%20SF2%20w.%20Lessor%20comments%20%28option%20space%29%284.27.04%29.doc">PY
+                                EPA Final SF2 w. Lessor comments (option space)(4.27.04)</a></p>
+                    </div>
                 </div>
-                <div class="card-block">
-                    <h4>Piedmont Town Center Strom Management system</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACsdOiXsiQBhIMuFzcJobFJa/Examples/MIller%20Ex/Piedmont%20Town%20Center%20Article.pdf">Piedmont
-                            Town Center Article</a></p>
+
+                <div class="card my-4" id="t3stage6">
+                    <h3 class="card-header">Stage 6 – Building Renovations III.6</h3>
                 </div>
-                <div class="card-block">
-                    <h4>Two Potomac Yard Green Guidelines for Tennant Finishes</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACwrAe1Tk81yEvVY1Gv4O7Ca/Examples/MIller%20Ex/PY%20-%20Green%20TI-Section%20C-draft2-010505.doc">PY
-                            - Green TI-Section C-draft2-010505</a></p>
+
+                <div class="card my-4" id="t3stage7">
+                    <h3 class="card-header">Stage 7- Property Redevelopment III.7</h3>
                 </div>
-            </div>
-
-            <div class="card my-4">
-                <h3 class="card-header">Stage 5 – Building Operations IV.5</h3>
-            </div>
-
-            <div class="card my-4">
-                <h3 class="card-header">Stage 6 – Building Renovations IV.6</h3>
-            </div>
-
-            <div class="card my-4">
-                <h3 class="card-header">Stage 7- Property Redevelopment IV.7</h3>
-            </div>
-        </div>
-    </div>
-
-    <hr><!--TASK 5-->
-
-    <div class="card">
-        <img class="card-img" height="200"
-             src="https://static.pexels.com/photos/41170/architecture-blue-building-business-41170.jpeg">
-        <div class="card-img-overlay card-inverse">
-            <h2 class="card-title">Task V – Permits and Approvals</h2>
-        </div>
-
-        <div class="card-block">
-            <div class="card my-4">
-                <h3 class="card-header">Stage 1 – Land Banking V.1</h3>
-            </div>
-
-            <div class="card my-4">
-                <h3 class="card-header">Stage 2 – Land Packaging V.2</h3>
-                <div class="card-block">
-                    <h4>Potomac Yard – Alexandria – Coordinated Development District</h4>
-                    <p>
-                        <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/potomac_yard_alexandria_cdd_regulation.pdf">Potomac
-                            Yard – Alexandria – Coordinated Development District</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Potomac Yard Arlington Phased Development Site Plan</h4>
-                    <p>
-                        <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/arlington_county_development_site_plan_for_2001.pdf">Potomac
-                            Yard Arlington Phased Development Site Plan</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Armed Forces Retirement Home Memorandum of Understanding</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/afrh_mou_dc_and_usa.pdf">Armed Forces
-                        Retirement
-                        Home Memorandum of Understanding</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Belgate Master Land Plan</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AABLr-utAj8xw0M8jQV_8rA4a/Examples/MIller%20Ex/053007%20master%20plan%2011x17.pdf">053007
-                            master plan 11x17</a></p>
-                </div>
-            </div>
-
-            <div class="card my-4">
-                <h3 class="card-header">Stage 3 – Land Development V.3</h3>
-                <div class="card-block">
-                    <h4>Potomac Yard Arlington</h4>
-                    <p>
-                        <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/potomac_yard_public_art_concept_plan_.pdf">Potomac
-                            Yard Arlington</a></p>
-                </div>
-            </div>
-
-            <div class="card my-4">
-                <h3 class="card-header">Stage 4 -Building Development V.4</h3>
-                <div class="card-block">
-                    <h4>Education Real Estate Permitting Checklist</h4>
-                    <p>
-                        <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/master_real_estate_permitting_checklist.pdf">Education
-                            Real Estate Permitting Checklist</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Building Permit Case Study</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AABh4K4v1x3yF6NCjCLorkRta/Examples/MIller%20Ex/Hopkins%20Building%20Case%20Study-%20Additional%20Information.pptx">Hopkins
-                            Building Case Study- Additional Information</a></p>
-                </div>
-            </div>
-
-            <div class="card my-4">
-                <h3 class="card-header">Stage 5 – Building Operations V.5</h3>
-            </div>
-
-            <div class="card my-4">
-                <h3 class="card-header">Stage 6 – Building Renovations V.6</h3>
-            </div>
-
-            <div class="card my-4">
-                <h3 class="card-header">Stage 7- Property Redevelopment V.7</h3>
             </div>
         </div>
-    </div>
 
-    <hr><!--TASK 6-->
-
-    <div class="card">
-        <img class="card-img" height="200"
-             src="https://static.pexels.com/photos/41170/architecture-blue-building-business-41170.jpeg">
-        <div class="card-img-overlay card-inverse">
-            <h2 class="card-title">Task VI – Physical Improvements</h2>
-        </div>
-
-        <div class="card-block">
-            <div class="card my-4">
-                <h3 class="card-header">Stage 1 – Land Banking VI.1</h3>
+        <div class="card" id="task4">
+            <img class="card-img" height="200"
+                 src="https://static.pexels.com/photos/41170/architecture-blue-building-business-41170.jpeg">
+            <div class="card-img-overlay card-inverse">
+                <h2 class="card-title">Task IV – Environmental</h2>
             </div>
 
-            <div class="card my-4">
-                <h3 class="card-header">Stage 2 – Land Packaging VI.2</h3>
-                <div class="card-block">
-                    <h4>Potomac Yard – Alexandria – Coordinated Development District</h4>
-                    <p>
-                        <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/potomac_yard_alexandria_cdd_regulation.pdf">Potomac
-                            Yard – Alexandria – Coordinated Development District</a></p>
+            <div class="card-block">
+                <div class="card my-4" id="t4stage1">
+                    <h3 class="card-header">Stage 1 – Land Banking IV.1</h3>
                 </div>
-                <div class="card-block">
-                    <h4>Potomac Yard Arlington Phased Development Site Plan</h4>
-                    <p>
-                        <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/arlington_county_development_site_plan_for_2001.pdf">Potomac
-                            Yard Arlington Phased Development Site Plan</a>
-                    </p>
-                </div>
-            </div>
 
-            <div class="card my-4">
-                <h3 class="card-header">Stage 3 – Land Development VI.3</h3>
-                <div class="card-block">
-                    <h4>Potomac Yard Alrington Public Art Concept Plan</h4>
-                    <p>
-                        <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/potomac_yard_public_art_concept_plan_.pdf">Potomac
-                            Yard Alrington Public Art Concept Plan</a></p>
+                <div class="card my-4" id="t4stage2">
+                    <h3 class="card-header">Stage 2 – Land Packaging IV.2</h3>
+                    <div class="card-block">
+                        <h4>Phase II Environmental Study Example</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADotfL6Rx7S2MQxyWQjaAo9a/Examples/MIller%20Ex/Environmental%20Reports%20ASTM_Phase_II_Example.pdf">Environmental
+                                Reports ASTM_Phase_II_Example</a></p>
+                    </div>
                 </div>
-                <div class="card-block">
-                    <h4>Potomac Yard Arlington youtube Video</h4>
-                    <p><a href="https://youtu.be/-7Y5Iy_T33Y">https://youtu.be/-7Y5Iy_T33Y</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Belgate Mixed Use Master Plan</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAD9i-JSmu-Jo-szJkhaECNLa/Examples/MIller%20Ex/Belgate%20master%20plan%2011x17.pdf">Belgate
-                            master plan 11x17</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Crown Farm Development Budget</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAUek-Z5cwNgTN1v85_OwRxa/Examples/MIller%20Ex/Crown%20Land%20Development%20Budget.xls">Crown
-                            Land Development Budget</a></p>
-                </div>
-            </div>
 
-            <div class="card my-4">
-                <h3 class="card-header">Stage 4 -Building Development VI.4</h3>
-                <div class="card-block">
-                    <h4>Potomac Yard Arlington Land Bay B Hotel Feasibility Study</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/land_bay_b_feasibility.doc">Potomac Yard
-                        Arlington
-                        Land Bay B Hotel Feasibility Study</a></p>
+                <div class="card my-4" id="t4stage3">
+                    <h3 class="card-header">Stage 3 – Land Development IV.3</h3>
+                    <div class="card-block">
+                        <h4>Potomac Yard Arlington and Alexandria Alternative uses for Cinder Ballast</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/cinder_ballast_use_options.doc">Potomac
+                            Yard
+                            Arlington and Alexandria Alternative uses for Cinder Ballast</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Potomac Yard Arlington Land Bay F Contaminated Soil Memo</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/land_bay_f_dirt_memo.doc">Potomac
+                            Yard
+                            Arlington
+                            Land Bay F Contaminated Soil Memo</a></p>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/land_bay_f_dirt_analysis_.xls">Potomac
+                            Yard
+                            Arlington Land Bay F Contaminated Soil Analysis</a></p>
+                    </div>
                 </div>
-                <div class="card-block">
-                    <h4>Potomac Yard Arlington Land Bay A Budget with EPA Lease Terms</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/epa_proposal_pro_forma.xls">Potomac Yard
-                        Arlington
-                        Land Bay A Budget with EPA Lease Terms</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Potomac Yard Arlington Land Bay A “Back of the Envelope Analysis”</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/bote_for_land_bay_a.xls">Potomac Yard
-                        Arlington
-                        Land
-                        Bay A “Back of the Envelope Analysis”</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Potomac Yard Arlington Land Bay A Construction Budget</h4>
-                    <p>
-                        <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/land_bay__a_budget_reconcilliation_june_26_06.xls">Potomac
-                            Yard Arlington Land Bay A Construction Budget</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Commonwealth Center Office Development Budget</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAC7Y-l_yp6GSi7T3lCJIk4fa/Examples/MIller%20Ex/Commonwealth%20Center%20One%20%20Development%20budget.xls">Commonwealth
-                            Center One Development budget</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>International Plaza 4 Development Budget</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACD3xzt5u3LCS23Nr_agw0Ga/Examples/MIller%20Ex/IP4%20development_budget_model.xls">IP4
-                            development_budget_model</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Education Construction Budget for One Anikeeff Place</h4>
-                    <p>
-                        <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/anikeeff_place_master_budget_with_ve.xlsx">Education
-                            Construction Budget for One Anikeeff Place</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Education Construction Draw using a “S” Curves</h4>
-                    <p>
-                        <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/construction_draws_24months_modified.xlsx">Education
-                            Construction Draw using a “S” Curves</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Kuwait Hospital Construction Schedule Using S-Curves</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAChxB8Fkr1sokh9zYYGIWlda/Examples/MIller%20Ex/Kuwait%20hospital%20Cosnstruction%20costs%20Update.jpg">Kuwait
-                            hospital Cosnstruction costs Update</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Parking Agreement with Hyatt during construction</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAfY1YCmkFWzua3_jfwhjrfa/Examples/MIller%20Ex/PY%20License%20Agreement%20for%20Parking_v2.DOC">PY
-                            License Agreement for Parking_v2</a></p>
-                </div>
-            </div>
 
-            <div class="card my-4">
-                <h3 class="card-header">Stage 5 – Building Operations VI.5</h3>
-            </div>
+                <div class="card my-4" id="t4stage4">
+                    <h3 class="card-header">Stage 4 -Building Development IV.4</h3>
+                    <div class="card-block">
+                        <h4>Potomac Yard Arlington Greening of One and Two Potomac Yard</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/3._the_greening_of_one_and_two_potomac_yard_v2.pdf">Potomac
+                                Yard Arlington Greening of One and Two Potomac Yard</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Potomac Yard Arlington Case study for USBGC LEED Certification</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/case_study_one_and_two_potomac_yard.pdf">Potomac
+                                Yard Arlington Case study for USBGC LEED Certification</a></p>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/2._green_leasing_to_a_government_tenant_-_potomac_yard.pdf">Potomac
+                                Yard Green Leasing To Government Tenant</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Piedmont Town Center Strom Management system</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACsdOiXsiQBhIMuFzcJobFJa/Examples/MIller%20Ex/Piedmont%20Town%20Center%20Article.pdf">Piedmont
+                                Town Center Article</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Two Potomac Yard Green Guidelines for Tennant Finishes</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACwrAe1Tk81yEvVY1Gv4O7Ca/Examples/MIller%20Ex/PY%20-%20Green%20TI-Section%20C-draft2-010505.doc">PY
+                                - Green TI-Section C-draft2-010505</a></p>
+                    </div>
+                </div>
 
-            <div class="card my-4">
-                <h3 class="card-header">Stage 6 – Building Renovations VI.6</h3>
-            </div>
+                <div class="card my-4" id="t4stage5">
+                    <h3 class="card-header">Stage 5 – Building Operations IV.5</h3>
+                </div>
 
-            <div class="card my-4">
-                <h3 class="card-header">Stage 7- Property Redevelopment VI.7</h3>
+                <div class="card my-4" id="t4stage6">
+                    <h3 class="card-header">Stage 6 – Building Renovations IV.6</h3>
+                </div>
+
+                <div class="card my-4" id="t4stage7">
+                    <h3 class="card-header">Stage 7- Property Redevelopment IV.7</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-    <hr><!--TASK 7-->
-
-    <div class="card">
-        <img class="card-img" height="200"
-             src="https://static.pexels.com/photos/41170/architecture-blue-building-business-41170.jpeg">
-        <div class="card-img-overlay card-inverse">
-            <h2 class="card-title">Task VII – Transportation and Accessibility</h2>
-        </div>
-
-        <div class="card-block">
-            <div class="card my-4">
-                <h3 class="card-header">Stage 1 – Land Banking VII.1</h3>
+        <div class="card" id="task5">
+            <img class="card-img" height="200"
+                 src="https://static.pexels.com/photos/41170/architecture-blue-building-business-41170.jpeg">
+            <div class="card-img-overlay card-inverse">
+                <h2 class="card-title">Task V – Permits and Approvals</h2>
             </div>
 
-            <div class="card my-4">
-                <h3 class="card-header">Stage 2 – Land Packaging VII.2</h3>
-            </div>
+            <div class="card-block">
+                <div class="card my-4" id="t5stage1">
+                    <h3 class="card-header">Stage 1 – Land Banking V.1</h3>
+                </div>
 
-            <div class="card my-4">
-                <h3 class="card-header">Stage 3 – Land Development VII.3</h3>
-                <div class="card-block">
-                    <h4>Belgate Charlotte and CR Agreement for Extension of City Boulevard</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAR9rHxP-M1oEdcD3NnT_hfa/Examples/MIller%20Ex/Bekgate%20City%20Infrastructure%20Dev%20Agr%205-21-07.pdf">Bekgate
-                            City Infrastructure Dev Agr 5-21-07</a></p>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADJGmxUPnhaDA-HF9uM2pN7a/Examples/MIller%20Ex/Belgate%20EXHIBIT%20R-3%20IKEA%20WAY%20IMPROVEMENTS.pdf">Belgate
-                            EXHIBIT R-3 IKEA WAY IMPROVEMENTS</a></p>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAA0Td-_NhSUkb_MhYz-BHgNa/Examples/MIller%20Ex/City%20Blvd%20IBM%20aerial.pdf">City
-                            Blvd IBM aerial</a></p>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADEyt3SnB6d8mzgHaaZfuvca/Examples/MIller%20Ex/City%20Blvd%20Land%20Plan%206-12-07.pdf">City
-                            Blvd Land Plan 6-12-07</a></p>
+                <div class="card my-4" id="t5stage2">
+                    <h3 class="card-header">Stage 2 – Land Packaging V.2</h3>
+                    <div class="card-block">
+                        <h4>Potomac Yard – Alexandria – Coordinated Development District</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/potomac_yard_alexandria_cdd_regulation.pdf">Potomac
+                                Yard – Alexandria – Coordinated Development District</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Potomac Yard Arlington Phased Development Site Plan</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/arlington_county_development_site_plan_for_2001.pdf">Potomac
+                                Yard Arlington Phased Development Site Plan</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Armed Forces Retirement Home Memorandum of Understanding</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/afrh_mou_dc_and_usa.pdf">Armed
+                            Forces
+                            Retirement
+                            Home Memorandum of Understanding</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Belgate Master Land Plan</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AABLr-utAj8xw0M8jQV_8rA4a/Examples/MIller%20Ex/053007%20master%20plan%2011x17.pdf">053007
+                                master plan 11x17</a></p>
+                    </div>
                 </div>
-                <div class="card-block">
-                    <h4>Potomac Yard Transfer of Streets to Arlington county</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADkpkEL9Eu0g0UM-LotKKlva/Examples/MIller%20Ex/PY%20%20North%20Tract%20Transfer%20Potomac_Deed_Dedication_Termination%20-%20Copy.DOC">PY
-                            North Tract Transfer Potomac_Deed_Dedication_Termination - Copy</a></p>
-                </div>
-            </div>
 
-            <div class="card my-4">
-                <h3 class="card-header">Stage 4 -Building Development VII.4</h3>
-            </div>
+                <div class="card my-4" id="t5stage3">
+                    <h3 class="card-header">Stage 3 – Land Development V.3</h3>
+                    <div class="card-block">
+                        <h4>Potomac Yard Arlington</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/potomac_yard_public_art_concept_plan_.pdf">Potomac
+                                Yard Arlington</a></p>
+                    </div>
+                </div>
 
-            <div class="card my-4">
-                <h3 class="card-header">Stage 5 – Building Operations VII.5</h3>
-            </div>
+                <div class="card my-4" id="t5stage4">
+                    <h3 class="card-header">Stage 4 -Building Development V.4</h3>
+                    <div class="card-block">
+                        <h4>Education Real Estate Permitting Checklist</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/master_real_estate_permitting_checklist.pdf">Education
+                                Real Estate Permitting Checklist</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Building Permit Case Study</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AABh4K4v1x3yF6NCjCLorkRta/Examples/MIller%20Ex/Hopkins%20Building%20Case%20Study-%20Additional%20Information.pptx">Hopkins
+                                Building Case Study- Additional Information</a></p>
+                    </div>
+                </div>
 
-            <div class="card my-4">
-                <h3 class="card-header">Stage 6 – Building Renovations VII.6</h3>
-            </div>
+                <div class="card my-4" id="t5stage5">
+                    <h3 class="card-header">Stage 5 – Building Operations V.5</h3>
+                </div>
 
-            <div class="card my-4">
-                <h3 class="card-header">Stage 7- Property Redevelopment VII.7</h3>
-            </div>
-        </div>
-    </div>
+                <div class="card my-4" id="t5stage6">
+                    <h3 class="card-header">Stage 6 – Building Renovations V.6</h3>
+                </div>
 
-    <hr><!--TASK 8-->
-    <div class="card">
-        <img class="card-img" height="200"
-             src="https://static.pexels.com/photos/41170/architecture-blue-building-business-41170.jpeg">
-        <div class="card-img-overlay card-inverse">
-            <h2 class="card-title">Task VIII – Sales and Disposition</h2>
-        </div>
-
-        <div class="card-block">
-            <div class="card my-4">
-                <h3 class="card-header">Stage 1 – Land Banking VIII.1</h3>
-                <div class="card-block">
-                    <h4>Tyvola Crossing Land Sale Memo</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AABWA_FNJ2F72CbtcBTKCsxOa/Examples/MIller%20Ex/Tyvola%20Crossing%20Sale%20white%20paper.doc">Tyvola
-                            Crossing Sale white paper</a></p>
+                <div class="card my-4" id="t5stage7">
+                    <h3 class="card-header">Stage 7- Property Redevelopment V.7</h3>
                 </div>
-            </div>
-
-            <div class="card my-4">
-                <h3 class="card-header">Stage 2 – Land Packaging VIII.2</h3>
-            </div>
-
-            <div class="card my-4">
-                <h3 class="card-header">Stage 3 – Land Development VIII.3</h3>
-                <div class="card-block">
-                    <h4>Potomac Yard Alexandria Land Sale</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/p.y._alexandria_land_sale.doc">P.Y.
-                        Alexandria
-                        Land
-                        Sale.doc</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Potomac Yard Alexandra Potomac Greens Land Sale Memo</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/potomac_greens_sale_summary.doc">Potomac
-                        Yard
-                        Alexandra Potomac Greens Land Sale Memo</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Potomac Yard Arlington Disposition Memo for Land Bays B, C, D and E</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/p.y._land_bays_bcd_e_land_sales.doc">Potomac
-                        Yard
-                        Arlington Disposition Memo for Land Bays B, C, D and E</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Potomac Yard Arlington and Alexandria Development Post Closing Development Agreements</h4>
-                    <p>
-                        <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/develoment_agreement_summary1rev9-1-05.xls">Potomac
-                            Yard Arlington and Alexandria Development Post Closing Development Agreements</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Westfields Disposition Memo</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/westfields_sale.doc">Westfields
-                        Disposition
-                        Memo</a>
-                    </p>
-                </div>
-                <div class="card-block">
-                    <h4>Crosstown Center Land Sale Memo</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACwfGm4yQOEIlYxovKJaBcVa/Examples/MIller%20Ex/Crosstown%20Center%20Land%20Sale.pdf">Crosstown
-                            Center Land Sale</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Hidden River Land Sales</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAA5VFiCGteGK19h7KiFjA4ia/Examples/MIller%20Ex/Hidden%20River%20Land%20Sale.doc">Hidden
-                            River Land Sale</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Ikea Sales Contract</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAqv8xvTVbWVQeG1Sxl0I08a/Examples/MIller%20Ex/Ikea%20sales%20contract%2012%2014%2006c.doc">Ikea
-                            sales contract 12 14 06c</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Potomac Yard Settlement Sheet for Meridian Land Sale</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAE6MJa0ymmbIvovKr1v_9fa/Examples/MIller%20Ex/PY%20Meridian_Settlement_Statement.XLS">PY
-                            Meridian_Settlement_Statement</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Westfields Letter of Intent for Sale</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAaQQSD6LWgBH0-IZgvE_1ha/Examples/MIller%20Ex/Westfields%20Letter%20of%20Intent.pdf">Westfields
-                            Letter of Intent</a></p>
-                </div>
-                <div class="card-block">
-                    <h4>Westfields Land Sale</h4>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAC_faZqwGQnNAHu0QSwQF5da/Examples/MIller%20Ex/Westfields%20Sale%20white%20paper.doc">Westfields
-                            Sale white paper</a></p>
-                    <p>
-                        <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AABsNWRvwsWTpY9gSoWGAAQ4a/Examples/MIller%20Ex/Westfields%20Purchase%20and%20Sale%20Agreement.%20june%203%2005pdf.pdf">Westfields
-                            Purchase and Sale Agreement. june 3 05pdf</a></p>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/p.y._alexandria_land_sale.doc">P.Y.
-                        Alexandria
-                        Land
-                        Sale.doc</a></p>
-                </div>
-            </div>
-
-            <div class="card my-4">
-                <h3 class="card-header">Stage 4 -Building Development VIII.4</h3>
-                <div class="card-block">
-                    <h4>Potomac Yard Arlington One and Two Potomac Yard Disposition Memo</h4>
-                    <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/potomac_one__two_sale_v2.doc">
-                        Potomac Yard Arlington One and Two Potomac Yard Disposition Memo</a></p>
-                </div>
-            </div>
-
-            <div class="card my-4">
-                <h3 class="card-header">Stage 5 – Building Operations VIII.5</h3>
-            </div>
-
-            <div class="card my-4">
-                <h3 class="card-header">Stage 6 – Building Renovations VIII.6</h3>
-            </div>
-
-            <div class="card my-4">
-                <h3 class="card-header">Stage 7- Property Redevelopment VIII.7</h3>
             </div>
         </div>
+
+        <div class="card" id="task6">
+            <img class="card-img" height="200"
+                 src="https://static.pexels.com/photos/41170/architecture-blue-building-business-41170.jpeg">
+            <div class="card-img-overlay card-inverse">
+                <h2 class="card-title">Task VI – Physical Improvements</h2>
+            </div>
+
+            <div class="card-block">
+                <div class="card my-4" id="t6stage1">
+                    <h3 class="card-header">Stage 1 – Land Banking VI.1</h3>
+                </div>
+
+                <div class="card my-4" id="t6stage2">
+                    <h3 class="card-header">Stage 2 – Land Packaging VI.2</h3>
+                    <div class="card-block">
+                        <h4>Potomac Yard – Alexandria – Coordinated Development District</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/potomac_yard_alexandria_cdd_regulation.pdf">Potomac
+                                Yard – Alexandria – Coordinated Development District</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Potomac Yard Arlington Phased Development Site Plan</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/arlington_county_development_site_plan_for_2001.pdf">Potomac
+                                Yard Arlington Phased Development Site Plan</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card my-4" id="t6stage3">
+                    <h3 class="card-header">Stage 3 – Land Development VI.3</h3>
+                    <div class="card-block">
+                        <h4>Potomac Yard Alrington Public Art Concept Plan</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/potomac_yard_public_art_concept_plan_.pdf">Potomac
+                                Yard Alrington Public Art Concept Plan</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Potomac Yard Arlington youtube Video</h4>
+                        <p><a href="https://youtu.be/-7Y5Iy_T33Y">https://youtu.be/-7Y5Iy_T33Y</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Belgate Mixed Use Master Plan</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAD9i-JSmu-Jo-szJkhaECNLa/Examples/MIller%20Ex/Belgate%20master%20plan%2011x17.pdf">Belgate
+                                master plan 11x17</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Crown Farm Development Budget</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAUek-Z5cwNgTN1v85_OwRxa/Examples/MIller%20Ex/Crown%20Land%20Development%20Budget.xls">Crown
+                                Land Development Budget</a></p>
+                    </div>
+                </div>
+
+                <div class="card my-4" id="t6stage4">
+                    <h3 class="card-header">Stage 4 -Building Development VI.4</h3>
+                    <div class="card-block">
+                        <h4>Potomac Yard Arlington Land Bay B Hotel Feasibility Study</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/land_bay_b_feasibility.doc">Potomac
+                            Yard
+                            Arlington
+                            Land Bay B Hotel Feasibility Study</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Potomac Yard Arlington Land Bay A Budget with EPA Lease Terms</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/epa_proposal_pro_forma.xls">Potomac
+                            Yard
+                            Arlington
+                            Land Bay A Budget with EPA Lease Terms</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Potomac Yard Arlington Land Bay A “Back of the Envelope Analysis”</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/bote_for_land_bay_a.xls">Potomac
+                            Yard
+                            Arlington
+                            Land
+                            Bay A “Back of the Envelope Analysis”</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Potomac Yard Arlington Land Bay A Construction Budget</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/land_bay__a_budget_reconcilliation_june_26_06.xls">Potomac
+                                Yard Arlington Land Bay A Construction Budget</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Commonwealth Center Office Development Budget</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAC7Y-l_yp6GSi7T3lCJIk4fa/Examples/MIller%20Ex/Commonwealth%20Center%20One%20%20Development%20budget.xls">Commonwealth
+                                Center One Development budget</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>International Plaza 4 Development Budget</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACD3xzt5u3LCS23Nr_agw0Ga/Examples/MIller%20Ex/IP4%20development_budget_model.xls">IP4
+                                development_budget_model</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Education Construction Budget for One Anikeeff Place</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/anikeeff_place_master_budget_with_ve.xlsx">Education
+                                Construction Budget for One Anikeeff Place</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Education Construction Draw using a “S” Curves</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/construction_draws_24months_modified.xlsx">Education
+                                Construction Draw using a “S” Curves</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Kuwait Hospital Construction Schedule Using S-Curves</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAChxB8Fkr1sokh9zYYGIWlda/Examples/MIller%20Ex/Kuwait%20hospital%20Cosnstruction%20costs%20Update.jpg">Kuwait
+                                hospital Cosnstruction costs Update</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Parking Agreement with Hyatt during construction</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAfY1YCmkFWzua3_jfwhjrfa/Examples/MIller%20Ex/PY%20License%20Agreement%20for%20Parking_v2.DOC">PY
+                                License Agreement for Parking_v2</a></p>
+                    </div>
+                </div>
+
+                <div class="card my-4" id="t6stage5">
+                    <h3 class="card-header">Stage 5 – Building Operations VI.5</h3>
+                </div>
+
+                <div class="card my-4" id="t6stage6">
+                    <h3 class="card-header">Stage 6 – Building Renovations VI.6</h3>
+                </div>
+
+                <div class="card my-4" id="t6stage7">
+                    <h3 class="card-header">Stage 7- Property Redevelopment VI.7</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="task7">
+            <img class="card-img" height="200"
+                 src="https://static.pexels.com/photos/41170/architecture-blue-building-business-41170.jpeg">
+            <div class="card-img-overlay card-inverse">
+                <h2 class="card-title">Task VII – Transportation and Accessibility</h2>
+            </div>
+
+            <div class="card-block">
+                <div class="card my-4" id="t7stage1">
+                    <h3 class="card-header">Stage 1 – Land Banking VII.1</h3>
+                </div>
+
+                <div class="card my-4" id="t7stage2">
+                    <h3 class="card-header">Stage 2 – Land Packaging VII.2</h3>
+                </div>
+
+                <div class="card my-4" id="t7stage3">
+                    <h3 class="card-header">Stage 3 – Land Development VII.3</h3>
+                    <div class="card-block">
+                        <h4>Belgate Charlotte and CR Agreement for Extension of City Boulevard</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAR9rHxP-M1oEdcD3NnT_hfa/Examples/MIller%20Ex/Bekgate%20City%20Infrastructure%20Dev%20Agr%205-21-07.pdf">Bekgate
+                                City Infrastructure Dev Agr 5-21-07</a></p>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADJGmxUPnhaDA-HF9uM2pN7a/Examples/MIller%20Ex/Belgate%20EXHIBIT%20R-3%20IKEA%20WAY%20IMPROVEMENTS.pdf">Belgate
+                                EXHIBIT R-3 IKEA WAY IMPROVEMENTS</a></p>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAA0Td-_NhSUkb_MhYz-BHgNa/Examples/MIller%20Ex/City%20Blvd%20IBM%20aerial.pdf">City
+                                Blvd IBM aerial</a></p>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADEyt3SnB6d8mzgHaaZfuvca/Examples/MIller%20Ex/City%20Blvd%20Land%20Plan%206-12-07.pdf">City
+                                Blvd Land Plan 6-12-07</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Potomac Yard Transfer of Streets to Arlington county</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AADkpkEL9Eu0g0UM-LotKKlva/Examples/MIller%20Ex/PY%20%20North%20Tract%20Transfer%20Potomac_Deed_Dedication_Termination%20-%20Copy.DOC">PY
+                                North Tract Transfer Potomac_Deed_Dedication_Termination - Copy</a></p>
+                    </div>
+                </div>
+
+                <div class="card my-4" id="t7stage4">
+                    <h3 class="card-header">Stage 4 -Building Development VII.4</h3>
+                </div>
+
+                <div class="card my-4" id="t7stage5">
+                    <h3 class="card-header">Stage 5 – Building Operations VII.5</h3>
+                </div>
+
+                <div class="card my-4" id="t7stage6">
+                    <h3 class="card-header">Stage 6 – Building Renovations VII.6</h3>
+                </div>
+
+                <div class="card my-4" id="t7stage7">
+                    <h3 class="card-header">Stage 7- Property Redevelopment VII.7</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="task8">
+            <img class="card-img" height="200"
+                 src="https://static.pexels.com/photos/41170/architecture-blue-building-business-41170.jpeg">
+            <div class="card-img-overlay card-inverse">
+                <h2 class="card-title">Task VIII – Sales and Disposition</h2>
+            </div>
+
+            <div class="card-block">
+                <div class="card my-4" id="t8stage1">
+                    <h3 class="card-header">Stage 1 – Land Banking VIII.1</h3>
+                    <div class="card-block">
+                        <h4>Tyvola Crossing Land Sale Memo</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AABWA_FNJ2F72CbtcBTKCsxOa/Examples/MIller%20Ex/Tyvola%20Crossing%20Sale%20white%20paper.doc">Tyvola
+                                Crossing Sale white paper</a></p>
+                    </div>
+                </div>
+
+                <div class="card my-4" id="t8stage2">
+                    <h3 class="card-header">Stage 2 – Land Packaging VIII.2</h3>
+                </div>
+
+                <div class="card my-4" id="t8stage3">
+                    <h3 class="card-header">Stage 3 – Land Development VIII.3</h3>
+                    <div class="card-block">
+                        <h4>Potomac Yard Alexandria Land Sale</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/p.y._alexandria_land_sale.doc">P.Y.
+                            Alexandria
+                            Land
+                            Sale.doc</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Potomac Yard Alexandra Potomac Greens Land Sale Memo</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/potomac_greens_sale_summary.doc">Potomac
+                            Yard
+                            Alexandra Potomac Greens Land Sale Memo</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Potomac Yard Arlington Disposition Memo for Land Bays B, C, D and E</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/p.y._land_bays_bcd_e_land_sales.doc">Potomac
+                                Yard
+                                Arlington Disposition Memo for Land Bays B, C, D and E</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Potomac Yard Arlington and Alexandria Development Post Closing Development Agreements</h4>
+                        <p>
+                            <a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/develoment_agreement_summary1rev9-1-05.xls">Potomac
+                                Yard Arlington and Alexandria Development Post Closing Development Agreements</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Westfields Disposition Memo</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/westfields_sale.doc">Westfields
+                            Disposition
+                            Memo</a>
+                        </p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Crosstown Center Land Sale Memo</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AACwfGm4yQOEIlYxovKJaBcVa/Examples/MIller%20Ex/Crosstown%20Center%20Land%20Sale.pdf">Crosstown
+                                Center Land Sale</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Hidden River Land Sales</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAA5VFiCGteGK19h7KiFjA4ia/Examples/MIller%20Ex/Hidden%20River%20Land%20Sale.doc">Hidden
+                                River Land Sale</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Ikea Sales Contract</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAqv8xvTVbWVQeG1Sxl0I08a/Examples/MIller%20Ex/Ikea%20sales%20contract%2012%2014%2006c.doc">Ikea
+                                sales contract 12 14 06c</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Potomac Yard Settlement Sheet for Meridian Land Sale</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAE6MJa0ymmbIvovKr1v_9fa/Examples/MIller%20Ex/PY%20Meridian_Settlement_Statement.XLS">PY
+                                Meridian_Settlement_Statement</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Westfields Letter of Intent for Sale</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAAaQQSD6LWgBH0-IZgvE_1ha/Examples/MIller%20Ex/Westfields%20Letter%20of%20Intent.pdf">Westfields
+                                Letter of Intent</a></p>
+                    </div>
+                    <div class="card-block">
+                        <h4>Westfields Land Sale</h4>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AAC_faZqwGQnNAHu0QSwQF5da/Examples/MIller%20Ex/Westfields%20Sale%20white%20paper.doc">Westfields
+                                Sale white paper</a></p>
+                        <p>
+                            <a href="https://www.dropbox.com/sh/lrbyqjxt9msqxjf/AABsNWRvwsWTpY9gSoWGAAQ4a/Examples/MIller%20Ex/Westfields%20Purchase%20and%20Sale%20Agreement.%20june%203%2005pdf.pdf">Westfields
+                                Purchase and Sale Agreement. june 3 05pdf</a></p>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/p.y._alexandria_land_sale.doc">P.Y.
+                            Alexandria
+                            Land
+                            Sale.doc</a></p>
+                    </div>
+                </div>
+
+                <div class="card my-4" id="t8stage4">
+                    <h3 class="card-header">Stage 4 -Building Development VIII.4</h3>
+                    <div class="card-block">
+                        <h4>Potomac Yard Arlington One and Two Potomac Yard Disposition Memo</h4>
+                        <p><a href="http://dankohlhepp.com/uploads/3/4/3/6/34366166/potomac_one__two_sale_v2.doc">
+                            Potomac Yard Arlington One and Two Potomac Yard Disposition Memo</a></p>
+                    </div>
+                </div>
+
+                <div class="card my-4" id="t8stage5">
+                    <h3 class="card-header">Stage 5 – Building Operations VIII.5</h3>
+                </div>
+
+                <div class="card my-4" id="t8stage6">
+                    <h3 class="card-header">Stage 6 – Building Renovations VIII.6</h3>
+                </div>
+
+                <div class="card my-4" id="t8stage7">
+                    <h3 class="card-header">Stage 7- Property Redevelopment VIII.7</h3>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 </main>
@@ -1570,6 +1628,9 @@
         </ul>
     </div>
 </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="../script/examples_page.js"></script>
 
 </body>
 </html>
