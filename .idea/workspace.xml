@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2688208-2e97-4733-a97b-df2ef1578219" name="Default" comment="updated previous s3 links on examples page">
+    <list default="true" id="c2688208-2e97-4733-a97b-df2ef1578219" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/pages/examples.html" afterPath="$PROJECT_DIR$/FrontEnd/pages/examples.html" />
     </list>
@@ -34,10 +34,10 @@
       <file leaf-file-name="examples.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FrontEnd/pages/examples.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="356" column="114" lean-forward="false" selection-start-line="356" selection-start-column="113" selection-end-line="356" selection-end-column="114" />
+            <state relative-caret-position="258">
+              <caret line="1116" column="33" lean-forward="false" selection-start-line="1116" selection-start-column="33" selection-end-line="1116" selection-end-column="33" />
               <folding>
-                <marker date="1495513705837" expanded="false" signature="89401:89407" ph="©" />
+                <element signature="e#91382#91388#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,6 +73,10 @@
       <find>dankoh</find>
       <find>http://dankohlhepp.com/uploads/3/4/3/6/34366166</find>
       <find>miller+ex/</find>
+      <find>s3</find>
+      <find>https</find>
+      <find>physical</find>
+      <find>peidmont</find>
     </findStrings>
     <replaceStrings>
       <replace>class=&quot;card my-4&quot; id=&quot;txstagey&quot;</replace>
@@ -81,6 +85,7 @@
       <replace>+</replace>
       <replace>.pdf</replace>
       <replace>https://realestatedevelopmentmatrix.com/textbook/res</replace>
+      <replace>http</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -263,6 +268,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="FrontEnd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RealEstateDevMatrix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RealEstateDevelopmentMatrix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontEnd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -994,7 +1017,8 @@
     <MESSAGE value="added task filtering on examples page" />
     <MESSAGE value="Added base special skills. Modified examples img header" />
     <MESSAGE value="updated previous s3 links on examples page" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated previous s3 links on examples page" />
+    <MESSAGE value="updated dropbox and dankohlhepp examples to use local s3 links" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated dropbox and dankohlhepp examples to use local s3 links" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1341,10 +1365,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd/pages/examples.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="356" column="114" lean-forward="false" selection-start-line="356" selection-start-column="113" selection-end-line="356" selection-end-column="114" />
+        <state relative-caret-position="258">
+          <caret line="1116" column="33" lean-forward="false" selection-start-line="1116" selection-start-column="33" selection-end-line="1116" selection-end-column="33" />
           <folding>
-            <marker date="1495513705837" expanded="false" signature="89401:89407" ph="©" />
+            <element signature="e#91382#91388#0" expanded="true" />
           </folding>
         </state>
       </provider>
