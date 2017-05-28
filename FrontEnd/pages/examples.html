@@ -66,35 +66,36 @@
     <hr>
     <div class="row">
 
-        <div class="col-sm-3">
+        <div class="col-md-4">
             <h2>Task</h2>
-            <select multiple id="taskSelect">
-                <option value="1">I Acquisition</option>
-                <option value="2">II Financing</option>
-                <option value="3">III Market Analysis and Strategies</option>
-                <option value="4">IV Environmental</option>
-                <option value="5">V Approvals and Permits</option>
-                <option value="6">VI Physical Improvements</option>
-                <option value="7">VII Transportation and Accessibility</option>
-                <option value="8">VIII Sales and Disposition</option>
+            <select multiple id="taskSelect" class="w-100">
+                <option value="1" selected="selected">I Acquisition</option>
+                <option value="2" selected="selected">II Financing</option>
+                <option value="3" selected="selected">III Market Analysis and Strategies</option>
+                <option value="4" selected="selected">IV Environmental</option>
+                <option value="5" selected="selected">V Approvals and Permits</option>
+                <option value="6" selected="selected">VI Physical Improvements</option>
+                <option value="7" selected="selected">VII Transportation and Accessibility</option>
+                <option value="8" selected="selected">VIII Sales and Disposition</option>
             </select>
         </div>
 
-        <!--<div class="col-sm-3">-->
-        <!--<h2>Stage</h2>-->
-        <!--<select multiple id="stageSelect">-->
-        <!--<option value="1">1 Land Banking</option>-->
-        <!--<option value="2">2 Land Packaging</option>-->
-        <!--<option value="3">3 Land Development</option>-->
-        <!--<option value="4">4 Building Development</option>-->
-        <!--<option value="5">5 Building Operations</option>-->
-        <!--<option value="6">6 Building Renovation</option>-->
-        <!--<option value="7">7 Property Redevelopment</option>-->
-        <!--</select>-->
-        <!--</div>-->
+        <div class="col-md-4">
+            <h2>Stage</h2>
+            <select multiple id="stageSelect" class="w-100">
+                <option value="1" selected="selected">1 Land Banking</option>
+                <option value="2" selected="selected">2 Land Packaging</option>
+                <option value="3" selected="selected">3 Land Development</option>
+                <option value="4" selected="selected">4 Building Development</option>
+                <option value="5" selected="selected">5 Building Operations</option>
+                <option value="6" selected="selected">6 Building Renovation</option>
+                <option value="7" selected="selected">7 Property Redevelopment</option>
+            </select>
+        </div>
 
-        <div class="col-sm-6">
-            <p></p>
+        <div class="col-md-4">
+            <h2>Title Text</h2>
+            <input type="text" id="searchText" class="w-100">
             <button type="button" onclick="filter()">Filter</button>
         </div>
 
