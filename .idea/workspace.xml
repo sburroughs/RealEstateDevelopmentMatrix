@@ -6,17 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2688208-2e97-4733-a97b-df2ef1578219" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/pages/textbook.html" />
+    <list default="true" id="c2688208-2e97-4733-a97b-df2ef1578219" name="Default" comment="added textbook page to nav">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/index.html" afterPath="$PROJECT_DIR$/FrontEnd/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/pages/contact.html" afterPath="$PROJECT_DIR$/FrontEnd/pages/contact.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/pages/examples.html" afterPath="$PROJECT_DIR$/FrontEnd/pages/examples.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/pages/faq.html" afterPath="$PROJECT_DIR$/FrontEnd/pages/faq.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/pages/how-to-read-matrix.html" afterPath="$PROJECT_DIR$/FrontEnd/pages/how-to-read-matrix.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/pages/process.html" afterPath="$PROJECT_DIR$/FrontEnd/pages/process.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/pages/skills.html" afterPath="$PROJECT_DIR$/FrontEnd/pages/skills.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/pages/third-dimension.html" afterPath="$PROJECT_DIR$/FrontEnd/pages/third-dimension.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/pages/textbook.html" afterPath="$PROJECT_DIR$/FrontEnd/pages/textbook.html" />
     </list>
     <ignored path="RealEstateDevMatrix.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,9 +35,11 @@
       <file leaf-file-name="textbook.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FrontEnd/pages/textbook.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="56" column="17" lean-forward="false" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
-              <folding />
+            <state relative-caret-position="6436">
+              <caret line="439" column="30" lean-forward="false" selection-start-line="439" selection-start-column="30" selection-end-line="439" selection-end-column="30" />
+              <folding>
+                <element signature="e#26822#26828#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,9 +59,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>s3</find>
-      <find>https</find>
-      <find>physical</find>
       <find>peidmont</find>
       <find>each</find>
       <find>taskNum</find>
@@ -94,6 +86,9 @@
       <find>Piedmont Town Center</find>
       <find>Permits</find>
       <find>belgate</find>
+      <find>South</find>
+      <find>card</find>
+      <find>&quot;card&quot;</find>
     </findStrings>
     <replaceStrings>
       <replace>class=&quot;card my-4&quot; id=&quot;txstagey&quot;</replace>
@@ -165,14 +160,14 @@
         <option value="$PROJECT_DIR$/FrontEnd/script/examples_page.js" />
         <option value="$PROJECT_DIR$/FrontEnd/css/page.css" />
         <option value="$PROJECT_DIR$/FrontEnd/index.html" />
-        <option value="$PROJECT_DIR$/FrontEnd/pages/textbook.html" />
         <option value="$PROJECT_DIR$/FrontEnd/pages/contact.html" />
         <option value="$PROJECT_DIR$/FrontEnd/pages/process.html" />
         <option value="$PROJECT_DIR$/FrontEnd/pages/skills.html" />
         <option value="$PROJECT_DIR$/FrontEnd/pages/third-dimension.html" />
-        <option value="$PROJECT_DIR$/FrontEnd/pages/examples.html" />
         <option value="$PROJECT_DIR$/FrontEnd/pages/faq.html" />
         <option value="$PROJECT_DIR$/FrontEnd/pages/how-to-read-matrix.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/pages/examples.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/pages/textbook.html" />
       </list>
     </option>
   </component>
@@ -204,7 +199,7 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -991,7 +986,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1073,7 +1068,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="hardcoded expected content for theming" />
     <MESSAGE value="Fixed issue with modal jquery not pcking up dynamic elements" />
     <MESSAGE value="Actually Fixed issue with modal jquery not pcking up dynamic elements" />
     <MESSAGE value="Modified sample content and sample demo operations" />
@@ -1098,7 +1092,8 @@
     <MESSAGE value="updated spelling bugs" />
     <MESSAGE value="updated examples page to improve filter ability." />
     <MESSAGE value="ui updates base commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="ui updates base commit" />
+    <MESSAGE value="added textbook page to nav" />
+    <option name="LAST_COMMIT_MESSAGE" value="added textbook page to nav" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1395,7 +1390,7 @@
         <state relative-caret-position="300">
           <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="54" selection-end-column="17" />
           <folding>
-            <element signature="e#17294#17300#0" expanded="true" />
+            <element signature="e#17294#17300#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1450,19 +1445,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd/pages/examples.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret line="50" column="73" lean-forward="true" selection-start-line="50" selection-start-column="73" selection-end-line="50" selection-end-column="73" />
+        <state relative-caret-position="223">
+          <caret line="250" column="111" lean-forward="false" selection-start-line="250" selection-start-column="111" selection-end-line="250" selection-end-column="111" />
           <folding>
-            <element signature="e#92306#92312#0" expanded="true" />
+            <element signature="e#92305#92311#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd/pages/textbook.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="56" column="17" lean-forward="false" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="6436">
+          <caret line="439" column="30" lean-forward="false" selection-start-line="439" selection-start-column="30" selection-end-line="439" selection-end-column="30" />
+          <folding>
+            <element signature="e#26822#26828#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
