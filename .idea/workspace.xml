@@ -6,9 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2688208-2e97-4733-a97b-df2ef1578219" name="Default" comment="textbook updates">
+    <list default="true" id="c2688208-2e97-4733-a97b-df2ef1578219" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/pages/examples.html" afterPath="$PROJECT_DIR$/FrontEnd/pages/examples.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/pages/textbook.html" afterPath="$PROJECT_DIR$/FrontEnd/pages/textbook.html" />
     </list>
     <ignored path="RealEstateDevMatrix.iws" />
@@ -31,23 +30,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="textbook.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="textbook.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FrontEnd/pages/textbook.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="581" column="59" lean-forward="true" selection-start-line="581" selection-start-column="59" selection-end-line="581" selection-end-column="59" />
+            <state relative-caret-position="196">
+              <caret line="394" column="19" lean-forward="true" selection-start-line="394" selection-start-column="19" selection-end-line="394" selection-end-column="19" />
               <folding>
-                <element signature="e#31466#31472#0" expanded="true" />
+                <element signature="e#31477#31483#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="examples.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="examples.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FrontEnd/pages/examples.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="374" column="81" lean-forward="true" selection-start-line="374" selection-start-column="81" selection-end-line="374" selection-end-column="81" />
+            <state relative-caret-position="281">
+              <caret line="153" column="141" lean-forward="false" selection-start-line="153" selection-start-column="141" selection-end-line="153" selection-end-column="141" />
               <folding />
             </state>
           </provider>
@@ -175,8 +174,8 @@
         <option value="$PROJECT_DIR$/FrontEnd/pages/third-dimension.html" />
         <option value="$PROJECT_DIR$/FrontEnd/index.html" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/FrontEnd/pages/textbook.html" />
         <option value="$PROJECT_DIR$/FrontEnd/pages/examples.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/pages/textbook.html" />
       </list>
     </option>
   </component>
@@ -997,7 +996,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Updated Matrix and updated content" />
     <MESSAGE value="that feel when table" />
     <MESSAGE value="For the love of god, why did I not commit sooner.  Service near complete, still needs comments. Theme needs doin and what not." />
     <MESSAGE value="Added images and extra content" />
@@ -1022,7 +1020,8 @@
     <MESSAGE value="added textbook page content." />
     <MESSAGE value="updated textbook page title, updated textbook page with reference numbers" />
     <MESSAGE value="textbook updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="textbook updates" />
+    <MESSAGE value="broken link fixes for examples and textbook pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="broken link fixes for examples and textbook pages" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1360,21 +1359,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/pages/textbook.html">
+    <entry file="file://$PROJECT_DIR$/FrontEnd/pages/examples.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="581" column="59" lean-forward="true" selection-start-line="581" selection-start-column="59" selection-end-line="581" selection-end-column="59" />
-          <folding>
-            <element signature="e#31466#31472#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="281">
+          <caret line="153" column="141" lean-forward="false" selection-start-line="153" selection-start-column="141" selection-end-line="153" selection-end-column="141" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/pages/examples.html">
+    <entry file="file://$PROJECT_DIR$/FrontEnd/pages/textbook.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="374" column="81" lean-forward="true" selection-start-line="374" selection-start-column="81" selection-end-line="374" selection-end-column="81" />
-          <folding />
+        <state relative-caret-position="196">
+          <caret line="394" column="19" lean-forward="true" selection-start-line="394" selection-start-column="19" selection-end-line="394" selection-end-column="19" />
+          <folding>
+            <element signature="e#31477#31483#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
