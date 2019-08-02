@@ -29,12 +29,12 @@ td, th {
 }
 
 th {
-    background: #303440;
+    background: #2c2f3a;
     font-weight: 700;
 }
 
 th a {
-    color: #B4CE22;
+    color: #d9ea7b;
 }
 
 th a:hover,
@@ -53,6 +53,18 @@ header {
 
 footer {
     margin-top: 40px;
+}
+
+.navbar {
+    background: #2c2f3a;
+}
+
+.navbar a {
+    color: #d9ea7b;
+}
+
+.navbar a:hover {
+    color: #A3B63A;
 }
 
 .card-img-overlay {
@@ -131,7 +143,7 @@ footer {
 }
 
 .modal__wrap {
-    background: #F2ECE9;
+    background: #ffffff;
     box-shadow: 5px 5px 15px black;
     width: 80%;
     max-width: 800px;
