@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="RealEstateDevMatrix:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="matrix.war">
-      <element id="artifact" artifact-name="RealEstateDevMatrix:war exploded" />
-    </root>
-  </artifact>
-</component>
